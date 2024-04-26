@@ -12,12 +12,12 @@ const theme = extendTheme({
         color: '#e0e0e0',
         lineHeight: 'tall',
       },
-      a: {
-        color: 'teal.500',
-        _hover: {
-          textDecoration: 'underline',
-        },
-      },
+      // a: {
+      //   color: 'teal.500',
+      //   _hover: {
+      //     textDecoration: 'dashed',
+      //   },
+      // },
     },
   },
   components: {    
@@ -26,6 +26,11 @@ const theme = extendTheme({
         color: '#FFFF'
       },
       sizes: {
+        '4xl': { 
+          fontSize: Typography.heading['heading-large']['4xl'].fontSize,
+          fontWeight: Typography.heading['heading-large']['4xl'].fontWeight,
+          lineHeight: Typography.heading['heading-large']['4xl'].lineHeight,
+        },
         '3xl': { 
           fontSize: Typography.heading['heading-large']['3xl'].fontSize,
           fontWeight: Typography.heading['heading-large']['3xl'].fontWeight,
@@ -67,6 +72,23 @@ const theme = extendTheme({
           fontSize: Typography.text['2xl']['lineHeight-8']['font-normal'].fontSize, 
           fontWeight:  Typography.text['2xl']['lineHeight-8']['font-normal'].fontWeight,
           lineHeight:  Typography.text['2xl']['lineHeight-8']['font-normal'].lineHeight,
+        },
+        lg: {
+          fontSize: Typography.text.lg['lineHeight-7']['font-normal'].fontSize, 
+          fontWeight: Typography.text.lg['lineHeight-7']['font-normal'].fontWeight,
+          lineHeight: Typography.text.lg['lineHeight-7']['font-normal'].lineHeight,
+        },
+        defaultProps: {
+          size: 'lg', // Default size for all Headings if not specified
+        }
+      }
+    },
+    Link: {
+      sizes: {
+        'xl': {
+          fontSize: Typography.text['xl']['lineHeight-7']['font-normal'].fontSize, 
+          fontWeight:  Typography.text['xl']['lineHeight-7']['font-normal'].fontWeight,
+          lineHeight:  Typography.text['xl']['lineHeight-7']['font-normal'].lineHeight,
         },
         lg: {
           fontSize: Typography.text.lg['lineHeight-7']['font-normal'].fontSize, 

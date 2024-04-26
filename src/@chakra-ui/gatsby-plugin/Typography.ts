@@ -4,12 +4,9 @@ export const Typography = {
       "4xl":  {
         "fontSize":  72,
         "fontFamily":  "Poppins",
-        "fontWeight":  "Semi Bold",
-        "lineHeight":  100,
-        "lineHeightUnit":  "PERCENT",
-        "letterSpacing":  0,
-        "letterSpacingUnit":  "PERCENT",
-        "textCase":  "ORIGINAL",
+        "fontWeight":  600,
+        "lineHeight":  "100%",
+        "fontStyle": "normal",
         "textDecoration":  "NONE"
       },
       "3xl":  {
@@ -443,11 +440,7 @@ export const Typography = {
           "fontSize":  20,
           "fontFamily":  "Inter",
           "fontWeight":  "Regular",
-          "lineHeight":  28,
-          "lineHeightUnit":  "PIXELS",
-          "letterSpacing":  0,
-          "letterSpacingUnit":  "PERCENT",
-          "textCase":  "ORIGINAL",
+          "lineHeight":  "28px",
           "textDecoration":  "NONE"
         },
         "font-medium":  {

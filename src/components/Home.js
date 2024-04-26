@@ -40,7 +40,7 @@ export const Home = () => (
       </GridItem>
       <GridItem colSpan={1}>
         <Stack gap="32px" >
-          <Heading size="3xl" background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)" backgroundClip="text">
+          <Heading as="h1" size="4xl" background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)" backgroundClip="text">
               Hi, I’m Avi
             </Heading>
             <Text size="2xl">         
