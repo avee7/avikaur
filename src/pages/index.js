@@ -1,12 +1,15 @@
 import React from "react"
-// import Layout from "../components/layout"
 import { Home } from "../components/Home";
 import Layout from "../components/Layout";
+import { ChakraProvider } from '@chakra-ui/react';
+import theme from '../@chakra-ui/gatsby-plugin/theme'; 
 
 const IndexPage = () => (
-  <Layout>
-    <Home />
-  </Layout>
+  <ChakraProvider theme={theme}>
+    <Layout>
+      <Home />
+    </Layout>
+  </ChakraProvider>
 );
 
 export default IndexPage;

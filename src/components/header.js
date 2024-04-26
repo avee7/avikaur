@@ -16,11 +16,6 @@ const Header = () => {
           <Link href="/about" fontWeight="bold" color="#FFFFFF">About</Link>
           <Link href="/contact" fontWeight="bold" color="#FFFFFF">Contact</Link>
         </Stack>
-       {/* <Flex gap="8">
-          <Link href="/" fontWeight="bold">Home</Link>
-          <Link href="/about" fontWeight="bold">About</Link>
-          <Link href="/contact" fontWeight="bold">Contact</Link>
-        </Flex>  */}
       </Flex>
 
     </Box>
