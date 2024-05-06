@@ -12,7 +12,7 @@ const Header = () => {
       boxShadow="sm"  // Optional shadow for better visibility over the content below
       width="full" 
     >
-      <Flex align="center" justify="space-between" maxW="1140px" mx="auto">
+      <Flex align="center" justify="space-between" maxW="1300px" mx="auto">
         <Box as={Link} href='/' width="10rem">
           <Image src={logo} alt="logo" maxW="100%"  / >
         </Box>

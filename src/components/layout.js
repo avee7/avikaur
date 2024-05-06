@@ -1,7 +1,7 @@
 // src/components/layout.js
 import React from "react"
 import { Box } from "@chakra-ui/react"
-import Header from "./Header"
+import Header from "./header"
 
 import Footer from "./footer"
 
