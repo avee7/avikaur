@@ -17,8 +17,8 @@ const MotionCircle = motion(Box);
 
 export const Home = () => (
  <Box>
-  <Box position="absolute" width="100%" height="90vh">
-    
+  <Box position="absolute" width="100%" height="100vh" zIndex="0" mt="-8rem">
+    <HeroAnimation />
   </Box>
 
   <HeroArea />

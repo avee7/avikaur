@@ -76,11 +76,9 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
                 justifyContent: 'center',
                 alignItems: 'center',
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                color: 'white',
-                fontSize: '24px'
               }}
             >
-              Coming Soon
+              <Text size="xl">Coming Soon</Text>
             </motion.div>
           )}
         </Box>
