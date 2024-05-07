@@ -10,13 +10,17 @@ import HeroAnimation from './hero-animation';
 
 
 
+
 const MotionCircle = motion(Box);
 
 
 
 export const Home = () => (
  <Box>
-  {/* <HeroAnimation /> */}
+  <Box position="absolute" width="100%" height="90vh">
+    
+  </Box>
+
   <HeroArea />
 
   
