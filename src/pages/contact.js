@@ -1,10 +1,8 @@
 
 import React from 'react';
-import { Box, Text, Link, VStack, Heading, Container } from '@chakra-ui/react';
+import { Text, Link, VStack, Heading, Container } from '@chakra-ui/react';
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
-import AboutMe from "../components/about-me"
 
 const Contact = () => (
   <Layout>
