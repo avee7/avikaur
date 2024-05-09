@@ -1,5 +1,5 @@
 import React from "react"
-import Home from "../components/home";
+import Home from "../components/home.js";
 import Layout from "../components/layout";
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../@chakra-ui/gatsby-plugin/theme'; 
