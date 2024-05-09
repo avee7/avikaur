@@ -33,7 +33,7 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
             bg="rgba(145, 128, 255, 0.5)"
             // bg="#7B7A7E"
             bgImage={`url(${project.imgSrc})`}
-            bgPosition={heading === "Prototypes" ? "center center" : "center left"}
+            bgPosition={heading === "Prototypes" ? "center center" : "-5rem center"}
             bgRepeat="no-repeat"
             bgSize={heading === "Prototypes" ? "contain" : "cover"}
           ></Box>

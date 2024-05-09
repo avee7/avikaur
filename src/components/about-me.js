@@ -90,14 +90,17 @@ const AboutMe = () => {
     animate={{ opacity: 1, rotate: 0 }}  // Fades in and rotates back to 0 degrees
     transition={{ 
       rotate: {
-        type: "spring",  // Use spring physics for the rotation transition
-        stiffness: 100,  // Spring stiffness, adjust for snappiness
-        damping: 12,     // Spring damping, adjust for oscillation
-        delay: 0.8     // Delay before starting the rotation
+        // type: "spring",  // Use spring physics for the rotation transition
+        // stiffness: 100,  // Spring stiffness, adjust for snappiness
+        // damping: 12,     // Spring damping, adjust for oscillation
+        duration: 0.8,  // Duration of the rotation animation
+        ease: "easeInOut",
+        delay: 0.4     // Delay before starting the rotation
       },
       opacity: {
-        duration: 0.4,  // Duration of the fade-in effect
-        delay: 0.8      // Delay before starting the fade in
+        duration: 0.8,  // Duration of the fade-in effect
+        ease: "easeInOut",
+        delay: 0.4      // Delay before starting the fade in
       }
     }}
   />

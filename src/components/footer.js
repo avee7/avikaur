@@ -8,7 +8,8 @@ const Footer = () => (
     <Flex justifyContent="space-between" direction="row">
         <VStack direction="column" alignItems="flex-start" justifyContent="space-between" height="100%">
           <Box pb="5rem">
-            <Heading size="lg">Would like to talk?</Heading>
+            
+            <Heading size="xl" background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)" backgroundClip="text">Would like to talk?</Heading>
             <Text pt='1rem' size="xl">Happy to grab a coffee and chat :) </Text>
             <Text pt="2rem" size="xl" >avinash.kaur90@gmail.com </Text>
           </Box>
@@ -18,9 +19,9 @@ const Footer = () => (
           
         </VStack>
         <VStack direction="column" alignItems="flex-start" gap="1.5rem" height="100%">
-          <Link size="lg" href="#">Home</Link>
-          <Link size="lg" href="#">About</Link>
-          <Link size="lg" href="#">Contact</Link>          
+          <Link size="lg" href="/">Home</Link>
+          <Link size="lg" href="/about">About</Link>
+          <Link size="lg" href="/contact">Contact</Link>          
         </VStack>
         <VStack pr="2rem" direction="column" alignItems="flex-start" justifyContent="flex-start" gap="1.5rem" height="100%">
           <Link size="lg" href="#">LinkedIn</Link>

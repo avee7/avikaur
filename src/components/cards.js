@@ -45,7 +45,7 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0.2 }}
         variants={cardVariants}
         whileHover={!showComingSoon ? "hover" : null}
       >
