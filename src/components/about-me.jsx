@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, VStack, Heading, Image as ChakraImage, Container, Flex } from '@chakra-ui/react';
+import { Box, Text, Image as ChakraImage, Container, Flex } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 import MyImage from "../images/me.png"
 

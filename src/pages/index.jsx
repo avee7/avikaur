@@ -1,7 +1,5 @@
 import React from "react"
 import Layout from "../components/layout";
-import { ChakraProvider } from '@chakra-ui/react';
-import theme from '../@chakra-ui/gatsby-plugin/theme'; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { Box } from '@chakra-ui/react'
@@ -25,11 +23,9 @@ const Home = () => (
 
  
 const IndexPage = () => (
-  <ChakraProvider theme={theme}>
     <Layout>
       <Home />
     </Layout>
-  </ChakraProvider>
 );
 
 export default IndexPage;
