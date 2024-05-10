@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import DSImage from "../images/DSImages.svg";
 import ProductDesignImage from "../images/projectImage.svg";
 import PrototypesImage from "../images/prototypeimg.svg";
-import isoshealthImg from "../images/isoshealth-img.png"
+import isoshealthImg from "../images/isoshealth-img.webp"
 import CubiXImg from "../images/cubix-img.png"
 import MdUIImg from "../images/mdui-img.png"
 import GroupsImg from "../images/groups-img.png"
-import MCiteImg from "../images/mcite-img.png"
+import MCiteImg from "../images/mcite-img.webp"
 import NavioImg from "../images/big-wheel.gif"
 
 import FullScreenOverlay from './full-screen-overlay'; // Ensure the path is correct

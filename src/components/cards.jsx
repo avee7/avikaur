@@ -2,11 +2,11 @@ import React from 'react';
 import { VStack, Box, Heading, Text, Image, Link } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import CardObjectsImage from "../images/card-bg-shapes.svg";
-import MendeleyProjectImage from "../images/mendley-macbook.svg";
+import MendeleyProjectImage from "../images/mendley-macbook.webp";
 import DeltaProjectImage from "../images/airline-neutral.svg";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
 
-const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon }) => {
+const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon, imgWidth }) => {
   // Animation variants for the card visibility and hover
   const cardVariants = {
     offscreen: {
@@ -60,7 +60,7 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
           <Heading size="lg" mb={3}>{title}</Heading>
           <Text size="xl">{description}</Text>
           <Image src={CardObjectsImage} position="absolute" top="0" left="0" backgroundRepeat="repeat" />
-          <Image src={imageSrc} position="absolute" {...positionAdjust} />
+          <Image src={imageSrc} position="absolute" width={imgWidth} {...positionAdjust} />
           {showComingSoon && (
             <motion.div
               variants={comingSoonVariants}
@@ -96,6 +96,7 @@ const Cards = () => (
       imageSrc={MendeleyProjectImage}
       positionAdjust={{ top: "-4rem", right: "-10rem" }}
       showComingSoon={false}
+      imgWidth="66%"
     />
     <Card
       href="/"
@@ -104,14 +105,16 @@ const Cards = () => (
       imageSrc={DeltaProjectImage}
       positionAdjust={{ top: "4rem", right: "-20rem" }}
       showComingSoon={true}
+      imgWidth="100%"
     />
     <Card
       href="/"
       title="Duplicates Management"
       description="Product Design"
       imageSrc={DuplicatesProjectImage}
-      positionAdjust={{ top: "3rem", right: "-36rem" }}
+      positionAdjust={{ top: "3rem", right: "-33rem" }}
       showComingSoon={true}
+      imgWidth="100%"
     />
   </VStack>
 );
