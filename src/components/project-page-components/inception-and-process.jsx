@@ -1,6 +1,6 @@
 import React from "react"
 import { Stack, Box, Text, Heading, Image, Grid, GridItem, Flex, VStack, List, ListItem, ListIcon, Container } from '@chakra-ui/react'
-import OldMendeley from "../../images/old-mendeley.png"
+import OldMendeley from "../../images/old-mendeley.webp"
 import ArrowDown from "../../images/TrendDown.svg";
 import TrustImage from  '../../images/trust.svg';
 import EngagingImage from  '../../images/engaging.svg';
@@ -34,7 +34,7 @@ const InceptionAndProcess = () => (
             <GridItem>
               <VStack gap={4} width="100%" >
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
-                  <Image src={ArrowDown} width="60px" />
+                  <Image src={ArrowDown} width="3rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
                       Limited Value Proposition
@@ -43,7 +43,7 @@ const InceptionAndProcess = () => (
                   </Box>
                 </Box>
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
-                  <Image src={ArrowDown} width="60px" />
+                  <Image src={ArrowDown} width="3rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
                       Obsolete branding
@@ -52,7 +52,7 @@ const InceptionAndProcess = () => (
                   </Box>
                 </Box>
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
-                  <Image src={ArrowDown} width="60px" />
+                  <Image src={ArrowDown} width="3rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
                       Outdated Elements
