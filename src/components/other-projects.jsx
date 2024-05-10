@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, GridItem, Heading, Image, Container, Flex, useDisclosure } from '@chakra-ui/react';
+import { Grid, GridItem, Heading, Image, Container, Flex, useDisclosure, Box, Text } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 
 import DSImage from "../images/DSImages.svg";
@@ -11,19 +11,17 @@ import MdUIImg from "../images/mdui-img.png"
 import GroupsImg from "../images/groups-img.png"
 import MCiteImg from "../images/mcite-img.png"
 import NavioImg from "../images/big-wheel.gif"
-import AjabShaharImg from "../images/ajabshahar-parallax.gif"
-import MendeleyPrototypesImg from "../images/mendeley-prototypes.png"
 
 import FullScreenOverlay from './full-screen-overlay'; // Ensure the path is correct
 
-// Motion wrapper for Flex
+
 const MotionFlex = motion(Flex);
 
 const OtherProjects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedItem, setSelectedItem] = useState(null); // Define state for selected item
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  // Define items data
+    // Define items data
   const items = [
     {
       id: 1,
@@ -72,15 +70,18 @@ const OtherProjects = () => {
       imageSrc: PrototypesImage,
       heading: "Prototypes",
       subProjects: [
-        { name: "AjabShahar", year: "2015", imgSrc: AjabShaharImg, role: "UI developer (solo project)",  impact: [], description: "At Thoughtworks, for the 'AjabShahar' project, I crafted HTML, CSS, and JavaScript prototypes to secure client approval, focusing on delivering the immersive experience the client desired. My work featured complex interactions such as parallax effects and advanced CSS3 animations, demonstrating the innovative capabilities of our designs and effectively engaging our clients." },
-        { name: "Mendeley Prototypes", year: "2019-2023", imgSrc: MendeleyPrototypesImg, role: "UX Designer",  impact: [], description: "During my tenure at Mendeley, I developed numerous prototypes using HTML, CSS, and Azure, transforming initial ideas into visual representations that accelerated decision-making processes. This work not only facilitated quicker validations but also significantly enhanced our project development lifecycle." }
+        { name: "AjabShahar", year: "2015", imgSrc: "", role: "UI developer (solo project)",  impact: [], description: "At Thoughtworks, for the 'AjabShahar' project, I crafted HTML, CSS, and JavaScript prototypes to secure client approval, focusing on delivering the immersive experience the client desired. My work featured complex interactions such as parallax effects and advanced CSS3 animations, demonstrating the innovative capabilities of our designs and effectively engaging our clients." },
+        { name: "Mendeley Prototypes", year: "2019-2023", imgSrc: "", role: "UX Designer",  impact: [], description: "During my tenure at Mendeley, I developed numerous prototypes using HTML, CSS, and Azure, transforming initial ideas into visual representations that accelerated decision-making processes. This work not only facilitated quicker validations but also significantly enhanced our project development lifecycle." }
       ],
     },
   ];
 
+
   const handleClick = (item) => {
-    setSelectedItem(item);
-    onOpen(); // Opens the modal
+    if (item.id !== 3) {
+      setSelectedItem(item);
+      onOpen();
+    }
   };
 
   return (
@@ -94,7 +95,12 @@ const OtherProjects = () => {
         gap={4}
       >
         {items.map(item => (
-          <GridItem key={item.id} rowSpan={item.id === 1 ? 2 : 1} onClick={() => handleClick(item)} overflow="hidden" bg="rgba(90, 93, 159,0.18)" borderRadius="20px" borderWidth="1px" borderColor="#5A5D9F">
+          <GridItem key={item.id} rowSpan={item.id === 1 ? 2 : 1} 
+            onClick={() => handleClick(item)}
+            overflow="hidden" bg="rgba(90, 93, 159,0.18)" 
+            borderRadius="20px" borderWidth="1px" borderColor="#5A5D9F"
+            role="group" // Add group role for hover effect
+          >
             <MotionFlex
               height="100%"
               alignItems="center"
@@ -104,6 +110,14 @@ const OtherProjects = () => {
             >
               <Image src={item.imageSrc} zIndex="0" position="absolute" bottom="0rem" left="0" width="100%"/>
               <Heading size="lg" zIndex="1">{item.heading}</Heading>
+              {item.id === 3 && (
+                <Box position="absolute" top="0" left="0" right="0" bottom="0" bg="rgba(0, 0, 0, 0.5)" display="flex" alignItems="flex-end" justifyContent="center"
+                  opacity="0"
+                  _groupHover={{ opacity: 1 }} // Correctly apply group hover
+                >
+                  <Text size="lg" pb="1rem">Coming Soon</Text>
+                </Box>
+              )}
             </MotionFlex>
           </GridItem>
         ))}

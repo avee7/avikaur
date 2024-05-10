@@ -21,21 +21,10 @@ const HeroArea = () => {
       />
       
       <MotionFlex zIndex="1" alignItems="center" gap="1rem" flexWrap="wrap">
-        {/* <MotionFlex width="15%" display={{base: "none", md: "inline-block"}} zIndex="1" alignItems="center" justifyContent="flex-start"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-        >
-          <MotionImage src={heroImage} alt="Hero Image" maxW="100%" width="100%" pr="2rem"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1, duration: 0.5 }}
-          />
-        </MotionFlex> */}
         
         <MotionHeading as="h1"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 20, opacity: 0, visibility: 'hidden' }}
+          animate={{ y: 0, opacity: 1, visibility: 'visible' }}
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <Heading size="4xl" background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)" backgroundClip="text">Hi, I’m Avi</Heading>
