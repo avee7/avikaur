@@ -11,7 +11,7 @@ const Footer = () => (
             
             <Heading size="xl" background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)" backgroundClip="text">Would like to talk?</Heading>
             <Text pt='1rem' size="xl">Happy to grab a coffee and chat :) </Text>
-            <Text pt="2rem" size="xl" >avinash.kaur90@gmail.com </Text>
+            <Text pt="2rem" size="xl" >avikaur.design@gmail.com </Text>
           </Box>
           <Box width="100%">
             <Text size="sm">© 2024 Avinash Kaur. All Rights Reserved</Text>
@@ -24,9 +24,9 @@ const Footer = () => (
           <Link size="lg" href="/contact">Contact</Link>          
         </VStack>
         <VStack pr="2rem" direction="column" alignItems="flex-start" justifyContent="flex-start" gap="1.5rem" height="100%">
-          <Link size="lg" href="#">LinkedIn</Link>
-          <Link size="lg" href="#">ADPList</Link>    
-          <Link size="lg" href="#">X</Link>
+        <Link size="lg" href="https://www.linkedin.com/in/avinash-kaur9/" isExternal>Linkedin</Link>
+        <Link size="lg" href="https://adplist.org/mentors/avinash-kaur" isExternal>ADPList</Link>  
+        <Link size="lg" href="https://twitter.com/avee_design" isExternal>X/Twitter</Link>
         </VStack>
         </Flex>
     

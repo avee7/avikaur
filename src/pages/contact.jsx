@@ -25,14 +25,14 @@ const Contact = () => (
 
         <Flex align="center">
           <Image src={LinkedinLogo} width="32px" mr="1rem"  />
-          <Link href="https://www.linkedin.com/in/avinash-kaur9/" isExternal>
+          <Link size="lg" href="https://www.linkedin.com/in/avinash-kaur9/" isExternal>
             Visit my LinkedIn
           </Link>
         </Flex>
 
         <Flex align="center">
         <Image src={ADPLogo} width="32px" mr="1rem"  />
-          <Link href="https://adplist.org/mentors/avinash-kaur" isExternal>
+          <Link size="lg" href="https://adplist.org/mentors/avinash-kaur" isExternal>
             Check out my ADPList Profile
           </Link>
         </Flex>
