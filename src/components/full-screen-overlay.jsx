@@ -27,18 +27,18 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
         <Box display="flex" height="100vh">
           
           <Box
-            width="40%"
+            width="50%"
             height="100vh" // Set height accordingly if different
             overflow="hidden"
             bg="rgba(145, 128, 255, 0.5)"
             // bg="#7B7A7E"
             bgImage={`url(${project.imgSrc})`}
-            bgPosition={heading === "Prototypes" ? "center center" : "-5rem center"}
+            bgPosition="center center"
             bgRepeat="no-repeat"
             bgSize={heading === "Prototypes" ? "contain" : "cover"}
           ></Box>
         
-          <Box width="60%" p={10}>
+          <Box width="50%" p={10}>
             <ModalCloseButton
               onClick={handleClose}
               size="lg" // This sets the size to a larger preset, if available. Chakra UI doesn't use size for ModalCloseButton by default, so this might not affect it.
