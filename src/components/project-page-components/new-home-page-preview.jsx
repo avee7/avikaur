@@ -12,7 +12,6 @@ const NewHomePagePreview = () => (
           <Heading size="2xl">The new home page experience</Heading>
         </Flex>
         <Flex mt="4rem" gap={8}>
-          {/* <Image src={OldMendeley} maxW="300px"  /> */}
           <Box width="full" maxW="900px" mx="auto">
             <video controls width="100%">
               <source src={HomePageVideo} type="video/mp4" />
