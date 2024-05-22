@@ -1,36 +1,80 @@
 import React from 'react';
-import { Box, Flex, Link, Image, Spacer, Stack, Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  IconButton,
+  Button,
+  useDisclosure,
+  Stack,
+  Drawer,
+  DrawerBody,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  Image,
+  Link,
+  Container
+} from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
 import logo from '../images/logo.png';
 
-const Header = () => {
-  return (
-    <Box as="header" p={4}  
-      position="sticky"
-      top="0"  
-      zIndex="sticky"  
-      bg="rgba(10, 9, 17, 0.8)" 
-      // backdropFilter="blur(60px)"
-      boxShadow="sm"  // Optional shadow for better visibility over the content below
-      width="full" 
-    >
-      <Flex align="center" justify="space-between" maxW="1300px" mx="auto">
-        <Box as={Link} href='/' width="10rem">
-          <Image src={logo} alt="logo" maxW="100%"  / >
-        </Box>
-        
-        <Stack direction="row" justify="flex-start" align="center" spacing="20px">
-          <Link href="/" size='xl' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#1a1a1a", textDecoration: 'none' }}>
-            Home</Link>
-  
-          <Link href="/about" size='xl' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#1a1a1a", textDecoration: 'none' }}>
-          About</Link>
-          <Link href="/contact" size='xl' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#1a1a1a", textDecoration: 'none' }}>
-          Contact</Link>
-        </Stack>
-      </Flex>
+const Navbar = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-    </Box>
+  return (
+    <Container maxW="1300px" bg="rgba(10, 9, 17, 0.8)" boxShadow="sm" position="sticky" top="0"
+    zIndex="sticky" 
+    width="full">
+      <Box 
+      >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+          <Box as={Link} href='/' width="10rem" mt="2">
+            <Image src={logo} alt="logo" maxW="100%" />
+          </Box>
+
+          <Flex alignItems={'center'}>
+            <Box display={{ base: 'none', md: 'flex' }}>
+              <Button as={Link} href="/" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2a2a2a", textDecoration: 'none' }}>Home</Button>
+              <Button as={Link} href="/about" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2a2a2a", textDecoration: 'none' }}>About</Button>
+              <Button as={Link} href="/contact" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2a2a2a", textDecoration: 'none' }}>Contact</Button>
+            </Box>
+
+            {/* Hamburger Icon on the right for mobile view */}
+            <IconButton
+              icon={<HamburgerIcon />}
+              aria-label={'Open Menu'}
+              size={'lg'}
+              // mr={2}
+              // height="40px"
+              display={{ md: 'none' }}
+              onClick={onOpen}
+              color="#e0e0e0"
+              transition="all 0.2s"
+              // borderColor="#7B7A7E"
+              variant="ghost"
+              borderRadius="md"
+              _hover={{ bg: "#2A2A2A", textDecoration: 'none' }}
+            />
+          </Flex>
+        </Flex>
+
+        {/* Mobile menu as an overlay */}
+        <Drawer isOpen={isOpen} placement="right" onClose={onClose}  >
+          <DrawerOverlay />
+          <DrawerContent bg="rgba(10, 9, 17, 0.8)" boxShadow="sm">
+            <DrawerCloseButton />
+            <DrawerBody>
+              <Stack pt={12} spacing={4}>
+                <Button as={Link} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2A2A2A", textDecoration: 'none' }} href="/" variant="ghost" onClick={onClose}>Home</Button>
+                <Button as={Link} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2A2A2A", textDecoration: 'none' }} href="/about" variant="ghost" onClick={onClose}>About</Button>
+                <Button as={Link} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2A2A2A", textDecoration: 'none' }} href="/contact" variant="ghost" onClick={onClose}>Contact</Button>
+              </Stack>
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+      </Box>
+    </Container>
   );
 };
 
-export default Header;
+export default Navbar;

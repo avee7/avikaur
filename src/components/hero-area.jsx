@@ -11,7 +11,7 @@ const MotionText = motion(Text);
 
 const HeroArea = () => {
   return (
-    <MotionFlex zIndex="1" maxW="1300px" mt="8rem" mb="10rem"  mx={{ base: "24px", xl: "auto" }} direction="column" px={{ base: "2rem", xl: "6rem" }} pb="6rem" pt="4rem" position="relative" gap="2rem">
+    <MotionFlex zIndex="1" maxW="1300px" mt={{ base: "4rem",  lg: "8rem"}} mb="10rem"  mx={{ base: "24px", md: "48px", xl: "auto" }} direction="column" px={{ base: "2rem", xl: "6rem" }} pb="6rem" pt="4rem" position="relative" gap="2rem">
       <MotionBox
         position="absolute" width='100%' background="rgba(90, 93, 159, 0.18)" zIndex="0"
         backdropFilter="blur(5px)" borderRadius="12px" height="100%" top="0" left="0"

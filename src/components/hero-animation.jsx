@@ -7,10 +7,9 @@ const MotionLine = motion.line;
 const MotionBox = motion(Box);
 
 function HeroAnimation() {
-  const ballSize = 24;  // Ball size in pixels
 
   return (
-    <Box position="relative" height="100%" width="100vw" backgroundColor="transparent" mt="-10rem">
+    <Box position="relative" height="100%" width="100vw" backgroundColor="transparent" mt={{ base: "-6rem", lg: "-10rem" }}>
       <MotionSvg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style={{ position: 'absolute', zIndex: 1 }}>
         
       <MotionLine
