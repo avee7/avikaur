@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, GridItem, Heading, Image, Container, Flex, useDisclosure, Box, Text } from '@chakra-ui/react';
+import { Grid, GridItem, Heading, Image, Container, Flex, useDisclosure, Box, Text, useBreakpointValue } from '@chakra-ui/react';
 import { motion } from "framer-motion";
 
 import DSImage from "../images/DSImages.svg";
@@ -84,6 +84,8 @@ const OtherProjects = () => {
     }
   };
 
+  const gridTemplateColumns = useBreakpointValue({ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' });
+
   return (
     <Container maxW="1300px" pb="10rem">
       <Heading size='xl' mb={{base: "2rem", md: "3.5rem"}}>Other Projects</Heading>
@@ -91,15 +93,21 @@ const OtherProjects = () => {
 
       <Grid
         h='556px'
-        templateRows='repeat(2, 1fr)'
-        templateColumns='repeat(2, 1fr)'
+        templateRows={{ base: 'auto', md: 'repeat(2, 1fr)' }}
+        templateColumns={gridTemplateColumns}
         gap={4}
       >
         {items.map(item => (
-          <GridItem key={item.id} rowSpan={item.id === 1 ? 2 : 1} 
+          <GridItem 
+            key={item.id} 
+            rowSpan={{ base: 1, md: item.id === 1 ? 2 : 1 }}
+            colSpan={{ base: 2, md: 1 }} // Stack on smaller screens
             onClick={() => handleClick(item)}
-            overflow="hidden" bg="rgba(90, 93, 159,0.18)" 
-            borderRadius="20px" borderWidth="1px" borderColor="#5A5D9F"
+            overflow="hidden" 
+            bg="rgba(90, 93, 159,0.18)" 
+            borderRadius="20px" 
+            borderWidth="1px" 
+            borderColor="#5A5D9F"
             role="group" // Add group role for hover effect
           >
             <MotionFlex
@@ -114,7 +122,7 @@ const OtherProjects = () => {
               {item.id === 3 && (
                 <Box position="absolute" top="0" left="0" right="0" bottom="0" bg="rgba(0, 0, 0, 0.5)" display="flex" alignItems="flex-end" justifyContent="center"
                   opacity="0"
-                  _groupHover={{ opacity: 1 }} // Correctly apply group hover
+                  _groupHover={{ opacity: 1 }} 
                 >
                   <Text size="lg" pb="1rem">Coming Soon</Text>
                 </Box>
