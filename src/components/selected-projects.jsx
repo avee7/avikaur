@@ -4,7 +4,7 @@ import Cards from "./cards"
 
 const SelectedProjects = () => (
     <Container maxW="1300px" pb="10rem" zIndex="9" position="relative">
-      <Heading size="xl" mb={14}>Selected Projects</Heading>
+      <Heading size='xl' mb={{base: "2rem", md: "3.5rem"}}>Selected Projects</Heading>
 
         <Cards />
       

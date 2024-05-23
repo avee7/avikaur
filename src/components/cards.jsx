@@ -5,6 +5,7 @@ import CardObjectsImage from "../images/card-bg-shapes.svg";
 import MendeleyProjectImage from "../images/mendley-macbook.webp";
 import DeltaProjectImage from "../images/airline-neutral.svg";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
+import { useBreakpointValue } from '@chakra-ui/react';
 
 const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon, imgWidth }) => {
   // Animation variants for the card visibility and hover
@@ -40,6 +41,8 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
     }
   };
 
+  const responsivePosition = useBreakpointValue(positionAdjust);
+
   return (
     <Link href={href} style={{ textDecoration: 'none' }} width="100%">
       <motion.div
@@ -60,7 +63,7 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
           <Heading size="lg" mb={3}>{title}</Heading>
           <Text size="xl">{description}</Text>
           <Image src={CardObjectsImage} position="absolute" top="0" left="0" backgroundRepeat="repeat" />
-          <Image src={imageSrc} position="absolute" width={imgWidth} {...positionAdjust} />
+          <Image src={imageSrc} position="absolute" width={imgWidth} {...responsivePosition} />
           {showComingSoon && (
             <motion.div
               variants={comingSoonVariants}
@@ -94,7 +97,11 @@ const Cards = () => (
       title="Beyond Reference Management"
       description="Website Redesign / Case Study"
       imageSrc={MendeleyProjectImage}
-      positionAdjust={{ top: "-4rem", right: "-10rem" }}
+      positionAdjust={{
+        base: { top: '14rem', right: '0.5rem' },
+        md: { top: '4rem', right: '-10rem' },
+        lg: { top: '-4rem', right: '-10rem' },
+      }}
       showComingSoon={false}
       imgWidth="66%"
     />
@@ -103,7 +110,11 @@ const Cards = () => (
       title="Airline Neutral: Fly Delta Airlines"
       description="Multi-brand Design System"
       imageSrc={DeltaProjectImage}
-      positionAdjust={{ top: "4rem", right: "-20rem" }}
+      positionAdjust={{
+        base: { top: '11rem', right: '0' },
+        md: { top: '4rem', right: '-10rem' },
+        lg: { top: '4rem', right: '-20rem' }
+      }}
       showComingSoon={true}
       imgWidth="100%"
     />
@@ -112,7 +123,11 @@ const Cards = () => (
       title="Duplicates Management"
       description="Product Design"
       imageSrc={DuplicatesProjectImage}
-      positionAdjust={{ top: "3rem", right: "-33rem" }}
+      positionAdjust={{
+        base: { top: '12rem', right: '0' },
+        md: { top: '4rem', right: '-26rem' },
+        lg: { top: '3rem', right: '-33rem' }
+      }}
       showComingSoon={true}
       imgWidth="100%"
     />
