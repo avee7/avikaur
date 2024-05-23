@@ -39,25 +39,25 @@ const InceptionAndProcess = () => (
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
                       Limited Value Proposition
                     </Heading>
-                    <Text size="lg">Users reported that they identify mendeley as only the reference manager -- which is only one of the offering.</Text>
+                    <Text size="lg">Many users recognised Mendeley only as a reference manager, overlooking its full suite of research tools and collaborative features.</Text>
                   </Box>
                 </Box>
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
                   <Image src={ArrowDown} width="3rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
-                      Obsolete branding
+                      Obsolete Branding
                     </Heading>
-                    <Text size="lg">Users reported that they identify mendeley as only the reference manager -- which is only one of the offering.</Text>
+                    <Text size="lg">Mendeley's previous branding did not reflect its modern vision and capabilities. </Text>
                   </Box>
                 </Box>
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
                   <Image src={ArrowDown} width="3rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
-                      Outdated Elements
+                      Outdated Content
                     </Heading>
-                    <Text size="lg">Users reported that they identify mendeley as only the reference manager -- which is only one of the offering.</Text>
+                    <Text size="lg">Several sections, including the careers page, were outdated and no longer relevant, highlighting the need for immediate updates to maintain our site's relevance and accuracy.</Text>
                   </Box>
                 </Box>
 

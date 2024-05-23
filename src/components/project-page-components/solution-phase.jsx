@@ -3,15 +3,14 @@ import {
   Stack, Box, Text, Heading, Image, Grid, GridItem, Flex, VStack,
   Divider, Container
 } from '@chakra-ui/react'
-import { MdOutlineAnalytics } from 'react-icons/md';
-import { MdSettings } from 'react-icons/md';
-import { MdPerson } from 'react-icons/md';
 import ConceptImage1 from '../../images/concept1.jpg'
 import ConceptImage2 from '../../images/concept2.jpg'
 import SolutionImage1 from '../../images/solution1.png'
 import SolutionImage2 from '../../images/solution2.png'
 import { MdErrorOutline } from 'react-icons/md';
 import { MdCheckCircleOutline } from "react-icons/md";
+import OldHeroImage from '../../images/old-mendeley-hero.png'
+import NewHeroImage from '../../images/new-mendeley-hero.png'
 
 
 
@@ -117,6 +116,53 @@ const SolutionPhase = () => (
               <Text fontSize="lg">The CTAs were made bold and visible, with secondary actions given less visual weight.</Text>
             </Box>
           </VStack>
+        </Box>
+      </GridItem>
+    </Grid>
+
+    <Grid
+      templateColumns="repeat(2, 1fr)"
+      gap={4}
+      justifyContent="center"
+      mt="4rem"
+    >
+      {/* GridItem Wrapper for First Column */}
+      <GridItem>
+        <Box minHeight="100%" display="flex" flexDirection="column">
+          <Box overflow="hidden">
+            <Text size="xl" textTransform="uppercase" mb={2}>old experience</Text>
+            <Image src={OldHeroImage} maxWidth="100%" borderRadius="12px" />
+          </Box>
+          {/* <VStack gap={4} align='stretch' p={5} borderRadius="12px" flexGrow={1}>
+            <Box>
+              <Box as={MdErrorOutline} boxSize="2rem" color="#A51A1A" float="left" mr="1rem" />
+              <Text fontSize="lg">Users reported that the images were unclear, the had to squint to understand.</Text>
+            </Box>
+            <Box>
+              <Box as={MdErrorOutline} boxSize="2rem" color="#A51A1A" float="left" mr="1rem" />
+              <Text fontSize="lg">Many users didn't notice the CTAs on use case sections.</Text>
+            </Box>
+          </VStack> */}
+        </Box>
+      </GridItem>
+
+      {/* GridItem Wrapper for Second Column */}
+      <GridItem>
+        <Box minHeight="100%" display="flex" flexDirection="column">
+          <Box overflow="hidden">
+            <Text size="xl" textTransform="uppercase" mb={2}>New experience</Text>
+            <Image src={NewHeroImage} maxWidth="100%" borderRadius="12px"/>
+          </Box>
+          {/* <VStack gap={4} align='stretch' p={5} borderRadius="12px" flexGrow={1}>
+            <Box>
+              <Box as={MdCheckCircleOutline} boxSize="2rem" color="#0A640E" float="left" mr="1rem" />
+              <Text fontSize="lg">The imagery was clear and less cluttered and received a positive feedback.</Text>
+            </Box>
+            <Box>
+              <Box as={MdCheckCircleOutline} boxSize="2rem" color="#0A640E" float="left" mr="1rem" />
+              <Text fontSize="lg">The CTAs were made bold and visible, with secondary actions given less visual weight.</Text>
+            </Box>
+          </VStack> */}
         </Box>
       </GridItem>
     </Grid>

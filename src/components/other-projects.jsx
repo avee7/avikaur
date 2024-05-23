@@ -28,17 +28,17 @@ const OtherProjects = () => {
       imageSrc: DSImage,
       heading: "Design Systems",
       subProjects: [
+        { name: "CubiX Design System", year: "2024", imgSrc: CubiXImg, role: "UX Designer (Product Design and Design System))", impact: [
+          "Streamlining Design Processes",
+          "Anticipated Efficiency Gains",
+          "Continuous Improvement"
+        ], description: "We're in the process of building a multi-brand platform designed to streamline and improve our product development. This initiative introduces foundational styles and scalable components to ensure uniformity and efficiency throughout CubixCraft’s diverse product lineup. It’s a key step toward making our development processes more cohesive and responsive to market demands." },
         { name: "Isoshealth Pattern Library", year: "2017", imgSrc: isoshealthImg, role: "UX Designer, UI developer (solo project)", impact: [
           "Established foundational styles",
           "Unified UI components",
           "Streamlined developer workflows",
           "Enhanced design consistency"
         ], description: "A dynamic living pattern library, inspired by Storybook and developed in ReactJS, designed to unify the user experience across client and practitioner platforms." },
-        { name: "CubiX Design System", year: "2024", imgSrc: CubiXImg, role: "UX Designer (Product Design and Design System))", impact: [
-          "Streamlining Design Processes",
-          "Anticipated Efficiency Gains",
-          "Continuous Improvement"
-        ], description: "We're in the process of building a multi-brand platform designed to streamline and improve our product development. This initiative introduces foundational styles and scalable components to ensure uniformity and efficiency throughout CubixCraft’s diverse product lineup. It’s a key step toward making our development processes more cohesive and responsive to market demands." },
         { name: "MDUI Design System", year: "2021", imgSrc: MdUIImg, role: "UX Designer", impact: [
           "Enhanced Interface Consistency across 6 Mendeley products",
           "Streamlined User Interactions",
@@ -87,7 +87,7 @@ const OtherProjects = () => {
   const gridTemplateColumns = useBreakpointValue({ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' });
 
   return (
-    <Container maxW="1300px" pb="10rem">
+    <Container maxW="1300px" pb={{ base: "5rem",  lg: "10rem"}}>
       <Heading size='xl' mb={{base: "2rem", md: "3.5rem"}}>Other Projects</Heading>
       
 

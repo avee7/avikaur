@@ -3,7 +3,7 @@ import { Stack, Box, Text, Heading, Image, Container, VStack } from '@chakra-ui/
 import Cards from "./cards"
 
 const SelectedProjects = () => (
-    <Container maxW="1300px" pb="10rem" zIndex="9" position="relative">
+    <Container maxW="1300px" pb={{ base: "5rem",  lg: "10rem"}} zIndex="9" position="relative">
       <Heading size='xl' mb={{base: "2rem", md: "3.5rem"}}>Selected Projects</Heading>
 
         <Cards />

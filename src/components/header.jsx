@@ -22,10 +22,11 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Container maxW="1300px" bg="rgba(10, 9, 17, 0.8)" boxShadow="sm" position="sticky" top="0"
+    <Box bg="rgba(10, 9, 17, 0.8)" boxShadow="sm" position="sticky" top="0"
     zIndex="sticky" 
-    width="full">
-      <Box 
+    width="100%">
+      <Container maxW="1300px" 
+    width="100%"
       >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box as={Link} href='/' width="10rem" mt="2">
@@ -72,8 +73,8 @@ const Navbar = () => {
             </DrawerBody>
           </DrawerContent>
         </Drawer>
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 
