@@ -26,19 +26,19 @@ const HeroArea = () => {
           initial={{ y: 20, opacity: 0, visibility: 'hidden' }}
           animate={{ y: 0, opacity: 1, visibility: 'visible' }}
           transition={{ delay: 0.8, duration: 0.5 }}
+          size={{ base: '2xl', md: '4xl' }} background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)" backgroundClip="text"
         >
-          <Heading size={{ base: '2xl', md: '4xl' }} background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)" backgroundClip="text">Hi, I’m Avi</Heading>
+          Hi, I’m Avi
         </MotionHeading>
       </MotionFlex>
       
-      <MotionText position="relative" zIndex="1"
+      <MotionText position="relative" zIndex="1"        
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 1.25, duration: 0.5 }}
+        size={{ base: '2xl', md: '3xl' }}
       >
-        <Text size={{ base: '2xl', md: '3xl' }}>
         Product Designer with a background in front-end development, focused on merging intuitive design with technical precision to craft consistent, scalable user experiences.
-        </Text>
       </MotionText>
     </MotionFlex>
   );
