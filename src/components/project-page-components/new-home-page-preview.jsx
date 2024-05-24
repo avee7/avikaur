@@ -8,10 +8,10 @@ import MendeleyClarity from '../../images/mendeley-clarity.png';
 
 const NewHomePagePreview = () => (
   <Box>
-     <Flex gap="3rem" pt="10rem" width="100%" justifyContent="space-between">
-          <Heading size="2xl">The new home page experience</Heading>
+     <Flex gap="3rem" pt={{ base: "6rem",  md: "10rem"}} width="100%" justifyContent="space-between">
+          <Heading size={{base: 'xl', md: '2xl'}}>The new home page experience</Heading>
         </Flex>
-        <Flex mt="4rem" gap={8}>
+        <Flex mt={{ base: "2rem",  md: "4rem"}} gap={8} direction={{base: 'column', md: 'row'}}>
           <Box width="full" maxW="900px" mx="auto">
             <video controls width="100%">
               <source src={HomePageVideo} type="video/mp4" />

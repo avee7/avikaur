@@ -13,10 +13,10 @@ import { MdErrorOutline } from 'react-icons/md';
 
 
 const ConceptTesting = () => (
-  <Box mt="8rem">
+  <Box mt={{ base: "6rem",  lg: "8rem"}}>
     <Flex direction="column" gap={2} maxW="1020px">
       <Text size="md" color="#7B7A7E" textTransform="uppercase">Concept testing</Text>
-      <Heading size="xl">Testing the Waters</Heading>
+      <Heading size={{base: 'lg', md: 'xl'}}>Testing the Waters</Heading>
       <Box>
         <Text size="lg" pt={2}>
           We translated conceptual ideas into tangible prototypes and validated them through comprehensive
@@ -26,8 +26,8 @@ const ConceptTesting = () => (
           analyze the discoverability and findability of the content.
           To better understand the user needs, we used a hybrid approach comprising of qual and quant methods.</Text>
         
-        <Box maxW="80%" p={4} rounded="md" mt={6}>
-          <Grid templateColumns="15% repeat(1, 1fr) 15% 15%" gap={6} alignItems="center">
+        <Box maxW={{base: "100%", lg: "80%"}} p={4} rounded="md" mt={6}>
+          <Grid templateColumns='15% repeat(1, 1fr) 15% 15%' gap={6} alignItems="center">
             {/* Header */}
             <Text></Text>
             <Text size="md" color="#7B7A7E">Methods</Text>

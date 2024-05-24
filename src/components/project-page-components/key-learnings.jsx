@@ -3,8 +3,8 @@ import { Box, Grid, Heading, Text } from '@chakra-ui/react';
 
 function KeyLearnings() {
   return (
-    <Box mt="6rem" mb="8rem">
-      <Heading size="2xl" mb="4rem">
+    <Box mt={{ base: "3rem",  md: "6rem"}}  mb="8rem">
+      <Heading size={{base: 'xl', md: '2xl'}} mb={{base: "2rem", md: "4rem"}}>
         Key Learnings
       </Heading>
       <Grid
