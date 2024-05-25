@@ -1,5 +1,5 @@
 import React from "react"
-import { Stack, Box, Text, Heading, Image, Container, Flex, VStack, ListItem, List } from '@chakra-ui/react'
+import { Box, Text, Heading, Image, Flex, VStack } from '@chakra-ui/react'
 import HomePageVideo from "../../static/Mendeley-homepage.mp4"
 import MendeleyTrust from '../../images/mendeley-trust.png';
 import MendeleyEngagement from '../../images/mendeley-engagement.png';

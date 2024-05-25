@@ -3,12 +3,6 @@ import {
   Stack, Box, Text, Heading, Image, Grid, GridItem, Flex, VStack,
   Divider, Container
 } from '@chakra-ui/react'
-import { MdOutlineAnalytics } from 'react-icons/md';
-import { MdSettings } from 'react-icons/md';
-import { MdPerson } from 'react-icons/md';
-import ConceptImage1 from '../../images/concept1.jpg'
-import ConceptImage2 from '../../images/concept2.jpg'
-import { MdErrorOutline } from 'react-icons/md';
 
 
 
@@ -23,7 +17,7 @@ const ConceptTesting = () => (
           user research. Our objectives were to assess the clarity of Mendeley's value proposition,
           evaluate trust in the brand and user engagement with the product,
           determine the understandability of the content, and
-          analyze the discoverability and findability of the content.
+          analyse the discoverability and findability of the content.
           To better understand the user needs, we used a hybrid approach comprising of qual and quant methods.</Text>
         
         <Box maxW={{base: "100%", lg: "80%"}} p={4} rounded="md" mt={6}>

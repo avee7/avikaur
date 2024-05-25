@@ -1,5 +1,5 @@
 import React from "react"
-import { Stack, Box, Text, Heading, Image, Grid, GridItem, Flex, VStack, List, ListItem, ListIcon, Container } from '@chakra-ui/react'
+import { Stack, Box, Text, Heading, Image, Grid, GridItem, Flex, VStack } from '@chakra-ui/react'
 import OldMendeley from "../../images/old-mendeley.webp"
 import ArrowDown from "../../images/TrendDown.svg";
 import TrustImage from  '../../images/trust.svg';
@@ -34,7 +34,7 @@ const InceptionAndProcess = () => (
             <GridItem>
               <VStack gap={4} width="100%" >
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
-                  <Image src={ArrowDown} width="3rem" />
+                  <Image src={ArrowDown} width="2.5rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
                       Limited Value Proposition
@@ -43,7 +43,7 @@ const InceptionAndProcess = () => (
                   </Box>
                 </Box>
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
-                  <Image src={ArrowDown} width="3rem" />
+                  <Image src={ArrowDown} width="2.5rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
                       Obsolete Branding
@@ -52,7 +52,7 @@ const InceptionAndProcess = () => (
                   </Box>
                 </Box>
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
-                  <Image src={ArrowDown} width="3rem" />
+                  <Image src={ArrowDown} width="2.5rem" />
                   <Box>
                     <Heading size="md" my={3} as="Flex" alignContent="center" display="flex">
                       Outdated Content
@@ -88,22 +88,28 @@ const InceptionAndProcess = () => (
             <GridItem p="2rem 1rem 2rem 2rem">
               <Heading size="md" mb={3} textTransform="uppercase">
                 <Image src={BrandImage} width="2rem" mb={3} py="0.5rem"/>Redefine brand presence</Heading>
-              <Text size="lg">Communicate a fresh and modern visual look that speaks Mendeley's brand value.</Text>
+              <Text size="lg">
+              Elevate Mendeley’s brand by adopting a fresh, modern visual identity that aligns with its core values and appeals to the audience.
+              </Text>
             </GridItem>
             <GridItem borderLeft={{base: "none", lg: "solid 1px rgba(90, 93, 159, 0.25)"}} p="2rem 1rem 2rem 2rem">
               <Heading size="md" mb={3} textTransform="uppercase">
                 <Image src={TrustImage} width="2rem" mb={3}/>Reinforce Trust</Heading>
-              <Text size="lg">Communicate Mendeley's full range of capabilities in supporting researchers in their whole research journey</Text>
+              <Text size="lg">
+              Highlight Mendeley's capabilities to support researchers throughout their research journey, enhancing user trust and reliability.
+              </Text>
             </GridItem>
             <GridItem p="2rem 1rem 2rem 2rem" borderTop={{base: "none", lg: "solid 1px rgba(90, 93, 159, 0.25)"}}>
               <Heading size="md" mb={3} textTransform="uppercase">
                 <Image src={ClarityImage} height="2rem" mb={3}/>Content Clarity</Heading>
-              <Text size="lg">Communicate a fresh and modern visual look that speaks Mendeley's brand value</Text>
+              <Text size="lg">
+              Revamp content to reflect Mendeley's modernised brand image, ensuring clarity and alignment with our updated brand values.
+              </Text>
             </GridItem>
             <GridItem borderLeft={{base: "none", lg: "solid 1px rgba(90, 93, 159, 0.25)"}} borderTop={{base: "none", lg: "solid 1px rgba(90, 93, 159, 0.25)"}} p="2rem 1rem 2rem 2rem">
               <Heading size="md" mb={3} textTransform="uppercase">
                 <Image src={EngagingImage} width="2rem" mb={3}/>Make it engaging</Heading>
-              <Text size="lg">Communicate how can Mendeley support researchers in their whole research journey</Text>
+              <Text size="lg">Communicate how Mendeley supports researchers throughout their entire research journey.</Text>
             </GridItem>
             
             

@@ -1,7 +1,7 @@
 import React from "react"
 import {
-  Stack, Box, Text, Heading, Image, Grid, GridItem, Flex, VStack,
-  Divider, Container
+  Box, Text, Heading, Image, Grid, GridItem, Flex, VStack,
+Container
 } from '@chakra-ui/react'
 import ConceptImage1 from '../../images/concept1.jpg'
 import ConceptImage2 from '../../images/concept2.jpg'
@@ -66,7 +66,7 @@ const SolutionPhase = () => (
             </Box>
             <Box>
               <Box as={MdCheckCircleOutline} boxSize="2rem" color="#0A640E" float="left" mr="1rem" />
-              <Text fontSize="lg">Terminology "Mendeley Suite" helped to remove confusion.</Text>
+              <Text fontSize="lg">The replacement of "Solutions" with "Mendeley Suite" helped to remove confusion between with the "Support" section.</Text>
             </Box>
           </VStack>
         </Box>
@@ -89,7 +89,7 @@ const SolutionPhase = () => (
           <VStack gap={4} align='stretch' p={5} borderRadius="12px" flexGrow={1}>
             <Box>
               <Box as={MdErrorOutline} boxSize="2rem" color="#A51A1A" float="left" mr="1rem" />
-              <Text fontSize="lg">Users reported that the images were unclear, the had to squint to understand.</Text>
+              <Text fontSize="lg">Users reported that the images were unclear and required squinting to interpret.</Text>
             </Box>
             <Box>
               <Box as={MdErrorOutline} boxSize="2rem" color="#A51A1A" float="left" mr="1rem" />
@@ -124,10 +124,10 @@ const SolutionPhase = () => (
     templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
     gap={4}
     justifyContent="center"
-    mt="4rem"
+    mt={{base: "4rem", lg: "8rem"}}
   >
     <GridItem colSpan={{base: '1' , md: '2'}}>
-      <Heading size={{ base: 'lg', md: 'xl' }} width="100%" mb="1rem">A Fresh, Modern Solution</Heading>
+      <Heading size={{ base: 'lg', md: 'xl' }} width="100%" mb="1rem">A Fresh, Modern Solution that Reflects Our Brand Values</Heading>
     </GridItem>
     <GridItem>
       <Box minHeight="100%" display="flex" flexDirection="column">
