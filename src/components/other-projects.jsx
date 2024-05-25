@@ -118,7 +118,10 @@ const OtherProjects = () => {
               whileHover={{ scale: 1.1 }}
             >
               <Image src={item.imageSrc} zIndex="0" position="absolute" bottom="0rem" left="0" width="100%"/>
-              <Heading size="lg" zIndex="1">{item.heading}</Heading>
+              <Heading size="lg" 
+              zIndex="1" 
+              textShadow="0 4px 6px rgba(0, 0, 0, 0.5)"
+               >{item.heading}</Heading>
               {item.id === 3 && (
                 <Box position="absolute" top="0" left="0" right="0" bottom="0" bg="rgba(0, 0, 0, 0.5)" display="flex" alignItems="flex-end" justifyContent="center"
                   opacity="0"

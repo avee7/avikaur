@@ -24,10 +24,10 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
     <Modal isOpen={isOpen} onClose={handleClose} size="full">
       <ModalOverlay />
       <ModalContent m={0} bg="rgba(10,19,17,0.1)" backdropFilter="blur(15px)">
-        <Box display="flex" height="100vh">
+        <Flex direction={{base: 'column', md: 'row'}} height="100vh">
           
           <Box
-            width="50%"
+            width="100%"
             height="100vh" // Set height accordingly if different
             overflow="hidden"
             bg="rgba(145, 128, 255, 0.5)"
@@ -38,7 +38,9 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
             bgSize={heading === "Prototypes" ? "contain" : "cover"}
           ></Box>
         
-          <Box width="50%" p={10}>
+          <Box 
+          width="100%"
+          p={10}>
             <ModalCloseButton
               onClick={handleClose}
               size="lg" // This sets the size to a larger preset, if available. Chakra UI doesn't use size for ModalCloseButton by default, so this might not affect it.
@@ -103,7 +105,7 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
               </Box>
             </Flex>
           </Box>
-        </Box>
+        </Flex>
       </ModalContent>
     </Modal>
   );
