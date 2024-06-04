@@ -18,8 +18,8 @@ const Contact = () => (
 
         <Flex align="center">
           <Box fontSize="2rem" mr="1rem" float="left">&#128231;</Box>
-          <Link size="lg" href="mailto:avikaur.design@gmail.com" isExternal>
-            avikaur.design@gmail.com
+          <Link size="lg" href="mailto:avikaur.design3@gmail.com" isExternal>
+          avikaur.design3@gmail.com
           </Link>
         </Flex>
 

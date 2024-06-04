@@ -28,7 +28,7 @@ const Footer = () => (
               Happy to grab a coffee and chat :)
             </Text>
             <Text pt="2rem" fontSize={{ base: 'lg', md: 'xl' }}>
-              avikaur.design@gmail.com
+              avikaur.design3@gmail.com
             </Text>
           </Box>
         </VStack>
