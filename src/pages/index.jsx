@@ -8,6 +8,7 @@ import SelectedProjects from '../components/selected-projects';
 import OtherProjects from '../components/other-projects'
 import CVSection from '../components/cv-section';
 import HeroAnimation from '../components/hero-animation';
+import useScrollToTop from "../hooks/useScrollToTop";
 
 const Home = () => (
   <Box>
@@ -22,10 +23,14 @@ const Home = () => (
  )
 
  
-const IndexPage = () => (
+ const IndexPage = () => {
+  useScrollToTop();
+
+  return (
     <Layout>
       <Home />
     </Layout>
-);
+  );
+};
 
 export default IndexPage;

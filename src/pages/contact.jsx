@@ -5,9 +5,13 @@ import { Text, Link, VStack, Heading, Container, Box, Flex, Image} from '@chakra
 import Layout from "../components/layout"
 import LinkedinLogo from "../images/linkedin.png"
 import ADPLogo from "../images/adp.png"
+import useScrollToTop from "../hooks/useScrollToTop";
 
-const Contact = () => (
-  <Layout>
+const Contact= () => {
+  useScrollToTop();
+
+  return (
+    <Layout>
     <Container p={5} maxW="1300px" mx="auto" py={{ base: "4rem", lg: "8rem" }} height={`calc(100vh - (80px + 8rem))`}>
       <VStack spacing={4} alignItems="flex-start" width={{ base: "100%", lg: "40rem" }}>
         <Heading size="xl" mb={4}>Let's connect!</Heading>
@@ -47,7 +51,10 @@ const Contact = () => (
     </Container>
 
   </Layout>
-)
+
+  )
+  
+}
 
 
 
