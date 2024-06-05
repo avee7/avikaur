@@ -76,8 +76,8 @@ const InceptionAndProcess = () => (
         <Heading size={{base: 'lg', md: 'xl'}}>Defining the new value proposition</Heading>
 
         <Box pt={2}>
-          <Text size="lg">In a collaborative workshop with key stakeholders from business,
-            product, marketing, analytics, and development, we plotted, prioritised and defined
+          <Text size="lg">In a collaborative workshop with key stakeholders from the business,
+            product, marketing, analytics, and development, I plotted, prioritised and defined
             critical focus areas for new Mendeley home page.
 
           </Text>

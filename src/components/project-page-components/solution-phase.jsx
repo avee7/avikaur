@@ -21,8 +21,7 @@ const SolutionPhase = () => (
       <Heading size={{base: 'lg', md: 'xl'}}>Sailing to Solutions</Heading>
       <Box>
         <Text size="lg" pt={2}>
-          Based on the learnings from the research phase and doing a deep competitor analysis, I came up with the following
-          designs for our home page.
+        After synthesising the results from our research and conducting a comprehensive competitor analysis, I crafted the following homepage designs
         </Text>
       </Box>
     </Flex>

@@ -23,7 +23,7 @@ function KeyLearnings() {
         </Box>
 
         {/* Importance of Adequate Response Time Card */}
-        <Box maxW="640px" w="full" border="1px solid rgba(90, 93, 159, 0.8)" borderRadius="12px" p={5}>
+        {/* <Box maxW="640px" w="full" border="1px solid rgba(90, 93, 159, 0.8)" borderRadius="12px" p={5}>
           <Heading size="md" mb={3}>
             Importance of Adequate Response Time in User Research
           </Heading>
@@ -32,7 +32,7 @@ function KeyLearnings() {
             improvement was our timeline for gathering user responses for unmoderated user testing using Ballpark.
             The responses were fewer than anticipated, which suggested a need for extended timelines to ensure sufficient user participation.
           </Text>
-        </Box>
+        </Box> */}
 
         {/* Critical Role of Team Communication Card */}
         <Box maxW="640px" w="full" border="1px solid rgba(90, 93, 159, 0.8)" borderRadius="12px" p={5}>

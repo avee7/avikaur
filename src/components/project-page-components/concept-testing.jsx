@@ -1,53 +1,75 @@
 import React from "react"
 import {
   Stack, Box, Text, Heading, Image, Grid, GridItem, Flex, VStack,
-  Divider, Container
+  Divider, Container, SimpleGrid
 } from '@chakra-ui/react'
 
 
 
-const ConceptTesting = () => (
-  <Box mt={{ base: "6rem",  lg: "8rem"}}>
-    <Flex direction="column" gap={2} maxW="1020px">
-      <Text size="md" color="#7B7A7E" textTransform="uppercase">Concept testing</Text>
-      <Heading size={{base: 'lg', md: 'xl'}}>Testing the Waters</Heading>
-      <Box>
-        <Text size="lg" pt={2}>
-          We translated conceptual ideas into tangible prototypes and validated them through comprehensive
-          user research. Our objectives were to assess the clarity of Mendeley's value proposition,
-          evaluate trust in the brand and user engagement with the product,
-          determine the understandability of the content, and
-          analyse the discoverability and findability of the content.
-          To better understand the user needs, we used a hybrid approach comprising of qual and quant methods.</Text>
-        
-        <Box maxW={{base: "100%", lg: "80%"}} p={4} rounded="md" mt={6}>
-          <Grid templateColumns='15% repeat(1, 1fr) 15% 15%' gap={6} alignItems="center">
-            {/* Header */}
-            <Text></Text>
-            <Text size="md" color="#7B7A7E">Methods</Text>
-            <Text size="md" color="#7B7A7E" sx={{ maxWidth: "160px" }}>Users</Text>
-            <Text size="md" color="#7B7A7E">Tools</Text>
+const ConceptTesting = () => {
+  const DataCard = ({ title, methods, users, tools }) => (
+    <Box
+      p={6}
+      // borderWidth="1px"
+      // borderColor="rgba(90, 93, 159, 0.25)"
+      borderRadius="lg"
+      overflow="hidden"
+      bg="#1a1a1a"
+      color="#e0e0e0"
+      mb={4}
+    >
+      <Heading size="md" mb={2}>{title}</Heading>
+      <Text size="md" color="#7B7A7E" textTransform="uppercase" mt={6}>Methods</Text>
+      <Text>{methods}</Text>
+      <Text size="md" color="#7B7A7E" textTransform="uppercase" mt={2}>Users</Text>
+      <Text>{users}</Text>
+      <Text size="md" color="#7B7A7E" textTransform="uppercase" mt={2}>Tools</Text>
+      <Text>{tools}</Text>
+    </Box>
+  );
 
-            {/* Row 1 */}
-            <Text fontWeight="semibold">Qualitative</Text>
-            <Text>Remote user interviews, Semi-Structured</Text>
-            <Text sx={{ maxWidth: "160px" }}>6 users</Text>
-            <Text>Zoom, Confluence</Text>
+  return (
+    <Box mt={{ base: "6rem", lg: "8rem" }}>
+      <Flex direction="column" gap={2} maxW="1020px">
+        <Text size="md" color="#7B7A7E" textTransform="uppercase">Concept testing</Text>
+        <Heading size={{ base: 'lg', md: 'xl' }}>Testing the Waters</Heading>
+        <Box>
+          <Text size="lg" pt={2}>
+            I translated conceptual ideas into tangible prototypes and validated them through comprehensive
+            user research. The objectives were to assess the clarity of Mendeley's value proposition,
+            evaluate trust in the brand and user engagement with the product,
+            determine the understandability of the content, and
+            analyse the discoverability and findability of the content.
+            
+            </Text>
+            <Text size="lg" pt={2}>
+            To better understand the user needs, I used a hybrid approach comprising of qual and quant methods.
+            </Text>
 
-            {/* Row 2 */}
-            <Text fontWeight="semibold">Quantitative</Text>
-            <Text>First click test, 5-second test</Text>
-            <Text sx={{ maxWidth: "160px" }}>20 responses</Text>
-            <Text>Ballpark</Text>
-          </Grid>
+          <Box mt="2rem">
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+              <DataCard
+                title="Qualitative"
+                methods="Remote user interviews, Semi-Structured"
+                users="6 users"
+                tools="Zoom, Confluence"
+              />
+              <DataCard
+                title="Quantitative"
+                methods="First click test, 5-second test"
+                users="20 responses"
+                tools="Ballpark"
+              />
+            </SimpleGrid>
+          </Box>
         </Box>
-      </Box>
-    </Flex>
-    
-  </Box>
+      </Flex>
+
+    </Box>
+  )
 
 
 
-);
+};
 
 export default ConceptTesting;
