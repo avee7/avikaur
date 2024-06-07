@@ -2,7 +2,7 @@ import React from 'react';
 import { VStack, Box, Heading, Text, Image, Link } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import CardObjectsImage from "../images/card-bg-shapes.svg";
-import MendeleyProjectImage from "../images/mendley-macbook.webp";
+import MendeleyProjectImage from "../images/mendeley-macbook.png";
 import DeltaProjectImage from "../images/airline-neutral.svg";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
 import { useBreakpointValue } from '@chakra-ui/react';
@@ -42,6 +42,7 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
   };
 
   const responsivePosition = useBreakpointValue(positionAdjust);
+  const responsiveWidth = useBreakpointValue(imgWidth);
 
   return (
     <Link href={href} style={{ textDecoration: 'none' }} width="100%">
@@ -63,7 +64,7 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
           <Heading size="lg" mb={3}>{title}</Heading>
           <Text size="xl">{description}</Text>
           <Image src={CardObjectsImage} position="absolute" top="0" left="0" backgroundRepeat="repeat" />
-          <Image src={imageSrc} position="absolute" width={imgWidth} {...responsivePosition} />
+          <Image src={imageSrc} position="absolute" {...responsiveWidth} {...responsivePosition} />
           {showComingSoon && (
             <motion.div
               variants={comingSoonVariants}
@@ -98,12 +99,17 @@ const Cards = () => (
       description="Website Redesign / Case Study"
       imageSrc={MendeleyProjectImage}
       positionAdjust={{
-        base: { top: '14rem', right: '0.5rem' },
-        md: { top: '4rem', right: '-10rem' },
-        lg: { top: '-4rem', right: '-10rem' },
+        base: { top: 'auto', right: '0', bottom: '1rem' },
+        md: { top: '5rem', right: '-12rem' },
+        lg: { top: '2rem', right: '-10rem' },
+        xl: { top: '-5rem', right: '-10rem' },
       }}
       showComingSoon={false}
-      imgWidth="66%"
+      imgWidth={{
+        base: { width: '100%' },
+        md: { width: '80%' },
+        lg: { width: '68%' },
+      }}
     />
     <Card
       href="/"
@@ -124,9 +130,9 @@ const Cards = () => (
       description="Product Design"
       imageSrc={DuplicatesProjectImage}
       positionAdjust={{
-        base: { top: '12rem', right: '0' },
-        md: { top: '4rem', right: '-26rem' },
-        lg: { top: '3rem', right: '-33rem' }
+        base: { top: 'auto', right: '0', bottom: '1rem'},
+        md: { top: '6rem', right: '-15rem' },
+        lg: { top: '1rem', right: '-25rem' }
       }}
       showComingSoon={true}
       imgWidth="100%"
