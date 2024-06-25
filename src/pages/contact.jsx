@@ -6,12 +6,16 @@ import Layout from "../components/layout"
 import LinkedinLogo from "../images/linkedin.png"
 import ADPLogo from "../images/adp.png"
 import useScrollToTop from "../hooks/useScrollToTop";
+import { Helmet } from "react-helmet";
 
 const Contact= () => {
   useScrollToTop();
 
   return (
     <Layout>
+    <Helmet>
+      <title>Get in touch — Avinash Kaur</title>
+    </Helmet>
     <Container p={5} maxW="1300px" mx="auto" py={{ base: "4rem", lg: "8rem" }} height={`calc(100vh - (80px + 8rem))`}>
       <VStack spacing={4} alignItems="flex-start" width={{ base: "100%", lg: "40rem" }}>
         <Heading size="xl" mb={4}>Let's connect!</Heading>

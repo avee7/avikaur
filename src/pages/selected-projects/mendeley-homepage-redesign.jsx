@@ -10,7 +10,7 @@ import ConceptTesting from "../../components/project-page-components/concept-tes
 import SolutionPhase from "../../components/project-page-components/solution-phase";
 import KeyLearnings from "../../components/project-page-components/key-learnings";
 import useScrollToTop from "../../hooks/useScrollToTop";
-
+import { Helmet } from "react-helmet";
 
 
 const MendeleyHomePageRedesign = () => {
@@ -18,6 +18,9 @@ const MendeleyHomePageRedesign = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Mendeley Home Page — Avinash Kaur</title>
+      </Helmet>
       <Box overflow="hidden" position="relative" mt="-78px">
         <ProjectPageHeader
           title="Beyond Reference Management"

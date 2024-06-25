@@ -29,13 +29,13 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Helmet>
+     
         <Helmet>
           <title>Avinash Kaur — Product Designer</title>
-          <meta name="description" content="Experienced product designer specializing in creating user-friendly and scalable digital experiences. Passionate about delivering innovative design solutions that enhance usability and user satisfaction." />
+          <meta name="description" content="Experienced product designer specialising in creating user-friendly and scalable digital experiences. Passionate about delivering innovative design solutions that enhance usability and user satisfaction." />
         </Helmet>
 
-      </Helmet>
+      
       <Home />
     </Layout>
   );
