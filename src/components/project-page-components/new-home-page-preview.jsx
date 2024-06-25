@@ -13,7 +13,7 @@ const NewHomePagePreview = () => (
         </Flex>
         <Flex mt={{ base: "2rem",  md: "4rem"}} gap={8} direction={{base: 'column', md: 'row'}}>
           <Box width="full" maxW="900px" mx="auto">
-            <video controls width="100%">
+            <video controls width="100%" autoPlay muted style={{ borderRadius: '8px' }}>
               <source src={HomePageVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
