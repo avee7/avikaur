@@ -22,8 +22,8 @@ const MendeleyIntroduction = () => (
         <Box>
           <Text size="md" color="#7B7A7E">ROLE</Text>
           <List>
-            <ListItem><Text size="lg">Research</Text></ListItem>
-            <ListItem><Text size="lg">UX and UI Design</Text></ListItem>
+            <ListItem><Text size="lg">UX Designer</Text></ListItem>
+            
           </List>
         </Box>
         <Box>
@@ -41,6 +41,18 @@ const MendeleyIntroduction = () => (
         <Box>
           <Text size="md" color="#7B7A7E">TIMELINE</Text>
           <Text size="lg">July - December 2022</Text>
+        </Box>
+        <Box>
+          <Text size="md" color="#7B7A7E">RESPONSIBILITIES</Text>
+          <List>
+            <ListItem><Text size="lg">Planning</Text></ListItem>
+            <ListItem><Text size="lg">Interaction Design</Text></ListItem>
+            <ListItem><Text size="lg">User flows</Text></ListItem>
+            <ListItem><Text size="lg">Visual design</Text></ListItem>
+            <ListItem><Text size="lg">Prototyping</Text></ListItem>
+            <ListItem><Text size="lg">Usability Testing</Text></ListItem>
+          </List>
+          
         </Box>
       </VStack>
     </HStack>
