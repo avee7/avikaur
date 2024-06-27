@@ -2,7 +2,7 @@ import React from "react"
 import { Box, Container } from '@chakra-ui/react';
 import Layout from "../../components/layout";
 import ProjectPageHeader from "../../components/project-page-components/project-header";
-import HomePage from "../../images/mendeley-new-homepage.jpg"
+import HomePage from "../../images/mendeley-new-homepage1.png"
 import HomepageIntroduction from "../../components/project-page-components/mendeley-introduction";
 import NewHomePagePreview from "../../components/project-page-components/new-home-page-preview";
 import InceptionAndProcess from "../../components/project-page-components/inception-and-process";
@@ -26,7 +26,10 @@ const MendeleyHomePageRedesign = () => {
           title="Beyond Reference Management"
           subtitle="Elevating Mendeley's Homepage for today’s researchers."
           bg="linear-gradient(135deg, #007398, #99C7D5)"
-          img={HomePage} />
+          img={HomePage}
+          headingColor="#e0e0e0" 
+          imgMaxWidth="800px"
+          imgPadding={{base: '3rem 0 0', md: '5rem 0 0'}} />
 
       </Box>
 

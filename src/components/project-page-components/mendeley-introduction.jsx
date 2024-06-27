@@ -21,7 +21,10 @@ const MendeleyIntroduction = () => (
       <VStack gap="3rem" alignItems="flex-start">
         <Box>
           <Text size="md" color="#7B7A7E">ROLE</Text>
-          <Text size="lg">Research, UX and UI</Text>
+          <List>
+            <ListItem><Text size="lg">Research</Text></ListItem>
+            <ListItem><Text size="lg">UX and UI Design</Text></ListItem>
+          </List>
         </Box>
         <Box>
           <Text size="md" color="#7B7A7E">COLLABORATORS</Text>
@@ -37,7 +40,7 @@ const MendeleyIntroduction = () => (
       <VStack gap="3rem" alignItems="flex-start">
         <Box>
           <Text size="md" color="#7B7A7E">TIMELINE</Text>
-          <Text size="lg">July 2022 - December 2022</Text>
+          <Text size="lg">July - December 2022</Text>
         </Box>
       </VStack>
     </HStack>
