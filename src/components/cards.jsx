@@ -7,7 +7,7 @@ import DeltaProjectImage from "../images/airline-neutral.svg";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
 import { useBreakpointValue } from '@chakra-ui/react';
 
-const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon, imgWidth }) => {
+const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon, imgWidth, bgImagePosition }) => {
   // Animation variants for the card visibility and hover
   const cardVariants = {
     offscreen: {
@@ -59,11 +59,15 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
           overflow="hidden"
           p={10}
           height="442px"
-          background="linear-gradient(134deg, #6c63ff99 0%, #8374ff91 20%, #9180ff8c 40%, #9180ff8a 60%, #b6a5f48f 80%, #e0e0e09e 100%)"
+          border="solid 1px #5A5D9F"
+          background={`url(${CardObjectsImage})`}
+          bgPosition={`${bgImagePosition?.top} ${bgImagePosition?.left}`}
+          bgRepeat="repeat"
+          bgSize="cover"
         >
           <Heading size="lg" mb={3}>{title}</Heading>
           <Text size="xl">{description}</Text>
-          <Image src={CardObjectsImage} position="absolute" top="0" left="0" backgroundRepeat="repeat" />
+          
           <Image src={imageSrc} position="absolute" {...responsiveWidth} {...responsivePosition} />
           {showComingSoon && (
             <motion.div
@@ -110,9 +114,10 @@ const Cards = () => (
         md: { width: '80%' },
         lg: { width: '68%' },
       }}
+      bgImagePosition={{ top: '20px', left: '30px' }}
     />
     <Card
-      href="/"
+      href="./selected-projects/airline-neutral-design-system/"
       title="Airline Neutral: Fly Delta Airlines"
       description="Multi-brand Design System"
       imageSrc={DeltaProjectImage}
@@ -121,8 +126,9 @@ const Cards = () => (
         md: { top: '4rem', right: '-10rem' },
         lg: { top: '4rem', right: '-20rem' }
       }}
-      showComingSoon={true}
+      showComingSoon={false}
       imgWidth="100%"
+      bgImagePosition={{ top: '-70px', left: '-1036pxx' }}
     />
     <Card
       href="/"
@@ -136,6 +142,7 @@ const Cards = () => (
       }}
       showComingSoon={true}
       imgWidth="100%"
+      bgImagePosition={{ top: '100px', left: '50px' }}
     />
   </VStack>
 );
