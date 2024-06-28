@@ -112,7 +112,7 @@ const Cards = () => (
       }}
     />
     <Card
-      href="./selected-projects/airline-neutral-design-system"
+      href="/"
       title="Airline Neutral: Fly Delta Airlines"
       description="Multi-brand Design System"
       imageSrc={DeltaProjectImage}
