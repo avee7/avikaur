@@ -128,7 +128,7 @@ const Cards = () => (
       }}
       showComingSoon={false}
       imgWidth="100%"
-      bgImagePosition={{ top: '-70px', left: '-1036pxx' }}
+      bgImagePosition={{ top: '-70px', left: '-1036px' }}
     />
     <Card
       href="/"

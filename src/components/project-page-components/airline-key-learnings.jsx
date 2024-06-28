@@ -18,8 +18,8 @@ function AirlineKeyLearnings() {
           Effective Communication Across Time Zones
           </Heading>
           <Text size="lg" mt={2}>
-          Working with teams in Atlanta, London, and Gurgaon highlighted the need for clear, consistent communication and meticulous scheduling across time zones. 
-          Regular updates and asynchronous tools were vital to keep everyone aligned and productive.</Text>
+          Working with teams in Atlanta, London, and Gurgaon taught me the importance of clear, 
+          consistent communication and meticulous scheduling across time zones. Regular updates and asynchronous tools were essential for keeping everyone aligned and productive.</Text>
         </Box>
 
         
@@ -29,15 +29,14 @@ function AirlineKeyLearnings() {
           Cross-Platform Design Understanding
           </Heading>
           <Text size="lg" mt={2}>
-          Developing for Android, iOS, and mobile web revealed each platform's unique challenges and strengths, enhancing my ability to create versatile and adaptive design systems.
-          </Text>
+          Developing for Android, iOS, and mobile web revealed each platform's unique challenges and strengths. This experience enhanced my ability to create adaptive design systems.</Text>
         </Box>
         <Box maxW="800px" w="full" p="1.5rem" borderRadius="8px" bg="#1a1a1a">
           <Heading size="md" mb={3}>
           Collaborative Implementation and Iterative Feedback
           </Heading>
           <Text size="lg" mt={2}>
-          Leading mobile web UI development and collaborating with iOS and Android teams highlighted the importance of cross-functional teamwork and a unified design vision. Iterative feedback through multiple review rounds ensured robust, user-centric solutions across platforms.</Text>
+          Leading mobile web UI development and collaborating with iOS and Android teams taught me the importance of cross-functional teamwork and a unified design vision. Iterative feedback through multiple review rounds ensured we delivered robust, user-centered solutions across platforms.</Text>
         </Box>
       </Stack>
     </Box>
