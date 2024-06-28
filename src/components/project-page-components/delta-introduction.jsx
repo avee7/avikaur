@@ -1,5 +1,5 @@
 import React from "react"
-import { Stack, Box, Text, Heading, Image, Container, Flex, VStack, ListItem, List, HStack } from '@chakra-ui/react'
+import { Box, Text, Flex, VStack, ListItem, List, HStack } from '@chakra-ui/react'
 
 
 const DeltaIntroduction = () => (
@@ -8,16 +8,20 @@ const DeltaIntroduction = () => (
     <Flex direction={{ base: "column", lg: "row" }} gap="2rem">
     <Box flex="1">
       <Text size="lg">
-      In 2016, Delta Airlines acquired Virgin Atlantic, and the goal was to have Virgin Atlantic adopt Delta's mobile web app, iOS app, and Android app while allowing Virgin Atlantic to incorporate their brand elements, such as color themes, copy, and formats.
+      Fly Delta is Delta Airlines' comprehensive suite of digital tools, including their mobile web, iOS, 
+      and Android apps. Following Delta Airlines' acquisition of Virgin Atlantic in 2012, a project was initiated in 2016 to develop new apps specifically for Virgin Atlantic.
       </Text>
-    </Box>
+      <Text size="lg" mt="1rem">
+      The vision was to build an airline-agnostic system that would allow for easy integration of any airline's branding into the Delta app, enabling quick rollouts for future airline partners.
+      </Text>
+      </Box>
     <HStack gap="3rem" alignItems="flex-start" flexWrap="wrap">
       <VStack gap="3rem" alignItems="flex-start">
         <Box>
           <Text size="md" color="#7B7A7E">ROLE</Text>
           <List>
             <ListItem><Text size="lg">UI Consultant</Text></ListItem>
-            {/* <ListItem><Text size="lg">UI development</Text></ListItem> */}
+           
           </List>
         </Box>
         <Box>
@@ -40,7 +44,7 @@ const DeltaIntroduction = () => (
           <Text size="md" color="#7B7A7E">RESPONSIBILITIES</Text>
           <List>
             <ListItem><Text size="lg">Develop Design System guidelines</Text></ListItem>
-            <ListItem><Text size="lg">Design System Strategy & Governance</Text></ListItem>
+            <ListItem><Text size="lg">Define Design System Strategy & Governance</Text></ListItem>
             <ListItem><Text size="lg">Lead mobile UI development</Text></ListItem>
             <ListItem><Text size="lg">Direct iOS and Android teams</Text></ListItem>
           </List>

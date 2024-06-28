@@ -6,7 +6,6 @@ import AirlineNeutralImg from "../../images/delta-vs.png"
 import DeltaIntroduction from "../../components/project-page-components/delta-introduction";
 import AirlinePreview from "../../components/project-page-components/airline-preview";
 import AirlineProcess from "../../components/project-page-components/airline-process";
-import AirlineProblem from "../../components/project-page-components/airline-problem";
 import KeyLearnings from "../../components/project-page-components/airline-key-learnings";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { Helmet } from "react-helmet";
@@ -23,8 +22,8 @@ const AirlineNeutral = () => {
       <Box overflow="hidden" position="relative" mt="-78px">
         <ProjectPageHeader
           title="Airline Neutral Design System"
-          subtitle="A White Label Design System for Delta and Virgin Atlantic Airlines."
-          bg="linear-gradient(180deg, #0A0911 92%, rgba(147,28,48,0.2) 110% )"
+          subtitle="A Multi-Brand Design System for Delta and Virgin Atlantic Airlines."
+          bg="linear-gradient(180deg, #0A0911 80%, rgba(147,28,48,0.2) 100% )"
           img={AirlineNeutralImg}
           headingGradient="linear(to-r, #013368 25%, #9B1631 50%, #940F1E 75%, #660099 100%)"
           imgMaxWidth="400px"
@@ -38,7 +37,7 @@ const AirlineNeutral = () => {
 
           <DeltaIntroduction />
           <AirlinePreview />
-          <AirlineProblem />
+          
           <AirlineProcess />
           <KeyLearnings />
         </Container>
