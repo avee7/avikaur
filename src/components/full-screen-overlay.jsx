@@ -1,5 +1,7 @@
 import React, { useState, useCallback } from 'react';
-import { Modal, ModalOverlay, ModalContent, ModalCloseButton, Box, Heading, Text, List, ListItem, Button, VStack, Flex, Spacer, Image } from '@chakra-ui/react';
+import { Modal, ModalOverlay, ModalContent, ModalCloseButton, Box, Heading, Text, List, ListItem, Button, VStack, Flex, IconButton } from '@chakra-ui/react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import icons from react-icons
+
 
 function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
@@ -23,12 +25,12 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
   return (
     <Modal isOpen={isOpen} onClose={handleClose} size="full">
       <ModalOverlay />
-      <ModalContent m={0} bg="rgba(10,19,17,0.1)" backdropFilter="blur(15px)">
-        <Flex direction={{base: 'column', md: 'row'}} height="100vh">
-          
+      <ModalContent m={0} bg="rgba(10,19,17,0.1)" backdropFilter="blur(15px)" position="relative">
+        <Flex direction={{ base: 'column', lg: 'row' }}>
+
           <Box
             width="100%"
-            height="100vh" // Set height accordingly if different
+            height={{ base: '40vh', lg: '100vh' }} // Set height accordingly if different
             overflow="hidden"
             bg="rgba(145, 128, 255, 0.5)"
             // bg="#7B7A7E"
@@ -37,30 +39,26 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
             bgRepeat="no-repeat"
             bgSize={heading === "Prototypes" ? "contain" : "cover"}
           ></Box>
-        
-          <Box 
-          width="100%"
-          p={10}>
+
+          <Box
+            width="100%"
+            p={10}>
             <ModalCloseButton
-              onClick={handleClose}
-              size="lg" // This sets the size to a larger preset, if available. Chakra UI doesn't use size for ModalCloseButton by default, so this might not affect it.
-              sx={{
-                width: "40px", // Specifies the width of the button
-                height: "40px", // Specifies the height of the button
-                borderRadius: "50%", // Makes the background circle
-                backgroundColor: "transparent", // Sets a semi-transparent white background
-                border: "solid 2px #6C63FF",
-                color: "#6C63FF", // Sets the color of the 'x' icon
-                fontSize: "20px", // Enlarges the 'x' icon
-                margin: "2rem 2rem 0 0",
-                padding: "1.5rem",
-                _hover: {
-                  backgroundColor: "#1a1a1a" // Changes background on hover for better interaction visibility
-                }
-              }}
-            />
+      onClick={handleClose}
+      width="72px" // Specifies the width of the button
+      height="72px" // Specifies the height of the button
+      borderRadius="50%" // Makes the background circle
+      backgroundColor="rgba(26,26,26,0.15)"
+      color="#6C63FF" // Sets the color of the 'x' icon
+      fontSize={{ base: "1.25rem", lg: "1.5rem" }}
+      margin={{ base: "1rem 1rem 0 0", lg: "2rem 2rem 0 0" }}
+      padding="1.5rem"
+      _hover={{
+        backgroundColor: "#1a1a1a" // Changes background on hover for better interaction visibility
+      }}
+    />
             <Flex direction="column" height="100%">
-              <VStack spacing={10} align="start">
+              <VStack spacing="3rem" align="start">
                 <Box>
                   <Text size="lg" color="#7B7A7E" textTransform="uppercase" mb="1rem">
                     {heading} · {project.year}
@@ -84,28 +82,62 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
                 </Box>
 
                 {project.impact && project.impact.length > 0 && (
-  <Box>
-    <Text size="lg" mb={2} color="#7B7A7E">IMPACT</Text>
-    <List spacing={2}>
-      {project.impact.map((item, index) => (
-        <ListItem key={index}><Text size="md">{item}</Text></ListItem>
-      ))}
-    </List>
-  </Box>
-)}
+                  <Box>
+                    <Text size="lg" mb={2} color="#7B7A7E">IMPACT</Text>
+                    <List spacing={2}>
+                      {project.impact.map((item, index) => (
+                        <ListItem key={index}><Text size="md">{item}</Text></ListItem>
+                      ))}
+                    </List>
+                  </Box>
+                )}
 
 
 
 
               </VStack>
-              <Spacer />
-              <Box>
-                <Button mr={4} onClick={handlePrev} isDisabled={currentProjectIndex === 0}>Previous Project</Button>
-                <Button onClick={handleNext} isDisabled={currentProjectIndex === subProjects.length - 1}>Next Project</Button>
-              </Box>
+
+              
             </Flex>
           </Box>
         </Flex>
+        
+              <IconButton
+      position="absolute"
+      left="1rem"
+      top={{base: "30vh", lg: "45vh" }}
+      height= "auto" // Specifies the height of the button
+      borderRadius= "50%" // Makes the background circle
+      
+      border= "solid 2px #6C63FF"
+      color= "#6C63FF"
+      fontSize= "20px"
+      // boxShadow="0px 4px 16px rgba(0, 0, 0, 0.2)" 
+      padding= "1.5rem"
+      backgroundColor= "rgba(26,26,26,0.15)"
+      onClick={handlePrev}
+      isDisabled={currentProjectIndex === 0}
+      icon={<FaArrowLeft />} // Use left arrow icon
+      aria-label="Previous Project"
+    />
+    <IconButton
+      position="absolute"
+      right="1rem"
+      top={{base: "30vh", lg: "45vh" }}
+      height= "auto" // Specifies the height of the button
+      borderRadius= "50%" // Makes the background circle
+      
+      border= "solid 2px #6C63FF"
+      color= "#6C63FF"
+      fontSize= "20px"
+      // boxShadow="0px 4px 16px rgba(0, 0, 0, 0.2)" 
+      padding= "1.5rem"
+      backgroundColor= "rgba(26,26,26,0.15)"
+      onClick={handleNext}
+      isDisabled={currentProjectIndex === subProjects.length - 1}
+      icon={<FaArrowRight />} // Use right arrow icon
+      aria-label="Next Project"
+    />
       </ModalContent>
     </Modal>
   );
