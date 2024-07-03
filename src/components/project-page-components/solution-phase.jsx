@@ -9,10 +9,6 @@ import SolutionImage1 from '../../images/solution1.png'
 import SolutionImage2 from '../../images/solution2.png'
 import { MdErrorOutline } from 'react-icons/md';
 import { MdCheckCircleOutline } from "react-icons/md";
-import OldHeroImage from '../../images/old-mendeley-hero.png'
-import NewHeroImage from '../../images/new-mendeley-hero.png'
-
-
 
 const SolutionPhase = () => (
   <Container maxW="1300px" py="6rem" mt="6rem">
@@ -36,7 +32,7 @@ const SolutionPhase = () => (
         <Box minHeight="100%" display="flex" flexDirection="column">
           <Box overflow="hidden">
             <Text size="md" textTransform="uppercase" mb={2}>concept</Text>
-            <Image src={ConceptImage1} maxWidth="100%" borderRadius="12px"/>
+            <Image src={ConceptImage1} maxWidth="100%" borderRadius="8px"/>
           </Box>
           <VStack gap={4} align='stretch' p={5} borderRadius="12px" flexGrow={1}>
             <Box>
@@ -56,7 +52,7 @@ const SolutionPhase = () => (
         <Box minHeight="100%" display="flex" flexDirection="column">
           <Box overflow="hidden">
             <Text size="md" textTransform="uppercase" mb={2}>solution</Text>
-            <Image src={SolutionImage1} maxWidth="100%" borderRadius="12px" />
+            <Image src={SolutionImage1} maxWidth="100%" borderRadius="8px" />
           </Box>
           <VStack gap={4} align='stretch' p={5} borderRadius="12px" flexGrow={1}>
             <Box>
@@ -83,7 +79,7 @@ const SolutionPhase = () => (
         <Box minHeight="100%" display="flex" flexDirection="column">
           <Box overflow="hidden">
             <Text size="md" textTransform="uppercase" mb={2}>concept</Text>
-            <Image src={ConceptImage2} maxWidth="100%" borderRadius="12px" />
+            <Image src={ConceptImage2} maxWidth="100%" borderRadius="8px" />
           </Box>
           <VStack gap={4} align='stretch' p={5} borderRadius="12px" flexGrow={1}>
             <Box>
@@ -103,7 +99,7 @@ const SolutionPhase = () => (
         <Box minHeight="100%" display="flex" flexDirection="column">
           <Box overflow="hidden">
             <Text size="md" textTransform="uppercase" mb={2}>Solution</Text>
-            <Image src={SolutionImage2} maxWidth="100%" borderRadius="12px"/>
+            <Image src={SolutionImage2} maxWidth="100%" borderRadius="8px"/>
           </Box>
           <VStack gap={4} align='stretch' p={5} borderRadius="12px" flexGrow={1}>
             <Box>
@@ -118,34 +114,6 @@ const SolutionPhase = () => (
         </Box>
       </GridItem>
     </Grid>
-
-    <Grid
-    templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }}
-    gap={4}
-    justifyContent="center"
-    mt={{base: "4rem", lg: "8rem"}}
-  >
-    <GridItem colSpan={{base: '1' , md: '2'}}>
-      <Heading size={{ base: 'lg', md: 'xl' }} width="100%" mb="1rem">A Fresh, Modern Solution that Reflects Our Brand Values</Heading>
-    </GridItem>
-    <GridItem>
-      <Box minHeight="100%" display="flex" flexDirection="column">
-        <Box overflow="hidden">
-          <Text fontSize="md" textTransform="uppercase" mb={2}>old experience</Text>
-          <Image src={OldHeroImage} width="100%" height="auto" borderRadius="12px" />
-        </Box>
-      </Box>
-    </GridItem>
-    <GridItem>
-      <Box minHeight="100%" display="flex" flexDirection="column">
-        <Box overflow="hidden">
-          <Text fontSize="md" textTransform="uppercase" mb={2}>new experience</Text>
-          <Image src={NewHeroImage} width="100%" height="auto" borderRadius="12px" />
-        </Box>
-      </Box>
-    </GridItem>
-  </Grid>
- 
 
 </Container>
 

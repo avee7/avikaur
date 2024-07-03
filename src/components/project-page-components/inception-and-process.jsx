@@ -17,10 +17,10 @@ const InceptionAndProcess = () => (
     <Heading size={{base: 'xl', md: '2xl'}} mb={{ base: "2rem",  md: "4rem"}}>Inception and Process</Heading>
     <Flex gap="8rem"  width="100%" direction="column">
 
-      <Flex direction="column" gap={2} maxW="1020px">
+      <Flex direction="column" gap={2}>
         <Text size="md" color="#7B7A7E" textTransform="uppercase">Defining the problem</Text>
-        <Heading size={{base: 'lg', md: 'xl'}}>Why Mendeley's Full Potential Remains Hidden?</Heading>
-        <Text size="lg" pt={2}>The user research at Mendeley has shown that while the reference manager
+        <Heading size={{base: 'lg', md: 'xl'}}  maxW="1020px">Why Mendeley's Full Potential Remains Hidden?</Heading>
+        <Text size="lg" pt={2}  maxW="1020px">The user research at Mendeley has shown that while the reference manager
           is widely used for managing and organising research, users often turn to other platforms for
           additional needs. This indicates a significant gap in awareness regarding Mendeley’s
           comprehensive features, including the web importer, reader, and the MCite tool for
@@ -32,7 +32,7 @@ const InceptionAndProcess = () => (
               <Image src={OldMendeley} maxW="100%" borderRadius="12px" />
             </GridItem>
             <GridItem>
-              <VStack gap={4} width="100%" >
+              <VStack gap={4} width="100%" maxW="480px" >
                 <Box p={6} borderRadius="12px" bg="#1a1a1a" as="Flex" gap={2}>
                   <Image src={ArrowDown} width="2.5rem" />
                   <Box>

@@ -9,6 +9,7 @@ import InceptionAndProcess from "../../components/project-page-components/incept
 import ConceptTesting from "../../components/project-page-components/concept-testing";
 import SolutionPhase from "../../components/project-page-components/solution-phase";
 import KeyLearnings from "../../components/project-page-components/key-learnings";
+import MFinalSolution from "../../components/project-page-components/mendeley-final-solution"
 import useScrollToTop from "../../hooks/useScrollToTop";
 import { Helmet } from "react-helmet";
 
@@ -47,6 +48,7 @@ const MendeleyHomePageRedesign = () => {
 
         </Box>
         <Container maxW="1300px">
+          <MFinalSolution />
           <KeyLearnings />
         </Container>
 
