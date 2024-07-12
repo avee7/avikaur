@@ -96,7 +96,7 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
 };
 
 const Cards = () => (
-  <VStack gap={14} width="full">
+  <VStack gap={14} maxW="1300px" width="100%" mx="auto">
     <Card
       href="./selected-projects/mendeley-homepage-redesign"
       title="Beyond Reference Management"

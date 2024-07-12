@@ -87,12 +87,13 @@ const OtherProjects = () => {
   const gridTemplateColumns = useBreakpointValue({ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' });
 
   return (
-    <Container maxW="1300px" pb={{ base: "5rem",  lg: "10rem"}}>
-      <Heading size='xl' mb={{base: "2rem", md: "3.5rem"}}>Other Projects</Heading>
+    <Container pb={{ base: "5rem",  lg: "10rem"}} bg={"#0A0911"} zIndex="9" position="relative" maxW="none">
+      <Heading size='xl' mb={{base: "2rem", md: "3.5rem"}} maxW="1300px" width="100%" mx="auto">Other Projects</Heading>
       
 
       <Grid
         h='556px'
+        maxW="1300px" width="100%" mx="auto"
         templateRows={{ base: 'auto', md: 'repeat(2, 1fr)' }}
         templateColumns={gridTemplateColumns}
         gap={4}

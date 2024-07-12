@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Text, Heading, Container, VStack, Flex, Link } from "@chakra-ui/react";
 
 const Footer = () => (
-  <Box bg="rgba(90, 93, 159, 0.18)" w="100%">
+  <Box bg="#18182a" w="100%" zIndex="9" position="relative">
     <Container maxW="1300px" pt="4rem" pb="2rem" color="#e0e0e0">
       <Flex
         direction={{ base: 'column', md: 'row' }} // Change direction based on screen size
