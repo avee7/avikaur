@@ -16,42 +16,45 @@ import {
   Container
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import logo from '../images/logo.png';
+import darkLogo from '../images/avee-logo-dark.png';
+import lightLogo from '../images/avee-logo-light.png';
 
-const Navbar = () => {
+const Navbar = ({ headerBg = "transparent", textColour }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const logo = textColour === 'dark' ? darkLogo : lightLogo;
+  const fontColour = textColour === 'dark' ? '#0A0911' : '#f4f4f4';
 
   return (
-    <Box bg="rgba(10, 9, 17, 0.8)" boxShadow="sm" position="sticky" top="0"
-    zIndex="sticky" 
-    width="100%">
-      <Container maxW="1300px" 
-    width="100%"
-      >
+    <Box
+      bg={headerBg}
+      boxShadow="sm"
+      position="sticky"
+      top="0"
+      zIndex="sticky"
+      width="100%"
+      backdropFilter="blur(8px)"
+    >
+      <Container px="3rem" width="100%" maxW="none">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box as={Link} href='/' width="10rem" mt="2">
+          <Box as={Link} href='/' width="6rem">
             <Image src={logo} alt="logo" maxW="100%" />
           </Box>
 
           <Flex alignItems={'center'}>
             <Box display={{ base: 'none', md: 'flex' }}>
-              <Button as={Link} href="/" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2a2a2a", textDecoration: 'none' }}>Home</Button>
-              <Button as={Link} href="/about" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2a2a2a", textDecoration: 'none' }}>About</Button>
-              <Button as={Link} href="/contact" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2a2a2a", textDecoration: 'none' }}>Contact</Button>
+              <Button as={Link} href="/" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>Home</Button>
+              <Button as={Link} href="/about" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>About</Button>
+              <Button as={Link} href="/contact" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>Contact</Button>
             </Box>
 
-            {/* Hamburger Icon on the right for mobile view */}
             <IconButton
               icon={<HamburgerIcon />}
               aria-label={'Open Menu'}
               size={'lg'}
-              // mr={2}
-              // height="40px"
               display={{ md: 'none' }}
               onClick={onOpen}
               color="#e0e0e0"
               transition="all 0.2s"
-              // borderColor="#7B7A7E"
               variant="ghost"
               borderRadius="md"
               _hover={{ bg: "#2A2A2A", textDecoration: 'none' }}
@@ -59,8 +62,7 @@ const Navbar = () => {
           </Flex>
         </Flex>
 
-        {/* Mobile menu as an overlay */}
-        <Drawer isOpen={isOpen} placement="right" onClose={onClose}  >
+        <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
           <DrawerOverlay />
           <DrawerContent bg="rgba(10, 9, 17, 0.8)" boxShadow="sm">
             <DrawerCloseButton />

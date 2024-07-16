@@ -8,7 +8,7 @@ const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient
       <Container maxW="1300px">
         <Flex
           mx="auto"
-          pt={{ base: '8rem', md: '11rem' }}
+          p={{ base: '8rem 0 3rem', md: '10rem 0 4rem' }}
           alignItems="center"
           justifyItems="center"
           direction="column"
@@ -35,7 +35,11 @@ const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <Text fontSize="xl" mt={2} textAlign="center">{subtitle}</Text>
+            <Text size="xl"
+             mt="1.5rem" 
+             textAlign="center"
+             color={headingColor ? headingColor : '#e0e0e0'}
+             >{subtitle}</Text>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -43,12 +47,12 @@ const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient
             transition={{ duration: 0.8, delay: 0.6  }} 
           >
             <Image
-              pt="10rem"
               src={img}
               borderRadius="12px 12px 0 0"
               maxWidth={imgMaxWidth}
               height="auto"
               width="100%"
+              mx="auto"
               padding={imgPadding}
             />
           </motion.div>
