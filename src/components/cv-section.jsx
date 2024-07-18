@@ -9,8 +9,8 @@ const CVSection = () => (
         size="sm"
         variant="outline"
         as="a"
-        href="/resume.pdf" 
-        download="AvinashKaur.pdf" 
+        href="/AvinashKaurUX.pdf" 
+        download="AvinashKaurUX.pdf" 
       >
         Download Resume
       </Button>
