@@ -34,7 +34,7 @@ const Cubix = () => {
       </Box>
 
       <Box borderRadius="12px 12px 0 0" bg="#0A0911" position="relative" zIndex="4">
-        <Container maxW="1300px" mt="6rem">
+        <Container maxW="1300px" mt={{base: "3rem", md: "6rem"}}>
 
           <CubixIntroduction />
           <CubixPreview />

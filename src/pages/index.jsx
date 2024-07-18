@@ -24,7 +24,7 @@ const Home = () => {
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>
-        <Box mt={{ base: '28rem', lg: '40rem'}}>
+        <Box mt={{ base: '30rem', lg: '40rem'}}>
           <SelectedProjects />
         </Box>
       </motion.div>

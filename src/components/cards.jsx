@@ -2,7 +2,7 @@ import React from 'react';
 import { VStack, Box, Heading, Text, Image, Link } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import CardObjectsImage from "../images/card-bg-shapes.svg";
-import MendeleyProjectImage from "../images/mendeley-macbook.png";
+import MendeleyProjectImage from "../images/mendeley-hero.png";
 import DeltaProjectImage from "../images/airline-neutral.svg";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
 import { useBreakpointValue } from '@chakra-ui/react';
@@ -103,10 +103,10 @@ const Cards = () => (
       description="Website Redesign / Case Study"
       imageSrc={MendeleyProjectImage}
       positionAdjust={{
-        base: { top: 'auto', right: '0', bottom: '1rem' },
+        base: { top: 'auto', right: '0', bottom: '0rem' },
         md: { top: '5rem', right: '-12rem' },
         lg: { top: '2rem', right: '-10rem' },
-        xl: { top: '-5rem', right: '-10rem' },
+        xl: { top: '-1.5rem', right: '-8rem' },
       }}
       showComingSoon={false}
       imgWidth={{
@@ -122,12 +122,16 @@ const Cards = () => (
       description="Multi-brand Design System"
       imageSrc={DeltaProjectImage}
       positionAdjust={{
-        base: { top: '11rem', right: '0' },
-        md: { top: '4rem', right: '-10rem' },
-        lg: { top: '4rem', right: '-20rem' }
+        base: { top: 'auto', right: '0', bottom: '-1rem' },
+        md: { top: '5rem', right: '-10rem' },
+        xl: { top: '2rem', right: '-5rem' }
       }}
       showComingSoon={false}
-      imgWidth="100%"
+      imgWidth={{
+        base: { width: '100%' },
+        md: { width: '80%' },
+        xl: { width: '900px' },
+      }}
       bgImagePosition={{ top: '-70px', left: '-1036px' }}
     />
     <Card
@@ -136,12 +140,16 @@ const Cards = () => (
       description="Product Design"
       imageSrc={DuplicatesProjectImage}
       positionAdjust={{
-        base: { top: 'auto', right: '0', bottom: '1rem'},
+        base: { top: 'auto', right: '1.2rem', bottom: '2rem'},
         md: { top: '6rem', right: '-15rem' },
-        lg: { top: '1rem', right: '-25rem' }
+        lg: { top: '6rem', right: '-10rem' }
       }}
       showComingSoon={true}
-      imgWidth="100%"
+      imgWidth={{
+        base: { width: '90%' },
+        md: { width: '80%' },
+        lg: { width: '68%' },
+      }}
       bgImagePosition={{ top: '100px', left: '50px' }}
     />
   </VStack>

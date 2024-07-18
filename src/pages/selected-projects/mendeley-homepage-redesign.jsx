@@ -2,7 +2,7 @@ import React from "react"
 import { Box, Container } from '@chakra-ui/react';
 import Layout from "../../components/layout";
 import ProjectPageHeader from "../../components/project-page-components/project-header";
-import HomePage from "../../images/mendeley-new-homepage1.png"
+import HomePage from "../../images/mendeley-hero.png"
 import HomepageIntroduction from "../../components/project-page-components/mendeley-introduction";
 import NewHomePagePreview from "../../components/project-page-components/new-home-page-preview";
 import InceptionAndProcess from "../../components/project-page-components/inception-and-process";
@@ -29,13 +29,13 @@ const MendeleyHomePageRedesign = () => {
           bg="linear-gradient(135deg, #007398, #99C7D5)"
           img={HomePage}
           headingColor="#e0e0e0" 
-          imgMaxWidth="800px"
-          imgPadding={{base: '3rem 0 0', md: '5rem 0 0'}} />
+          imgMaxWidth="1000px"
+          imgPadding={{base: '1rem 0 0', md: '2rem 0 0'}} />
 
       </Box>
 
       <Box borderRadius="12px 12px 0 0" bg="#0A0911" mt="-12px" position="relative" zIndex="4">
-        <Container maxW="1300px" mt="4rem">
+        <Container maxW="1300px" mt={{base: "3rem", md: "6rem"}}>
 
           <HomepageIntroduction />
           <NewHomePagePreview />
