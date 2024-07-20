@@ -33,7 +33,7 @@ const Contact= () => {
 
         <Flex align="center">
           <Image src={LinkedinLogo} width="32px" mr="1rem"  />
-          <Link size="lg" href="https://www.linkedin.com/in/avinash-kaur9/" isExternal>
+          <Link size="lg" href="https://www.linkedin.com/in/avinash-kaur3/" isExternal>
             Visit my LinkedIn
           </Link>
         </Flex>

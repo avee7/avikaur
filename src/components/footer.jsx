@@ -48,7 +48,7 @@ const Footer = () => (
               <Link fontSize="lg" href="/contact">Contact</Link>
             </VStack> */}
             <VStack alignItems="flex-start" gap="1.5rem" width={{ base: '100%', md: 'auto' }}>
-              <Link fontSize="lg" href="https://www.linkedin.com/in/avinash-kaur9/" isExternal>Linkedin</Link>
+              <Link fontSize="lg" href="https://www.linkedin.com/in/avinash-kaur3/" isExternal>Linkedin</Link>
               <Link fontSize="lg" href="https://adplist.org/mentors/avinash-kaur" isExternal>ADPList</Link>
               <Link fontSize="lg" href="https://twitter.com/avee_design" isExternal>X/Twitter</Link>
             </VStack>
