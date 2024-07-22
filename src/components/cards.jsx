@@ -7,8 +7,7 @@ import DeltaProjectImage from "../images/airline-neutral.svg";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
 import { useBreakpointValue } from '@chakra-ui/react';
 
-const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon, imgWidth, bgImagePosition }) => {
-  // Animation variants for the card visibility and hover
+const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon, imgWidth, bgImagePosition, index }) => {
   const cardVariants = {
     offscreen: {
       y: 50,
@@ -19,18 +18,17 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
       opacity: 1,
       transition: {
         type: "easeinout",
-        // bounce: 0.4,
-        duration: 0.8
+        duration: 0.8,
+        delay: index === 0 ? 1.6 : 0, // Add delay for the first card
       }
     },
     hover: {
       scale: 1.05,
-      boxShadow: "0px 10px 30px rgba(108, 99, 255, 0.18)", // More pronounced shadow on hover
+      boxShadow: "0px 10px 30px rgba(108, 99, 255, 0.18)",
       transition: { duration: 0.3 }
     }
   };
 
-  // "Coming Soon" overlay variants
   const comingSoonVariants = {
     initial: {
       opacity: 0
@@ -115,6 +113,7 @@ const Cards = () => (
         lg: { width: '68%' },
       }}
       bgImagePosition={{ top: '20px', left: '30px' }}
+      index={0} // First card
     />
     <Card
       href="./selected-projects/airline-neutral-design-system/"
@@ -133,6 +132,7 @@ const Cards = () => (
         xl: { width: '900px' },
       }}
       bgImagePosition={{ top: '-70px', left: '-1036px' }}
+      index={1} // Second card
     />
     <Card
       href="/"
@@ -151,9 +151,9 @@ const Cards = () => (
         lg: { width: '68%' },
       }}
       bgImagePosition={{ top: '100px', left: '50px' }}
+      index={2} // Third card
     />
   </VStack>
 );
 
 export default Cards;
-
