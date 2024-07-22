@@ -1,7 +1,6 @@
 import React from "react";
 import { Flex, Box, Heading, Text, Stack } from '@chakra-ui/react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import herobg from "../images/hero-bg.png"
 
 const MotionFlex = motion(Flex);
 const MotionBox = motion(Box);
@@ -57,7 +56,7 @@ const HeroArea = () => {
           p={{ base: "0 2rem 1rem", xl: "0 0 1rem" }}
           textAlign="center"
           size={{ base: '3xl', md: '4xl' }}
-          background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)"
+          background="linear-gradient(263deg, #d1cfff 0%, #6c63ff 100%)"
           backgroundClip="text"
         >
           Avinash Kaur
