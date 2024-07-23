@@ -8,12 +8,12 @@ const CubixIntroduction = () => (
     <Flex direction={{ base: "column", lg: "row" }} gap="3rem">
     <Box flex="1">
       <Text size="lg">
-      Fly Delta is Delta Airlines' comprehensive suite of digital tools, including their mobile web, iOS, 
-      and Android apps. Following Delta Airlines' acquisition of Virgin Atlantic in 2012, a project was initiated in 2016 to develop new apps specifically for Virgin Atlantic.
+      The CubiX Design System is dedicated to creating a versatile multi-brand design system for its products. 
+      It aims at offering a bootstrap design for clients, enabling them to build their products quickly and easily while allowing for the flexibility to integrate their own branding.
       </Text>
-      <Text size="lg" mt="1rem">
-      The vision was to build an airline-agnostic system that would allow for easy integration of any airline's branding into the Delta app, enabling quick rollouts for future airline partners.
-      </Text>
+      {/* <Text size="lg" mt="1rem">
+      
+      </Text> */}
       </Box>
     <HStack gap="3rem" alignItems="flex-start" maxWidth="600px">
       <VStack gap="3rem" alignItems="flex-start">

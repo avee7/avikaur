@@ -11,7 +11,7 @@ import HeroAnimation from '../components/hero-animation';
 import useScrollToTop from "../hooks/useScrollToTop";
 import { Helmet } from "react-helmet";
 import { motion, useScroll, useTransform } from 'framer-motion';
-const MotionBox = motion(Box);
+// const MotionBox = motion(Box);
 
 const Home = () => {
   const { scrollY } = useScroll();
@@ -20,12 +20,12 @@ const Home = () => {
 
   return (
     <Box>
-      <Box position="fixed" width="100%" height="100vh" zIndex="0" top="0">
-        <HeroAnimation />
+      <Box position="fixed" width="100%" height="calc(60vh + 64px)" zIndex="0" top="0" display="flex" justifyContent="center" alignItems="center">
+        {/* <HeroAnimation /> */}
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>
-        <Box mt={{ base: '60vh', lg: '65vh'}} >
+        <Box mt={{ base: "60vh", lg: "calc(60vh + 64px)"}} >
           <SelectedProjects />
         </Box>
       </motion.div>

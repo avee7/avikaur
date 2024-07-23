@@ -43,12 +43,27 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Poppins:400,600`,
-          `Inter:400` // you can also include other font weights and styles
+          `Inter:400`,
+          `Roboto: 400`,
+          `Libre+Caslon+Text: 400, 700`,
+          `Source+Sans+3:ital,wght@0,200..900;1,200..900`
         ],
         display: 'swap'
       }
     },
+   
     `gatsby-plugin-react-helmet`,
+    // {
+    //   resolve: `gatsby-plugin-react-helmet`,
+    //   options: {
+    //     headComponents: [
+    //       `<link
+    //         key="adobe-fonts"
+    //         rel="stylesheet"
+    //         href="https://use.typekit.net/YOUR_PROJECT_ID.css"
+    //       />`,
+    //     ],
+    //   },
+    // },
   ],
 }

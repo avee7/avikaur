@@ -4,16 +4,28 @@ import { MdBorderColor } from 'react-icons/md';
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Poppins', sans-serif`,
-    body: `'Inter', sans-serif`,
+    heading: "Prociono, serif",
+    body: `'Inter', sans-serif`
   },
   styles: {
     global: {
+      '@font-face': [
+        {
+          fontFamily: 'Prociono',
+          src: `
+            url('/fonts/Prociono-Regular.woff2') format('woff2'),
+            url('/fonts/Prociono-Regular.woff') format('woff')
+          `,
+          fontWeight: 'normal',
+          fontStyle: 'normal',
+        },
+      ],
       'html, body': {
         color: '#e0e0e0',
         lineHeight: 'tall',
       },
       'body': {
+        fontFamily: 'Inter',
         fontSize: "18px"
       }
       // a: {
@@ -30,6 +42,11 @@ const theme = extendTheme({
         color: '#e0e0e0'
       },
       sizes: {
+        '5xl': { 
+          fontSize: Typography.heading['heading-large']['5xl'].fontSize,
+          fontWeight: Typography.heading['heading-large']['5xl'].fontWeight,
+          lineHeight: Typography.heading['heading-large']['5xl'].lineHeight,
+        },
         '4xl': { 
           fontSize: Typography.heading['heading-large']['4xl'].fontSize,
           fontWeight: Typography.heading['heading-large']['4xl'].fontWeight,
@@ -50,7 +67,7 @@ const theme = extendTheme({
           fontWeight: Typography.heading['heading-large']['xl'].fontWeight,
           lineHeight: Typography.heading['heading-large']['xl'].lineHeight,
         },
-        lg: {
+        'lg': {
           fontSize: Typography.heading['heading-large']['lg'].fontSize,
           fontWeight: Typography.heading['heading-large']['lg'].fontWeight,
           lineHeight: Typography.heading['heading-large']['lg'].lineHeight,

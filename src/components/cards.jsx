@@ -63,8 +63,8 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
           bgRepeat="repeat"
           bgSize="cover"
         >
-          <Heading size="lg" mb={3}>{title}</Heading>
-          <Text size="xl">{description}</Text>
+          <Heading size="xl" mb={3}>{title}</Heading>
+          <Text size="lg">{description}</Text>
           
           <Image src={imageSrc} position="absolute" {...responsiveWidth} {...responsivePosition} />
           {showComingSoon && (

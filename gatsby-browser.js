@@ -22,3 +22,13 @@ export const onRouteUpdate = ({ prevLocation }) => {
     window.scrollTo(0, 0);
   }
 };
+
+// export const onRenderBody = ({ setHeadComponents }) => {
+//   setHeadComponents([
+//     <link
+//       key="adobe-fonts"
+//       rel="stylesheet"
+//       href="https://use.typekit.net/zcl4usb.css"
+//     />,
+//   ]);
+// };
