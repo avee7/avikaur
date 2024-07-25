@@ -10,7 +10,7 @@ import Footer from "./footer"
 
 const Layout = ({ children, headerBg, textColour }) => (
   <ChakraProvider theme={theme}>
-      <Box bg={"#0A0911"}>
+      <Box bg={"#a6ffba"}>
       {/* <AdobeFonts /> */}
       <Header headerBg={headerBg} textColour={textColour}/>
       {children}

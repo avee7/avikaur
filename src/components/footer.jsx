@@ -1,59 +1,35 @@
 import React from "react";
-import { Box, Text, Heading, Container, VStack, Flex, Link } from "@chakra-ui/react";
+import { Box, Text, Heading, Container, HStack, Flex, Link } from "@chakra-ui/react";
 
 const Footer = () => (
-  <Box bg="#18182a" w="100%" zIndex="9" position="relative">
-    <Container maxW="1300px" pt="4rem" pb="2rem" color="#e0e0e0">
+  <Box bg="#eee" w="100%" zIndex="9" position="relative">
+    <Container maxW="1300px" pt="4rem" pb="2rem" color="#000">
       <Flex
         direction={{ base: 'column', md: 'row' }} // Change direction based on screen size
         justifyContent={{ base: 'flex-start', md: 'space-between' }} // Add space between items on larger screens
         alignItems={{ base: 'flex-start', md: 'flex-start' }} // Adjust alignment based on screen size
         gap={{ base: '2rem', md: '0' }} // Add gap for better spacing on small screens
       >
-        <VStack
+        <HStack
           alignItems="flex-start"
           justifyContent="space-between"
           height="100%"
+          gap="2rem"
+          pb={{ base: "2rem", md: "5rem" }}
           width={{ base: '100%', md: 'auto' }} // Adjust width based on screen size
         >
-          <Box pb={{ base: "2rem", md: "5rem" }}>
-            <Heading
-              size={{ base: 'lg', md: 'xl' }}
-              background="linear-gradient(263deg, #bba6ff 0%, #6c63ff 100%)"
-              backgroundClip="text"
-            >
-              Interested in collaborating?  
-            </Heading>
-            <Text pt="1rem" fontSize={{ base: 'lg', md: 'xl' }}>
-              Feel free to <Link href="mailto:avikaur.design3@gmail.com">reach out via email</Link> :)
-            </Text>
-            {/* <Text pt="2rem" fontSize={{ base: 'lg', md: 'xl' }}>
-              avikaur.design3@gmail.com
-            </Text> */}
-          </Box>
-        </VStack>
-
-        <Flex
-          direction={{ base: 'column', md: 'row' }}
-          gap={{ base: '1.5rem', md: '4rem' }} // Adjust gap between link groups
-          flexWrap={{ base: 'wrap', md: 'nowrap' }} // Wrap on smaller screens only
-          width={{ base: '100%', md: 'auto' }} // Adjust width based on screen size
-          justifyContent={{ base: 'space-between', md: 'flex-end' }} // Align to the end on larger screens
-          alignItems={{ base: 'flex-start', md: 'center' }} // Align items on larger screens
-        >
-          <Flex direction="row" gap={{ base: '1.5rem', md: '2rem' }}>
-            {/* <VStack alignItems="flex-start" gap="1.5rem" width={{ base: '100%', md: 'auto' }}>
-              <Link fontSize="lg" href="/">Home</Link>
-              <Link fontSize="lg" href="/about">About</Link>
-              <Link fontSize="lg" href="/contact">Contact</Link>
-            </VStack> */}
-            <VStack alignItems="flex-start" gap="1.5rem" width={{ base: '100%', md: 'auto' }}>
-              <Link fontSize="lg" href="https://www.linkedin.com/in/avinash-kaur3/" isExternal>Linkedin</Link>
+          
+            
+         
+            <Link href="mailto:avikaur.design3@gmail.com">Email</Link>
+            <Link fontSize="lg" href="https://www.linkedin.com/in/avinash-kaur3/" isExternal>Linkedin</Link>
               <Link fontSize="lg" href="https://adplist.org/mentors/avinash-kaur" isExternal>ADPList</Link>
               <Link fontSize="lg" href="https://twitter.com/avee_design" isExternal>X/Twitter</Link>
-            </VStack>
-          </Flex>
-        </Flex>
+           
+         
+        </HStack>
+
+        
       </Flex>
 
       <Box width="100%" pt={{ base: '5rem', md: '1rem' }}>

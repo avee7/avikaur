@@ -3,7 +3,7 @@ import { Heading, Container } from '@chakra-ui/react';
 import Cards from "./cards"
 
 const SelectedProjects = () => (
-    <Container maxW="none"  pb={{ base: "5rem",  lg: "10rem"}} zIndex="9" position="relative" pt={{ base: "2rem",  lg: "3rem"}} bg={"#0A0911"} borderRadius="20px">
+    <Container maxW="none"  py={{ base: "4rem",  lg: "7rem"}} zIndex="9" position="relative"  bg={"#fff"} borderRadius="20px 20px 0 0">
       {/* <Heading maxW="1300px" width="100%" mx="auto" size='xl' mb={{base: "2rem", md: "3.5rem"}} >Selected Projects</Heading> */}
 
         <Cards />

@@ -1,13 +1,12 @@
 import React from 'react';
-import { VStack, Box, Heading, Text, Image, Link } from '@chakra-ui/react';
+import { Box, Heading, Text, Image, Link, Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import CardObjectsImage from "../images/card-bg-shapes.svg";
-import MendeleyProjectImage from "../images/mendeley-hero.png";
-import DeltaProjectImage from "../images/airline-neutral.svg";
+import MendeleyProjectImage from "../images/mendeley-project-image.png";
+import DeltaProjectImage from "../images/airline-neutral.png";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
-import { useBreakpointValue } from '@chakra-ui/react';
+import CubixHero from "../images/cubix-hero.png"
 
-const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSoon, imgWidth, bgImagePosition, index }) => {
+const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, year }) => {
   const cardVariants = {
     offscreen: {
       y: 50,
@@ -19,12 +18,11 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
       transition: {
         type: "easeinout",
         duration: 0.8,
-        delay: index === 0 ? 1.6 : 0, // Add delay for the first card
+        delay: index === 0 || index === 1 ? 1.6 : 0 , // Add delay for the first card
       }
     },
     hover: {
-      scale: 1.05,
-      boxShadow: "0px 10px 30px rgba(108, 99, 255, 0.18)",
+      scale: 1.02,
       transition: { duration: 0.3 }
     }
   };
@@ -39,11 +37,8 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
     }
   };
 
-  const responsivePosition = useBreakpointValue(positionAdjust);
-  const responsiveWidth = useBreakpointValue(imgWidth);
-
   return (
-    <Link href={href} style={{ textDecoration: 'none' }} width="100%">
+    <Link href={href} style={{ textDecoration: 'none' }} flex="1 1 46%" maxW="47%" mb="5rem">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -56,17 +51,17 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
           position="relative"
           overflow="hidden"
           p={10}
-          height="442px"
-          border="solid 1px #5A5D9F"
-          background={`url(${CardObjectsImage})`}
-          bgPosition={`${bgImagePosition?.top} ${bgImagePosition?.left}`}
-          bgRepeat="repeat"
-          bgSize="cover"
+          height="600px"
+          border="solid 1px rgba(224,224,224, 1)"
+          // bg="rgba(157, 150, 255,0.05)"
+          // bg="rgba(224,224,224,   0.2)"
+          bg="#eff2f7"
+          // bg="transparent"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
         >
-          <Heading size="xl" mb={3}>{title}</Heading>
-          <Text size="lg">{description}</Text>
-          
-          <Image src={imageSrc} position="absolute" {...responsiveWidth} {...responsivePosition} />
+          <Image src={imageSrc} width={imgWidth} height={imgHeight} maxW="none" />
           {showComingSoon && (
             <motion.div
               variants={comingSoonVariants}
@@ -88,72 +83,69 @@ const Card = ({ href, title, description, imageSrc, positionAdjust, showComingSo
             </motion.div>
           )}
         </Box>
+        <Box mt="0.8rem">
+          <Heading size="xl" mb={3}>{title}</Heading>
+          <Text size="lg">{description}</Text>
+          {/* <Text size="md" color="#7B7A7E">{year}</Text> */}
+        </Box>
       </motion.div>
     </Link>
   );
 };
 
 const Cards = () => (
-  <VStack gap={14} maxW="1300px" width="100%" mx="auto">
+  <Flex
+    wrap="wrap"
+    maxW="1300px"
+    width="100%"
+    mx="auto"
+    justifyContent="space-between"
+  >
     <Card
       href="./selected-projects/mendeley-homepage-redesign"
       title="Beyond Reference Management"
       description="Website Redesign / Case Study"
       imageSrc={MendeleyProjectImage}
-      positionAdjust={{
-        base: { top: 'auto', right: '0', bottom: '0rem' },
-        md: { top: '5rem', right: '-12rem' },
-        lg: { top: '2rem', right: '-10rem' },
-        xl: { top: '-1.5rem', right: '-8rem' },
-      }}
       showComingSoon={false}
-      imgWidth={{
-        base: { width: '100%' },
-        md: { width: '80%' },
-        lg: { width: '68%' },
-      }}
-      bgImagePosition={{ top: '20px', left: '30px' }}
-      index={0} // First card
+      imgWidth="auto"
+      imgHeight="120%"
+      index={0} 
+      year="2022"
     />
     <Card
-      href="./selected-projects/airline-neutral-design-system/"
-      title="Airline Neutral: Fly Delta Airlines"
-      description="Multi-brand Design System"
-      imageSrc={DeltaProjectImage}
-      positionAdjust={{
-        base: { top: 'auto', right: '0', bottom: '-1rem' },
-        md: { top: '5rem', right: '-10rem' },
-        xl: { top: '2rem', right: '-5rem' }
-      }}
+      href="./selected-projects/cubix-design-system/"
+      title="Cubix Design System"
+      description="Multi-brand, themeable design system"
+      imageSrc={CubixHero}
       showComingSoon={false}
-      imgWidth={{
-        base: { width: '100%' },
-        md: { width: '80%' },
-        xl: { width: '900px' },
-      }}
-      bgImagePosition={{ top: '-70px', left: '-1036px' }}
-      index={1} // Second card
+      imgWidth="auto"
+      imgHeight="132%"
+      index={1} 
+      year="2024"
     />
     <Card
       href="/"
       title="Duplicates Management"
       description="Product Design"
       imageSrc={DuplicatesProjectImage}
-      positionAdjust={{
-        base: { top: 'auto', right: '1.2rem', bottom: '2rem'},
-        md: { top: '6rem', right: '-15rem' },
-        lg: { top: '6rem', right: '-10rem' }
-      }}
       showComingSoon={true}
-      imgWidth={{
-        base: { width: '90%' },
-        md: { width: '80%' },
-        lg: { width: '68%' },
-      }}
-      bgImagePosition={{ top: '100px', left: '50px' }}
-      index={2} // Third card
+      imgWidth="auto%"
+      imgHeight="105%"
+      index={2}
+      year="2023"
     />
-  </VStack>
+    <Card
+      href="./selected-projects/airline-neutral-design-system/"
+      title="Airline Neutral: Fly Delta Airlines"
+      description="Multi-brand Design System"
+      imageSrc={DeltaProjectImage}
+      showComingSoon={false}
+      imgWidth="auto"
+      imgHeight="120%"
+      index={3}
+      year="2016"
+    />
+  </Flex>
 );
 
 export default Cards;

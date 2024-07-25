@@ -87,8 +87,8 @@ const OtherProjects = () => {
   const gridTemplateColumns = useBreakpointValue({ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' });
 
   return (
-    <Container pb={{ base: "5rem",  lg: "10rem"}} bg={"#0A0911"} zIndex="9" position="relative" maxW="none">
-      <Heading size={{base: 'lg', md: 'xl'}} mb={{base: "1rem", md: "2rem"}} maxW="1300px" width="100%" mx="auto">Other Projects</Heading>
+    <Container py={{ base: "5rem",  lg: "10rem"}} bg={"#466b4e"} zIndex="9" position="relative" maxW="none">
+      <Heading size={{base: '3xl', md: '4xl'}} mb={{base: "3rem", md: "6rem"}} maxW="1300px" width="100%" mx="auto" color="#fff">More Projects</Heading>
       
 
       <Grid
@@ -105,10 +105,11 @@ const OtherProjects = () => {
             colSpan={{ base: 2, md: 1 }} // Stack on smaller screens
             onClick={() => handleClick(item)}
             overflow="hidden" 
-            bg="rgba(90, 93, 159,0.18)" 
+            // bg="rgba(90, 93, 159,0.18)" 
+            bg="rgba(240, 239, 255, 0.1)"
             borderRadius="20px" 
             borderWidth="1px" 
-            borderColor="#5A5D9F"
+            borderColor="rgba(209, 207, 255, 0.4)"
             role="group" // Add group role for hover effect
           >
             <MotionFlex
@@ -119,10 +120,12 @@ const OtherProjects = () => {
               whileHover={{ scale: 1.1 }}
             >
               <Image src={item.imageSrc} zIndex="0" position="absolute" bottom="0rem" left="0" width="100%"/>
-              <Heading size="lg" 
+              <Text size="3xl" 
+              color="#fff"
               zIndex="1" 
-              textShadow="0 4px 6px rgba(0, 0, 0, 0.5)"
-               >{item.heading}</Heading>
+              textShadow="0 0px 6px rgba(0, 0, 0, 0.5)"
+              textTransform="uppercase"
+               >{item.heading}</Text>
               {item.id === 3 && (
                 <Box position="absolute" top="0" left="0" right="0" bottom="0" bg="rgba(0, 0, 0, 0.5)" display="flex" alignItems="flex-end" justifyContent="center"
                   opacity="0"

@@ -43,10 +43,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Inter:400`,
-          `Roboto: 400`,
-          `Libre+Caslon+Text: 400, 700`,
-          `Source+Sans+3:ital,wght@0,200..900;1,200..900`
+          
+          
+          `Source+Sans+3:ital,wght@0,200..900;1,200..900`,
+          
         ],
         display: 'swap'
       }

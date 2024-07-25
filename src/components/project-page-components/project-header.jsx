@@ -8,7 +8,7 @@ const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient
       <Container maxW="1300px">
         <Flex
           mx="auto"
-          p={{ base: '8rem 0 3rem', md: '10rem 0 4rem' }}
+          p={{ base: '7rem 0 3rem', md: '14rem 0 4rem' }}
           alignItems="center"
           justifyItems="center"
           direction="column"
@@ -21,7 +21,7 @@ const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient
             transition={{ duration: 0.8 }}
           >
             <Heading
-              size={{ base: '2xl', md: '3xl' }}
+              size={{ base: '4xl', md: '5xl' }}
               textAlign="center"
               bgGradient={headingGradient || 'none'}
               bgClip={headingGradient ? 'text' : 'initial'}

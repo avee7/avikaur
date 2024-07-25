@@ -1,8 +1,8 @@
 import React from "react";
 import { Flex, Box, Heading, Text, Stack, Image } from '@chakra-ui/react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import CodeIcon from "../images/BsCodeSlash.png"
-import DesignIcon from "../images/BsPalette.png"
+import CodeIcon from "../images/browser.png"
+import DesignIcon from "../images/color-palette.png"
 
 const MotionFlex = motion(Flex);
 const MotionBox = motion(Box);
@@ -17,7 +17,7 @@ const HeroArea = () => {
   const opacityTransform = useTransform(scrollY, [0, 300], [1, 0.5]);
 
   return (
-    <Box zIndex="1" width="100%" m={{ base: "0 auto" }} position="relative">
+    <Box zIndex="1" width="100%" m={{ base: "0 auto" }} position="relative" pb={{base: '0', lg:"0rem"}}>
       {/* <MotionBox
         position="absolute" width='100%' 
         zIndex="-1"
@@ -30,36 +30,42 @@ const HeroArea = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
       /> */}
 
-      <Box position="absolute" width={{base: "90%", lg: "920px", xl: "1200px"}} top="30%" 
+      <Box position="absolute" width={{base: "90%", lg: "920px", xl: "1200px"}} 
+      // top="50%"
+      bottom="-4rem"  
       left= "50%"
-      transform= "translate(-50%, -50%)">
+      transform= "translateX(-50%)"
+      // transform= "translate(-50%, -50%)"
+      >
         <Box
           position="absolute"
-          width="80px" height="80px"
-          left="-30px"
-          top="-40px"
-          bg="rgba(10,9,17,0.7)"
+          width={{base: '56px', md: '56px'}} 
+          height={{base: '56px', md: '56px'}} 
+          left={{base: '-10px', md: '-10px'}}
+          top={{base: '-28px', md: '-28px'}}
+          bg="radial-gradient(rgba(246, 255,248, 0.6) 0%, rgba(246, 255,248, 0) 80%)"
           zIndex="0"
           borderRadius="9999px"
-          backdropFilter="blur(5px)" >
-          <Box position="absolute"
+          backdropFilter="blur(5px)"
+           >
+          {/* <Box position="absolute"
             width="80px" height="80px"
-            bg="radial-gradient(circle, rgba(108, 99, 255, 0.4) 0%, rgba(0, 255, 0, 0) 70%)"
+            bg="transparent"
             filter="blur(10px)"
-          />
-          <Image src={DesignIcon} maxW="40px" m="18px 0 0 22px" />
+          /> */}
+          <Image src={DesignIcon} maxW={{base: '40px', md: '56px'}}  />
         </Box>
-        <Box position="absolute" width="100%" height="4px" bg="rgb(23, 23, 23)" top="0" zIndex="-1">
+        <Box position="absolute" width="100%" height="2px" bg="#97E8A9" top="0" zIndex="-1">
           <motion.div
             style={{
               position: "absolute",
               top: "50%",
               left: "-10px",
               width: "12px",
-              height: "4px",
+              height: "5px",
               borderRadius: "50%",
-              boxShadow: "0 0 20px 2px rgba(209, 207, 255, 0.7)",
-              background: "radial-gradient(#6C63FF,rgba(209, 207, 255, 0.7))",
+              boxShadow: "0 0 20px 2px rgba(209, 207, 255, 1)",
+              background: "rgb(227, 255, 234)",
               transform: "translateY(-50%)",
               filter: "blur(2px)"
             }}
@@ -69,8 +75,8 @@ const HeroArea = () => {
             }}
             transition={{
               delay: 1,
-              duration: 25,
-              ease: 'linear',
+              duration: 8,
+              ease: 'easeInOut',
 
               repeat: Infinity,
               repeatDelay: 0
@@ -80,19 +86,16 @@ const HeroArea = () => {
         </Box>
         <Box
           position="absolute"
-          width="80px" height="80px"
-          right="-30px"
-          top="-40px"
-          bg="rgba(10,9,17,0.7)"
+          width={{base: '60px', md: '60px'}} 
+          height={{base: '60px', md: '60px'}} 
+          right={{base: '-10px', md: '-20px'}}
+          top={{base: '-28px', md: '-28px'}}
+          bg="radial-gradient(rgba(246, 255,248, 0.6) 0%, rgba(246, 255,248, 0) 80%)"
+         
           zIndex="0"
           borderRadius="9999px"
           backdropFilter="blur(5px)" >
-          <Box position="absolute"
-            width="80px" height="80px"
-            bg="radial-gradient(circle, rgba(108, 99, 255, 0.4) 0%, rgba(0, 255, 0, 0) 70%)"
-            filter="blur(10px)"
-          />
-          <Image src={CodeIcon} maxW="42px" m="16px 0 0 18px" />
+          <Image src={CodeIcon} maxW={{base: '40px', md: '56px'}} />
         </Box>
       </Box>
 
@@ -105,7 +108,7 @@ const HeroArea = () => {
       >
 
 
-        <Stack direction="column" position="relative" gap="2rem" maxW={{base: "570px", lg:"800px"}}>
+        <Stack direction="column" position="relative" gap="2rem" maxW={{base: "570px", lg:"900px"}}>
 
           <motion.div
             style={{
@@ -125,9 +128,13 @@ const HeroArea = () => {
               as="h1"
               p={{ base: "0 2rem 1rem", xl: "0 0 1.25rem" }}
               textAlign="center"
-              size={{ base: '4xl', lg: '5xl' }}
-              background="linear-gradient(263deg, #d1cfff 0%, #6c63ff 100%)"
-              backgroundClip="text"
+              size={{ base: '5xl', lg: '6xl' }}
+              // color="#f4f4f4"
+              // mt={{base: '0', lg: '2rem'}}
+              // color="#6c63ff"
+              color="#0A0911"
+              // background="linear-gradient(263deg,#6c63ff  0%, #8982ff 100%)"
+              // backgroundClip="text"
             >
               Avinash Kaur
             </MotionHeading>
@@ -137,15 +144,18 @@ const HeroArea = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.25, duration: 0.9 }}
               textAlign="center"
-              size={{ base: 'lg', lg: 'xl' }}
+              size={{ base: 'xl', lg: '3xl' }}
               width="100%"
               p={{ base: "0 2rem", xl: "0" }}
               mx="auto"
+              color="#0A0911"
+              
+              // color="#e0e0e0"
 
             >
 
               {/* I'm a product designer with a background in front-end development, passionate about building engaging, scalable, and purposeful digital experiences. */}
-              I'm a product designer who blends a passion for design with front-end development skills to craft engaging, scalable digital experiences.
+              I'm a product designer who blends design passion with front-end development skills to craft engaging, scalable digital experiences.
               {/* I'm a product designer focused on merging creative and technical skills to craft user-focused, scalable digital experiences. */}
             </MotionText>
           </motion.div>

@@ -20,12 +20,15 @@ const Home = () => {
 
   return (
     <Box>
-      <Box position="fixed" width="100%" height="calc(60vh + 64px)" zIndex="0" top="0" display="flex" justifyContent="center" alignItems="center">
+      <Box position="fixed" width="100%" height="calc(60vh + 64px)" zIndex="0" top="0" display="flex" justifyContent="center" alignItems={{base: 'center', lg: "center"}} 
+      bg="#a6ffba"
+      
+      >
         {/* <HeroAnimation /> */}
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>
-        <Box mt={{ base: "60vh", lg: "calc(60vh + 64px)"}} >
+        <Box mt={{ base: "60vh"}} >
           <SelectedProjects />
         </Box>
       </motion.div>
@@ -39,7 +42,7 @@ const IndexPage = () => {
   useScrollToTop();
 
   return (
-    <Layout>
+    <Layout textColour="dark">
       <Helmet>
         <title>Avinash Kaur — Product Designer</title>
         <meta name="description" content="Experienced product designer specialising in creating user-friendly and scalable digital experiences. Passionate about delivering innovative design solutions that enhance usability and user satisfaction." />

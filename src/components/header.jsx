@@ -19,7 +19,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import darkLogo from '../images/avee-logo-dark.png';
 import lightLogo from '../images/avee-logo-light.png';
 
-const Navbar = ({ headerBg = "transparent", textColour }) => {
+const Header = ({ headerBg = "transparent", textColour }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const logo = textColour === 'dark' ? darkLogo : lightLogo;
   const fontColour = textColour === 'dark' ? '#0A0911' : '#f4f4f4';
@@ -27,7 +27,7 @@ const Navbar = ({ headerBg = "transparent", textColour }) => {
   return (
     <Box
       bg={headerBg}
-      boxShadow="sm"
+      // boxShadow="sm"
       position="sticky"
       top="0"
       zIndex="sticky"
@@ -80,4 +80,4 @@ const Navbar = ({ headerBg = "transparent", textColour }) => {
   );
 };
 
-export default Navbar;
+export default Header;
