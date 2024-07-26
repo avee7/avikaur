@@ -41,13 +41,13 @@ const Header = ({ headerBg = "transparent", textColour }) => {
           </Box>
 
           <Flex alignItems={'center'}>
-            <Box display={{ base: 'none', md: 'flex' }}>
-              <Button as={Link} href="/" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>Home</Button>
-              <Button as={Link} href="/about" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>About</Button>
-              <Button as={Link} href="/contact" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>Contact</Button>
+            <Box>
+              <Button as={Link} href="/" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.1)", textDecoration: 'none' }}>Home</Button>
+              {/* <Button as={Link} href="/about" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>About</Button> */}
+              {/* <Button as={Link} href="/contact" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>Contact</Button> */}
             </Box>
 
-            <IconButton
+            {/* <IconButton
               icon={<HamburgerIcon />}
               aria-label={'Open Menu'}
               size={'lg'}
@@ -58,11 +58,11 @@ const Header = ({ headerBg = "transparent", textColour }) => {
               variant="ghost"
               borderRadius="md"
               _hover={{ bg: "#2A2A2A", textDecoration: 'none' }}
-            />
+            /> */}
           </Flex>
         </Flex>
 
-        <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+        {/* <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
           <DrawerOverlay />
           <DrawerContent bg="rgba(10, 9, 17, 0.8)" boxShadow="sm">
             <DrawerCloseButton />
@@ -74,7 +74,7 @@ const Header = ({ headerBg = "transparent", textColour }) => {
               </Stack>
             </DrawerBody>
           </DrawerContent>
-        </Drawer>
+        </Drawer> */}
       </Container>
     </Box>
   );

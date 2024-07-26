@@ -37,7 +37,7 @@ const HeroArea = () => {
       
       transform= "translate(-50%, -50%)"
       >
-        <Box
+        {/* <Box
           position="absolute"
           width={{base: '32px', md: '44px'}} 
           height={{base: '32px', md: '44px'}} 
@@ -48,10 +48,10 @@ const HeroArea = () => {
           borderRadius="9999px"
           backdropFilter="blur(5px)"
            >
-            {/* <Box fontSize="3rem">&#127912;</Box> */}
+            
          
            <Image src={DesignIcon} maxW={{base: '32px', md: '44px'}}  /> 
-        </Box>
+        </Box> */}
         {/* <Box position="absolute" width="100%" height="4px" bg="#97E8A9" top="0" zIndex="-1">
           <motion.div
             style={{
@@ -81,7 +81,7 @@ const HeroArea = () => {
           />
 
         </Box> */}
-        <Box
+        {/* <Box
           position="absolute"
           width={{base: '32px', md: '44px'}} 
           height={{base: '32px', md: '44px'}} 
@@ -92,10 +92,10 @@ const HeroArea = () => {
           borderRadius="9999px"
           backdropFilter="blur(5px)"
            >
-            {/* <Box fontSize="3rem">&#128187;</Box> */}
+            
 
           <Image src={CodeIcon} maxW={{base: '32px', md: '44px'}} /> 
-        </Box>
+        </Box> */}
       </Box> 
 
 
