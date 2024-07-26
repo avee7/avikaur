@@ -1,8 +1,16 @@
 import React from "react";
 import { Flex, Box, Heading, Text, Stack, Image } from '@chakra-ui/react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import CodeIcon from "../images/browser.png"
-import DesignIcon from "../images/color-palette.png"
+import CodeIcon from "../images/code-icon.png"
+import PaletteIcon from "../images/palette-icon.png"
+import LayersIcon from "../images/layers-icon.png"
+import FigmaIcon from "../images/figma-icon.png"
+import PencilIcon from "../images/pencil-icon.png"
+import PuzzleIcon from "../images/puzzle-icon.png"
+import AnimationIcon from "../images/animation-icon.png"
+import LaptopIcon from "../images/animation-icon.png"
+import LayoutIcon from "../images/layout-icon.png"
+import ResponsiveIcon from "../images/responsive-icon.png"
 
 const MotionFlex = motion(Flex);
 const MotionBox = motion(Box);
@@ -30,73 +38,15 @@ const HeroArea = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
       /> */}
 
-       <Box position="absolute" width="100%" maxW={{base: "700px", lg: "1000px"}} 
+       {/* <Box position="absolute" width="100%" maxW={{base: "700px", lg: "1000px"}} 
       top="50%"
       
       left= "50%"
       
       transform= "translate(-50%, -50%)"
       >
-        {/* <Box
-          position="absolute"
-          width={{base: '32px', md: '44px'}} 
-          height={{base: '32px', md: '44px'}} 
-          left={{base: '-10px', md: '-10px'}}
-          top={{base: '-18px', md: '-22px'}}
-          bg="radial-gradient(rgba(246, 255,248, 0.6) 0%, rgba(246, 255,248, 0) 80%)"
-          zIndex="0"
-          borderRadius="9999px"
-          backdropFilter="blur(5px)"
-           >
-            
-         
-           <Image src={DesignIcon} maxW={{base: '32px', md: '44px'}}  /> 
-        </Box> */}
-        {/* <Box position="absolute" width="100%" height="4px" bg="#97E8A9" top="0" zIndex="-1">
-          <motion.div
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "-10px",
-              width: "12px",
-              height: "6px",
-              borderRadius: "50%",
-              boxShadow: "0 0 20px 2px rgba(209, 207, 255, 1)",
-              background: "rgb(227, 255, 234)",
-              transform: "translateY(-50%)",
-              filter: "blur(2px)"
-            }}
-            initial={{ left: "calc(0% - 10px)" }}
-            animate={{
-              left: ["calc(0% - 10px)", "calc(100% + 10px)", "calc(0% - 10px)"],
-            }}
-            transition={{
-              delay: 1,
-              duration: 8,
-              ease: 'easeInOut',
-
-              repeat: Infinity,
-              repeatDelay: 0
-            }}
-          />
-
-        </Box> */}
-        {/* <Box
-          position="absolute"
-          width={{base: '32px', md: '44px'}} 
-          height={{base: '32px', md: '44px'}} 
-          right={{base: '-10px', md: '-10px'}}
-          top={{base: '-18px', md: '-22px'}}
-          bg="radial-gradient(rgba(246, 255,248, 0.6) 0%, rgba(246, 255,248, 0) 80%)"
-          zIndex="0"
-          borderRadius="9999px"
-          backdropFilter="blur(5px)"
-           >
-            
-
-          <Image src={CodeIcon} maxW={{base: '32px', md: '44px'}} /> 
-        </Box> */}
-      </Box> 
+        <Image src={HeroBg} maxW={{base: '100%', md: '100%'}} /> 
+      </Box>  */}
 
 
       <MotionFlex

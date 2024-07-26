@@ -14,6 +14,7 @@ import { Helmet } from "react-helmet";
 import { motion, useScroll, useTransform } from 'framer-motion';
 // const MotionBox = motion(Box);
 
+
 const Home = () => {
   const { scrollY } = useScroll();
 
@@ -22,14 +23,12 @@ const Home = () => {
   return (
     <Box>
       <Box position="fixed" width="100%" height="calc(60vh + 64px)" zIndex="0" top="0" display="flex" justifyContent="center" alignItems={{base: 'center', lg: "center"}} 
-      bg="#a6ffba"
-      
-      >
+      bgColor="#a6ffba">
         <HeroAnimation />
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>
-        <Box mt={{ base: "65vh"}} >
+        <Box mt={{ base: "60vh"}} >
           <SelectedProjects />
         </Box>
       </motion.div>
