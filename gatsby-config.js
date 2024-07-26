@@ -53,17 +53,5 @@ module.exports = {
     },
    
     `gatsby-plugin-react-helmet`,
-    // {
-    //   resolve: `gatsby-plugin-react-helmet`,
-    //   options: {
-    //     headComponents: [
-    //       `<link
-    //         key="adobe-fonts"
-    //         rel="stylesheet"
-    //         href="https://use.typekit.net/YOUR_PROJECT_ID.css"
-    //       />`,
-    //     ],
-    //   },
-    // },
   ],
 }

@@ -107,8 +107,8 @@ const Cards = () => (
       description="Website Redesign / Case Study"
       imageSrc={MendeleyProjectImage}
       showComingSoon={false}
-      imgWidth="auto"
-      imgHeight="120%"
+      imgWidth="133%"
+      imgHeight="auto"
       index={0} 
       year="2022"
     />
@@ -119,7 +119,7 @@ const Cards = () => (
       imageSrc={CubixHero}
       showComingSoon={false}
       imgWidth="auto"
-      imgHeight="132%"
+      imgHeight="95%"
       index={1} 
       year="2024"
     />

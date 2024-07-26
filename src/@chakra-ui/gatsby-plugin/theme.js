@@ -13,8 +13,8 @@ const theme = extendTheme({
         {
           fontFamily: 'Prociono',
           src: `
-            url('/fonts/Prociono-Regular.woff2') format('woff2'),
-            url('/fonts/Prociono-Regular.woff') format('woff')
+            url('../fonts/Prociono-Regular.ttf') format('ttf'),
+            url('../fonts/Prociono-Regular.woff') format('woff')
           `,
           fontWeight: 'normal',
           fontStyle: 'normal',
@@ -187,8 +187,26 @@ const theme = extendTheme({
     Button: {
       variants: {
         "outline":{
+          fontSize: "22px",
+          color: "#0A0911",
+          borderColor: "#0A0911",
+          borderWidth: "2px",
+          borderRadius: '8px',
+          bg: "transparent",
+          paddingLeft: '2rem',
+          paddingRight: '2rem',
+          height: "4rem",
+          _hover: {
+            bg: "#76b584",          
+          },
+          _active: {
+            bg: "#76b584",
+          }
+  
+        },
+        "filled":{
           fontSize: "20px",
-          color: "#6C63FF",
+          color: "#f4f4f4",
           borderColor: "#6C63FF",
           borderWidth: "1px",
           borderRadius: '8px',

@@ -9,6 +9,7 @@ import OtherProjects from '../components/other-projects';
 import CVSection from '../components/cv-section';
 import HeroAnimation from '../components/hero-animation';
 import useScrollToTop from "../hooks/useScrollToTop";
+import About from "../components/about-me"
 import { Helmet } from "react-helmet";
 import { motion, useScroll, useTransform } from 'framer-motion';
 // const MotionBox = motion(Box);
@@ -24,16 +25,23 @@ const Home = () => {
       bg="#a6ffba"
       
       >
-        {/* <HeroAnimation /> */}
+        <HeroAnimation />
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>
-        <Box mt={{ base: "60vh"}} >
+        <Box mt={{ base: "65vh"}} >
           <SelectedProjects />
         </Box>
       </motion.div>
       <OtherProjects />
+      <Box bg="#a6ffba"  zIndex="9" position="relative">
+        <About/>
+      </Box>
+      {/* <Box bg="#a6ffba" zIndex="9" position="relative">
       <CVSection />
+      </Box> */}
+      
+      
     </Box>
   );
 };

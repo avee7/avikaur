@@ -4,14 +4,14 @@ export const Typography = {
       "6xl":  {
         "fontSize":  120,
         "fontFamily":  "Prociono",
-        "fontWeight":  500,
+        "fontWeight":  600,
         "lineHeight":  "100%",
         "textDecoration":  "NONE"
       },
       "5xl":  {
         "fontSize":  92,
         "fontFamily":  "Prociono",
-        "fontWeight":  500,
+        "fontWeight":  600,
         "lineHeight":  "100%",
         "textDecoration":  "NONE"
       },
@@ -24,8 +24,8 @@ export const Typography = {
       },
       "3xl":  {
         "fontSize":  48,
-        "fontFamily":  "'Source Sans 3', sans-serif",
-        "fontWeight":  500,
+        "fontFamily":  "Prociono",
+        "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
@@ -85,7 +85,7 @@ export const Typography = {
         "fontWeight":  "300",
         "lineHeight":  "18px",
         "textDecoration":  "NONE",
-        "letterSpacing": "-0.7px"
+        "letterSpacing": "-0.5px"
       },
       "font-medium":  {
         "fontSize":  12,
@@ -108,7 +108,7 @@ export const Typography = {
         "fontFamily":  "'Source Sans 3', sans-serif",
         "fontWeight":  "300",
         "lineHeight":  "21px",
-        "letterSpacing": "-0.7px",
+        "letterSpacing": "-0.5px",
         "textDecoration":  "NONE"
       },
       "font-medium":  {
@@ -131,7 +131,7 @@ export const Typography = {
         "fontFamily":  "'Source Sans 3', sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "24px",
-        "letterSpacing": "-0.7px",
+        "letterSpacing": "-0.5px",
         "textDecoration":  "NONE"
       },
       "font-medium":  {
@@ -156,7 +156,7 @@ export const Typography = {
         "fontFamily":  "'Source Sans 3', sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "27px",
-        "letterSpacing": "-0.7px",
+        "letterSpacing": "-0.5px",
         "textDecoration":  "NONE"
       },
       "font-medium":  {
