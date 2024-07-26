@@ -1,16 +1,7 @@
 import React from "react";
 import { Flex, Box, Heading, Text, Stack, Image } from '@chakra-ui/react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import CodeIcon from "../images/code-icon.png"
-import PaletteIcon from "../images/palette-icon.png"
-import LayersIcon from "../images/layers-icon.png"
-import FigmaIcon from "../images/figma-icon.png"
-import PencilIcon from "../images/pencil-icon.png"
-import PuzzleIcon from "../images/puzzle-icon.png"
-import AnimationIcon from "../images/animation-icon.png"
-import LaptopIcon from "../images/animation-icon.png"
-import LayoutIcon from "../images/layout-icon.png"
-import ResponsiveIcon from "../images/responsive-icon.png"
+
 
 const MotionFlex = motion(Flex);
 const MotionBox = motion(Box);

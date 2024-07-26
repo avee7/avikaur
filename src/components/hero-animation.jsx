@@ -27,7 +27,7 @@ function HeroAnimation() {
     <Box>
 
 
-      <Box position="absolute" left="0" top="0" height='80vh' width="100%">
+      <Box position="absolute" display={{base: "none", lg: "block"}} left="0" top="0" height='80vh' width="100%">
 
         <motion.div
           style={{
@@ -165,8 +165,9 @@ function HeroAnimation() {
       </Box>
 
       <Box position="absolute" left="0" top="0" height="100%" width="100%" bgImage={`url(${HeroBg})`}
-        bgSize="cover"
-        bgPosition={{ base: "bottom right", md: "top center" }}></Box>
+        bgSize={{base: "250% auto", sm:"cover"}}
+        bgRepeat="no-repeat"
+        bgPosition={{ base: "20% 25%", xl: "center center" }}></Box>
     </Box>
 
 

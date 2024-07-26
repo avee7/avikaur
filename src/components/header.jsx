@@ -31,10 +31,10 @@ const Header = ({ headerBg = "transparent", textColour }) => {
       position="sticky"
       top="0"
       zIndex="sticky"
-      width="100%"
+      width="100vw"
       backdropFilter="blur(8px)"
     >
-      <Container px="3rem" width="100%" maxW="none">
+      <Container px={{base: "1rem", xl: "3rem"}} width="100%" maxW="none">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box as={Link} href='/' width="6rem">
             <Image src={logo} alt="logo" maxW="100%" />

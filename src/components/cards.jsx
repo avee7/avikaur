@@ -6,7 +6,7 @@ import DeltaProjectImage from "../images/airline-neutral.png";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
 import CubixHero from "../images/cubix-hero.png"
 
-const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, year }) => {
+const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, scale, year }) => {
   const cardVariants = {
     offscreen: {
       y: 50,
@@ -38,7 +38,7 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
   };
 
   return (
-    <Link href={href} style={{ textDecoration: 'none' }} flex="1 1 46%" maxW="47%" mb="5rem">
+    <Link href={href} style={{ textDecoration: 'none' }} maxW={{base: "none", md: "48%", xl: "47%"}}  mb="5rem">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
@@ -50,8 +50,8 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
           borderRadius="20px"
           position="relative"
           overflow="hidden"
-          p={10}
-          height="600px"
+          p={{base: "2rem", md: "4rem" }}
+          height={{base: '450px', xl: "600px"}}
           border="solid 1px rgba(224,224,224, 1)"
           // bg="rgba(157, 150, 255,0.05)"
           // bg="rgba(224,224,224,   0.2)"
@@ -61,7 +61,7 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
           justifyContent="center"
           alignItems="center"
         >
-          <Image src={imageSrc} width={imgWidth} height={imgHeight} maxW="none" />
+          <Image src={imageSrc} height={imgHeight} maxW="100%" transform={`scale(${scale})`} />
           {showComingSoon && (
             <motion.div
               variants={comingSoonVariants}
@@ -107,10 +107,11 @@ const Cards = () => (
       description="Website Redesign / Case Study"
       imageSrc={MendeleyProjectImage}
       showComingSoon={false}
-      imgWidth="133%"
+      imgWidth="100%"
       imgHeight="auto"
       index={0} 
       year="2022"
+      scale="1.5"
     />
     <Card
       href="./selected-projects/cubix-design-system/"
@@ -118,10 +119,11 @@ const Cards = () => (
       description="Multi-brand, themeable design system"
       imageSrc={CubixHero}
       showComingSoon={false}
-      imgWidth="auto"
-      imgHeight="95%"
+      imgWidth="100%"
+      imgHeight="auto"
       index={1} 
       year="2024"
+      scale="1.2"
     />
     <Card
       href="/"
@@ -129,10 +131,11 @@ const Cards = () => (
       description="Product Design"
       imageSrc={DuplicatesProjectImage}
       showComingSoon={true}
-      imgWidth="auto%"
-      imgHeight="105%"
+      imgWidth="100%"
+      imgHeight="auto"
       index={2}
       year="2023"
+      scale="1.5"
     />
     <Card
       href="./selected-projects/airline-neutral-design-system/"
@@ -140,10 +143,11 @@ const Cards = () => (
       description="Multi-brand Design System"
       imageSrc={DeltaProjectImage}
       showComingSoon={false}
-      imgWidth="auto"
-      imgHeight="120%"
+      imgWidth="100%"
+      imgHeight="auto"
       index={3}
       year="2016"
+      scale="1.2"
     />
   </Flex>
 );
