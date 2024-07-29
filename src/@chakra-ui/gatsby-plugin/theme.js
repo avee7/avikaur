@@ -21,7 +21,7 @@ const theme = extendTheme({
         },
       ],
       'html, body': {
-        color: '#000',
+        color: '#0A0911',
       },
       'body': {
         fontFamily: "'Source Sans 3', sans-serif",
@@ -39,7 +39,7 @@ const theme = extendTheme({
   components: {    
     Heading: {
       baseStyle: {
-        color: '#000'
+        color: '#0A0911'
       },
       sizes: {
         '6xl': { 
@@ -103,7 +103,7 @@ const theme = extendTheme({
     },
     Text: {
       baseStyle: {
-        color: '#000'
+        color: '#0A0911'
       },
       sizes: {
         '3xl': {

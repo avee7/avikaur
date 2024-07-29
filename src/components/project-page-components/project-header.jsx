@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 
 const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient, imgMaxWidth, imgPadding }) => {
   return (
-    <Box bg={bg}>
+    <Box bg={bg} position="fixed" top="0" left="0" height="100vh" width="100%">
       <Container maxW="1300px">
         <Flex
           mx="auto"
-          p={{ base: '7rem 0 3rem', md: '14rem 0 4rem' }}
+          p={{ base: '3rem 0', md: '4rem 0 4rem' }}
           alignItems="center"
           justifyItems="center"
           direction="column"
@@ -53,7 +53,6 @@ const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient
               height="auto"
               width="100%"
               mx="auto"
-              padding={imgPadding}
             />
           </motion.div>
         </Flex>

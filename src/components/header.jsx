@@ -31,7 +31,7 @@ const Header = ({ headerBg = "transparent", textColour }) => {
       position="sticky"
       top="0"
       zIndex="sticky"
-      width="100vw"
+      width="100%"
       backdropFilter="blur(8px)"
     >
       <Container px={{base: "1rem", xl: "3rem"}} width="100%" maxW="none">

@@ -2,36 +2,30 @@ import React from "react"
 import { Box, Text, Heading, Image, Flex, Container } from '@chakra-ui/react'
 import quoteImg from "../../images/quote.png"
 
-import AalekhPreview from '../../images/aalekh-screens.png';
+
+import ProductPreview from '../../images/cubix-multi-mode.png';
 
 
 
 
 
 const CubiXPreview = () => (
-  <Container maxW="1300px" py={{ base: "6rem", md: "11rem" }}>
-    <Flex gap="3rem" width="100%" justifyContent="space-between" direction={{ base: 'column', md: 'row' }}>
-      <Heading size={{ base: '3xl', md: '4xl' }}>Multi-Brand, <br />Multi-Mode</Heading>
-      <Text size="lg" pt="1rem" maxW="600px">
-      Starting with the product design for Aalekh, we built a design system which not only supports multiple modes, but also gives flexibility to add multiple brands too.
-      </Text>
-    </Flex>
-    
-    
-    <Flex mt={{ base: "2rem", md: "4rem" }} direction={{ base: 'column'}}>
-      
-      <Box width="full" mt="2rem">
-        <Image src={AalekhPreview} width="100%" borderRadius="12px" />
-      </Box>
-     
-     
-     
+  <Box pt={{ base: "4rem", md: "8rem" }}>
+    <Container maxW="1300px">
+      <Flex gap="3rem" width="100%" justifyContent="space-between" direction={{ base: 'column' }}>
+        <Heading size={{ base: '3xl', md: '4xl' }} color="#f4f4f4">Multi-Brand, Multi-Mode</Heading>
+        <Text size="lg" pt="1rem" maxW="600px" color="#f4f4f4">
+          Beginning with the product design for Aalekh, we set out to develop a design system that not only supports multiple modes but also offers the flexibility to integrate multiple brands.
+        </Text>
+      </Flex>
+    </Container>
 
+    <Box width="full" mt={{base: "4rem", md: "8rem"}}>
+      <Image src={ProductPreview} maxW="100%" />
+    </Box>
 
-    </Flex>
-    
-    
-  </Container>
+  </Box>
+
 
 
 );

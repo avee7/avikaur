@@ -7,14 +7,13 @@ import quoteImg from "../../images/quote.png"
 
 
 const CubiXChallenge = () => (
-  <Container maxW="1300px" py={{ base: "7.5rem", md: "15rem" }}>
+  <Container maxW="1300px" py={{ base: "5rem", md: "10rem" }}>
 
     <Flex gap="1rem" width="100%" justifyContent="space-between" direction={{ base: 'column' }}>
-      <Heading size={{ base: '3xl', md: '4xl' }}>The Challenge</Heading>
-      <Text size="lg" maxW="600px">
-      We wanted to build a flexible design system that not only supports multiple brands, but also has the power to
-        support multiple modes within the same brand. Based on design tokens, I started mapping down the plan. The challenge was to translate this
-        methodology in Figma and communicate it to the product and dev team.
+      <Heading size={{ base: '2xl', md: '3xl' }} color="#0A0911">Objective</Heading>
+      <Text size="lg" maxW="600px" color="#0A0911">
+      Our primary challenge was to create a flexible design system that could support multiple brands and various modes within the same brand. This required a robust framework based on design tokens, ensuring consistency and adaptability. 
+      Translating this methodology into Figma and effectively communicating and then reviewing with the product and dev teams was crucial for the project's success.
       </Text>
     </Flex>
 

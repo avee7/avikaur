@@ -2,8 +2,10 @@ import React from "react"
 import {
   Stack, Box, Text, Heading, Image, Flex, Container
 } from '@chakra-ui/react'
-import ProductPreview from '../../images/cubix-multi-mode.png';
 import FileStructure from '../../images/cubix-file-structure.jpg';
+import ProjectPlan from '../../images/cubix-project-plan.png'
+import AalekhPreview from '../../images/aalekh-screens.png';
+import CubixFinal from "../../images/cubix-final.png"
 
 
 
@@ -12,106 +14,175 @@ const CubixProcess = () => {
 
 
   return (
-    <Box py={{ base: "7.5rem", md: "15rem" }}>
-      <Container maxW="1300px">
-      <Heading size={{ base: '3xl', lg: '4xl' }} mb={{ base: "2rem", md: "4rem" }}>The Journey</Heading>
-      <Flex direction="column" gap="8rem">
-      <Flex direction="column" gap={2} maxW="1020px">
-        <Text size="md" color="#7B7A7E" textTransform="uppercase">Defining the problem</Text>
-        
-        <Heading size={{base: 'lg', md: 'xl'}}>Defining the plan</Heading>
-        <Text size="lg" pt={2}>
-        I partnered with the company CEO to chalk down what are the expected timelines we have for building this design system. We wanted to build this alongwith 
-        the product we are working on. Since it was a project which we were building from scratch, we set up some milestones.
-        </Text>
-        
-      </Flex>
+    <Box pb={{ base: "7.5rem", md: "15rem" }}>
+      <Box bg="#0A0911" width="100%" py={{ base: "4rem", md: "8rem" }} textAlign="center">
+        <Heading size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4">The Journey</Heading>
+        <Text size={{ base: 'xl', lg: '2xl' }} color="#f4f4f4" mt={{ base: "1rem", md: "2rem" }}>Planning and process to acheive a themeable multi-brand design system</Text>
 
-      <Flex direction="column" gap={2} maxW="1020px">
-        <Text size="md" color="#7B7A7E" textTransform="uppercase">Creating a brand-identity and components systems</Text>
-        <Heading size={{ base: 'lg', md: 'xl' }}>Catalog everything</Heading>
-        <Box>
-          <Text size="lg" pt="2rem">
-            With the product we were building, I catalogued everything - everything starting from foundations till patterns. Since 
-            it was a greenfield project, we had the advantage of not carrying and backlog. We had already built a good foundations and components 
-            but it was based on only base tokens and didn't have the infrastructure for semantic tokens in place.
+      </Box>
+
+
+
+      <Container maxW="1300px" pt={{ base: "5rem", md: "10rem" }} pb={{ base: "3rem", md: "6rem" }}>
+
+        <Flex direction="column" gap={{ base: "3rem", md: "6rem" }} >
+          <Box maxW="660px">
+            <Text size="md" color="#7B7A7E" textTransform="uppercase" pb={{ base: "0.5rem", md: "1rem" }}>Defining the problem</Text>
+
+            <Heading size={{ base: 'lg', md: 'xl' }}>Defining the plan</Heading>
+            <Text size="lg" pt={{ base: "1rem", md: "2rem" }}>
+              To kick off the project, I collaborated closely with the CEO to outline the timeline and milestones.
+              We aimed to develop the design system concurrently with our primary product, Aalekh, setting clear goals and deliverables for each phase.
             </Text>
-            
-          {/* <Image src={DesignTokens} width={{base: '100%'}} mt="3rem" /> */}
-        </Box>
-       
-      </Flex>
-      
-      <Flex direction="column" gap={2} maxW="1020px" >
-        <Text size="md" color="#7B7A7E" textTransform="uppercase">Communication and Implementation for iOS and Android teams</Text>
-        <Heading size={{ base: 'lg', md: 'xl' }}>First iteration of Semantic layer</Heading>
-        <Box>
-          <Text size="lg" pt={2}>
-            We had created designs for our first products using base tokens. That is, simply naming the raw values. The project was building on Chakra UI,
-            so I utlised the foundation values (colour, typography, radius, spacing) provided by Chakra UI and linked them to base tokens.
-            For setting up the semantic layer, I researched hundreds of articles and analysed many famous design system like material design, lightening design system,
-            carbon design system, wise design system, Atlassian design system, etc. 
-            I drew inspiration from the Github's approach and setup a semantic layer for colours, typography, border radius, spacing, breakpoints, shadows, etc.
 
-         
-          </Text>
-          <Text size="lg" pt={2}>
-            After discussing the approach with the product and engineering team, I decided to stress test this for a few months. 
-          </Text>
-        </Box>
-        {/* <Image src={FinalProduct} width={{base: '100%', md: '60%'}} m="3rem 0 5rem" /> */}
-      </Flex>
-      <Flex direction="column" gap={2} maxW="1020px" >
-        <Text size="md" color="#7B7A7E" textTransform="uppercase">Communication and Implementation for iOS and Android teams</Text>
-        <Heading size={{ base: 'lg', md: 'xl' }}>Second iteration of Semantic layer</Heading>
-        <Box>
-          <Text size="lg" pt={2}>
-            In the second iteration, I interviewed the designers and dev team, to understand the challenges faced by them. Documented the challenges the are facing.
-            I also evaluated the places where the components are using values directly from the base tokens.
-          </Text>
-         
-        </Box>
-        <Box width="full">
-      <Image src={FileStructure} width="100%" borderRadius="12px" />
-    </Box>
-       
-      </Flex>
-      <Flex direction="column" gap={2} maxW="1020px" >
-        <Text size="md" color="#7B7A7E" textTransform="uppercase">Communication and Implementation for iOS and Android teams</Text>
-        <Heading size={{ base: 'lg', md: 'xl' }}>Extending it for the other product</Heading>
-        <Box>
-         
-          <Text size="lg" pt={2}>
-            Now, was the time of building another product, so I had to refine the approach for Figma files for supporting multiple brands and their respective modes too.
-          Therefore, I created a figma file system structure that could support multiple brands in future. 
-          </Text>
-          {/* Image for cubix file structure */}
-          <Text size="lg" pt={2}>
-            Also, I further refined the semantic layer by understanding the problems and focusing a coherent experience.
-          </Text>
-        </Box>
-       
-      </Flex>
-      <Flex direction="column" gap={2} maxW="1020px" >
-        <Text size="md" color="#7B7A7E" textTransform="uppercase">Communication and Implementation for iOS and Android teams</Text>
-        <Heading size={{ base: 'lg', md: 'xl' }}>A system is born</Heading>
-        <Box>
-         
-          <Text size="lg" pt={2}>
-            After testing it with the existing designs and receiving feedback from the devs and designers, we are working on the documentation. But as we are working very closely with the develooment team, the team is already implentating changes and are making progress quickly.            
-          </Text>
-          {/* Image for snapshots from the design system */}
+          </Box>
+          <Box width="100%" maxW="980px">
+          <Image src={ProjectPlan} maxW="100%" />
+
+          </Box>
+
           
-        </Box>
-      <Box width="full">
-      <Image src={ProductPreview} width="100%" borderRadius="12px" />
-    </Box>
-       
-      </Flex>
-      </Flex>
+
+        </Flex>
       </Container>
 
-     
+
+
+
+      <Box bg="#EFF2F6">
+        <Container maxW="1300px" pt={{ base: "4rem", md: "8rem" }} pb={{ base: "4rem", md: "8rem" }}>
+          <Flex direction="column" gap={{ base: "1.5rem", md: "3rem" }} bg="#EFF2F6">
+            <Text size="md" color="#7B7A7E" textTransform="uppercase">Defining approach and creating tokens</Text>
+
+            <Flex direction={{ base: "column", md: "row" }} gap={{ base: "2rem", md: "2rem" }}>
+              <Box>
+                <Heading size={{ base: 'lg', md: 'xl' }}>Setting the foundations</Heading>
+                <Text size="lg" pt={{ base: "1rem", md: "2rem" }}>
+                  From the outset, we intended to build a multi-brand design system. I researched and analysed various design systems to inform our approach. Based on this research, I established the foundational elements, including colour, typography, radius, spacing, and elevation, through base and semantic tokens.
+                </Text>
+
+              </Box>
+              <Box>
+                <Heading size={{ base: 'lg', md: 'xl' }}>Creating components</Heading>
+                <Text size="lg" pt={{ base: "1rem", md: "2rem" }}>
+                  Utilising these foundations, we designed the initial screens for Aalekh. During this process, we extracted reusable components, ensuring consistency and efficiency. After consulting with the engineering team, we embarked on a trial phase for our design system.
+                </Text>
+
+              </Box>
+            </Flex>
+          </Flex>
+
+        </Container>
+        <Image src={AalekhPreview} maxW="100%" />
+      </Box>
+
+
+      <Box>
+        <Container maxW="1300px" pt={{ base: "4rem", md: "8rem" }} pb={{ base: "4rem", md: "8rem" }}>
+          <Flex direction="column" maxW="660px" >
+            <Text size="md" color="#7B7A7E" textTransform="uppercase" pb={{ base: "0.5rem", md: "1rem" }}>Getting feedback and iterating</Text>
+            <Heading size={{ base: 'lg', md: 'xl' }}>Iterating on the Semantic layer</Heading>
+            <Box>
+              <Text size="lg" pt={{ base: "1rem", md: "2rem" }}>
+                I conducted interviews with designers and the dev team to identify challenges and areas for improvement. Documenting these insights, I evaluated the use of base tokens and made necessary adjustments to enhance the semantic layer.
+              </Text>
+
+            </Box>
+
+
+          </Flex>
+        </Container>
+      </Box>
+
+      <Box bg="#F2F2F2">
+        <Container maxW="1300px" pt={{ base: "4rem", md: "8rem" }} pb={{ base: "4rem", md: "8rem" }}>
+
+          <Flex direction="column" gap={{ base: "1.5rem", md: "3rem" }} alignItems="center">
+
+
+
+            <Box maxW="660px">
+              <Heading size={{ base: 'lg', md: 'xl' }} color="#0A0911 ">Scaling for Future Brands and Products</Heading>
+
+
+              <Text size="lg" color="#0A0911" pt={{ base: "1rem", md: "2rem" }}>
+                As we began working on a new product, I refined our Figma file structure to support multiple brands and their respective modes. This involved creating a scalable system that could accommodate future brands and ensuring a coherent user experience across products.
+              </Text>
+            </Box>
+          </Flex>
+
+          <Box width="100%" maxW="1000px" mt={{ base: "0.5rem", md: "1rem" }}  mx="auto">
+            <Image src={FileStructure} maxW="100%" />
+          </Box>
+
+
+        </Container>
+
+      </Box>
+
+      <Box bg="#2C73B3" width="100%" py={{ base: "4rem", md: "8rem" }}>
+        <Container maxW="1300px" textAlign="center" width="100%">
+        <Heading size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4">A system is born</Heading>
+        <Text size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4" mt={{ base: "1rem", md: "2rem" }}>“A design system isn’t a project. It’s a product serving products.”
+          <br />
+          – Brad Frost</Text>
+          </Container>
+
+      </Box>
+
+      <Container maxW="1300px" pb={{ base: "5rem", md: "10rem" }} pt={{ base: "3rem", md: "6rem" }}>
+        <Flex direction="column" gap={{ base: "3rem", md: "6rem" }}>
+
+          <Box maxW="660px">
+            <Text size="lg">
+              After rigorous testing and continuous feedback, our design system began to take shape. We started documenting the system comprehensively, allowing for seamless adoption and implementation by the development team. This close collaboration enabled rapid progress and swift integration of changes.
+            </Text>
+
+
+          </Box>
+          <Box width="100%" >
+            <Image src={CubixFinal} maxW="100%" borderRadius="12px" border="solid 1px rgba(60,61,59,0.2)"/>
+          </Box>
+
+        </Flex>
+
+      </Container>
+
+
+      <Box bg="#0A0911" width="100%" py={{ base: "4rem", md: "8rem" }} textAlign="center">
+        <Heading size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4">Next Steps</Heading>
+        <Text size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4" mt={{ base: "1rem", md: "2rem" }}>“Design systems are never complete; they are always in a state of evolution.”
+          <br />– Alla Kholmatova</Text>
+
+      </Box>
+      <Container maxW="1300px" pt={{base: "3rem", md: "6rem" }} display="flex" width="100%">
+      <Flex direction={{ base: "column", md: "row" }} flexWrap="wrap" gap={{base: "2rem", lg: '0'}}>
+              <Flex direction="column" flex="1 1 auto" maxW={{base: '100%', lg: "calc(100% / 12 * 4)"}} width={{base: '100%', lg: "calc(100% / 12 * 4)"}} flexBasis={{base: '100%', lg: "calc(100% / 12 * 4)"}} pl="0rem" pr={{base: '0', lg: "2rem"}}>
+                <Heading size={{ base: 'lg', md: 'xl' }}>Encourage Iterative Improvement</Heading>
+                <Text size="lg" pt="2rem">
+                Design systems require ongoing maintenance and improvement. Continuously collect feedback from all teams and users to identify areas for refinement. Encourage teams to provide suggestions, fostering a culture of continuous improvement.</Text>
+
+              </Flex>
+              <Flex direction="column" flex="1 1 auto" maxW={{base: '100%', lg: "calc(100% / 12 * 4)"}} width={{base: '100%', lg: "calc(100% / 12 * 4)"}} flexBasis={{base: '100%', lg: "calc(100% / 12 * 4)"}} pl={{base: '0', lg: "2rem"}} pr={{base: '0', lg: "2rem"}}>
+                <Heading size={{ base: 'lg', md: 'xl' }}>Promote Adoption</Heading>
+                <Text size="lg" pt="2rem">
+                Promote collaboration and adoption of the design system among teams. Encourage the use of components and adherence to guidelines. Provide ongoing support, resources, and communication channels to promote adoption of the design system.</Text>
+
+              </Flex>
+              <Flex direction="column" flex="1 1 auto" maxW={{base: '100%', lg: "calc(100% / 12 * 4)"}} width={{base: '100%', lg: "calc(100% / 12 * 4)"}} flexBasis={{base: '100%', lg: "calc(100% / 12 * 4)"}} pl={{base: '0', lg: "2rem"}} pr="0rem">
+                <Heading size={{ base: 'lg', md: 'xl' }}>Evaluate and Refine</Heading>
+                <Text size="lg" pt="2rem">
+                Evaluate the design system's impact and effectiveness. Track key metrics to assess improvements in efficiency, collaboration, and consistency. 
+                </Text>
+
+              </Flex>
+            </Flex>
+      </Container>
+
+
+
+
+
 
     </Box>
   )
