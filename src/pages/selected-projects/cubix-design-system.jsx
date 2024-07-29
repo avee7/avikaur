@@ -24,7 +24,8 @@ const Cubix = () => {
       </Helmet>
       <Box overflow="hidden" position="relative" mt="-78px">
         <ProjectPageHeader
-          bg="linear-gradient(135deg, #2C74B3 0%, #12A594 100%)"
+          // bg="linear-gradient(135deg, #2C74B3 0%, #12A594 100%)"
+          bg="#2C74B3"
           img={CubixHero}
           headingColor="#f4f4f4"
           imgMaxWidth={{base: '100%', xl: '100%'}}
@@ -48,7 +49,7 @@ const Cubix = () => {
           <Box bg="#fff">
             <CubixProcess />
           </Box>
-          {/* <KeyLearnings /> */}
+         
         
         
       </Box>

@@ -18,40 +18,48 @@ const MendeleyHomePageRedesign = () => {
   useScrollToTop();
 
   return (
-    <Layout>
+    <Layout textColour="dark">
       <Helmet>
         <title>Mendeley Home Page — Avinash Kaur</title>
       </Helmet>
       <Box overflow="hidden" position="relative" mt="-78px">
         <ProjectPageHeader
-          title="Beyond Reference Management"
-          subtitle="Elevating Mendeley's Homepage for today’s researchers."
-          bg="linear-gradient(135deg, #007398, #99C7D5)"
+          bg="#B8E2E8"
           img={HomePage}
           headingColor="#e0e0e0" 
-          imgMaxWidth="1000px"
-          imgPadding={{base: '1rem 0 0', md: '2rem 0 0'}} />
+           />
 
       </Box>
 
-      <Box borderRadius="12px 12px 0 0" bg="#0A0911" mt="-12px" position="relative" zIndex="4">
-        <Container maxW="1300px" mt={{base: "3rem", md: "6rem"}}>
+     
 
-          <HomepageIntroduction />
-          <NewHomePagePreview />
-          <InceptionAndProcess />
-          <ConceptTesting />
-        </Container>
-        <Box bg="rgba(90, 93, 159, 0.1)">
-
-          <SolutionPhase />
-
-        </Box>
+      <Box borderRadius="12px 12px 0 0" bg="#fff" position="relative" zIndex="4" marginTop={{base: '100vh'}}>
         <Container maxW="1300px">
-          <MFinalSolution />
-          <KeyLearnings />
-        </Container>
 
+        <HomepageIntroduction />
+        </Container>
+          <Box bg="#0A0911" >
+          <NewHomePagePreview />
+          
+          </Box>
+
+          <Box bg="#F6F6F6">
+          <ConceptTesting />
+          </Box>
+          
+          <Box bg="#fff">
+          <InceptionAndProcess />
+          </Box>
+          <SolutionPhase />
+          <Box bg="#0A0911">
+          <MFinalSolution />
+          
+        </Box>
+        <Box>
+        <KeyLearnings />
+        </Box>
+        
+        
       </Box>
 
     </Layout >

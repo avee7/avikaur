@@ -10,22 +10,27 @@ import TestMethods from "../../images/mendeley-research-plan.png"
 const ConceptTesting = () => {
 
   return (
-    <Box mt={{ base: "6rem", lg: "8rem" }}>
-      <Flex direction="column" gap={2} maxW="1020px">
+    <Container maxW="800px" py={{ base: "6rem", md: "8rem" }}>
+
+    
+    
+      <Flex direction="column" gap={{base: "0.5rem", md: "1rem"}}>
         <Text size="md" color="#7B7A7E" textTransform="uppercase">Concept testing</Text>
-        <Heading size={{ base: 'lg', md: 'xl' }}>Testing the Waters</Heading>
-        <Box>
-          <Text size="lg" pt={2}>
+        <Heading size={{ base: '2xl', md: '3xl' }} color="#0A0911">Testing the Waters</Heading>
+        {/* <Heading size={{ base: 'lg', md: 'xl' }}></Heading> */}
+        <Box pt={{base: "1rem", md: "2rem"}}>
+          <Text size="lg">
             I translated conceptual ideas into tangible prototypes and validated them through comprehensive
-            user research. The objectives were to assess the clarity of Mendeley's value proposition,
-            evaluate trust in the brand and user engagement with the product,
-            determine the understandability of the content, and
+            user research comprising of qual and quant methods.
+            
+            </Text>
+            <Text size="lg" pt={{base: "1rem"}}>
+            The objectives were to assess the clarity of Mendeley's value proposition,
+            evaluate trust in the brand and user engagement with the product, and
             analyse the discoverability and findability of the content.
             
             </Text>
-            <Text size="lg" pt={2}>
-            To better understand the user needs, I used a hybrid approach comprising of qual and quant methods.
-            </Text>
+           
 
             <Image mt={{base: "1rem", md: "4rem"}} src={TestMethods} width="100%" />
 
@@ -33,7 +38,8 @@ const ConceptTesting = () => {
         </Box>
       </Flex>
 
-    </Box>
+    
+    </Container>
   )
 
 

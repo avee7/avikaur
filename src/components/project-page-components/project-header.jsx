@@ -8,7 +8,7 @@ const ProjectHeader = ({ title, subtitle, bg, img, headingColor, headingGradient
       <Container maxW="1300px">
         <Flex
           mx="auto"
-          p={{ base: '3rem 0', md: '4rem 0 4rem' }}
+          p={{ base: '3rem 0', md: '4rem 0' }}
           alignItems="center"
           justifyItems="center"
           direction="column"

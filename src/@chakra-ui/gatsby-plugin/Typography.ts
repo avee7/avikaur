@@ -54,7 +54,7 @@ export const Typography = {
       "md":  {
         "fontSize":  20,
         "fontFamily":  "'Source Sans 3', sans-serif",
-        "fontWeight":  500,
+        "fontWeight":  600,
         "lineHeight":  "150%",
         "fontStyle": "normal",
         "textDecoration":  "NONE"
