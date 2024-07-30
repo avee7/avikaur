@@ -16,7 +16,7 @@ import {
   Container
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import darkLogo from '../images/avee-logo-dark.png';
+import darkLogo from '../images/avee-logo.png';
 import lightLogo from '../images/avee-logo-light.png';
 
 const Header = ({ headerBg = "transparent", textColour }) => {
@@ -35,8 +35,8 @@ const Header = ({ headerBg = "transparent", textColour }) => {
       backdropFilter="blur(8px)"
     >
       <Container px={{base: "1rem", xl: "3rem"}} width="100%" maxW="none">
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box as={Link} href='/' width="6rem">
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'} pt="1rem">
+          <Box as={Link} href='/'>
             <Image src={logo} alt="logo" maxW="100%" />
           </Box>
 
