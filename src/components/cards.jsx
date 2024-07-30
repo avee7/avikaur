@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import MendeleyProjectImage from "../images/mendeley-project-image.png";
 import DeltaProjectImage from "../images/airline-neutral.png";
 import DuplicatesProjectImage from "../images/duplicates-image.png";
-import CubixHero from "../images/cubix-hero.png"
+import CubixHero from "../images/cubix-card.png"
 
 const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, scale, year }) => {
   const cardVariants = {
@@ -53,10 +53,7 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
           p={{base: "2rem", md: "4rem" }}
           height={{base: '450px', xl: "600px"}}
           border="solid 1px rgba(224,224,224, 1)"
-          // bg="rgba(157, 150, 255,0.05)"
-          // bg="rgba(224,224,224,   0.2)"
           bg="#eff2f7"
-          // bg="transparent"
           display="flex"
           justifyContent="center"
           alignItems="center"
@@ -79,7 +76,7 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
                 backgroundColor: 'rgba(0, 0, 0, 0.5)',
               }}
             >
-              <Text size="xl">Coming Soon</Text>
+              <Text size="2xl" color="#000">Coming Soon</Text>
             </motion.div>
           )}
         </Box>
@@ -125,6 +122,18 @@ const Cards = () => (
       year="2024"
       scale="1.2"
     />
+    {/* <Card
+      href="/"
+      title="Airline Neutral: Fly Delta Airlines"
+      description="Multi-brand Design System"
+      imageSrc={DeltaProjectImage}
+      showComingSoon={true}
+      imgWidth="100%"
+      imgHeight="auto"
+      index={3}
+      year="2016"
+      scale="1.2"
+    /> */}
     <Card
       href="/"
       title="Duplicates Management"
@@ -137,18 +146,7 @@ const Cards = () => (
       year="2023"
       scale="1.5"
     />
-    <Card
-      href="./selected-projects/airline-neutral-design-system/"
-      title="Airline Neutral: Fly Delta Airlines"
-      description="Multi-brand Design System"
-      imageSrc={DeltaProjectImage}
-      showComingSoon={false}
-      imgWidth="100%"
-      imgHeight="auto"
-      index={3}
-      year="2016"
-      scale="1.2"
-    />
+    
   </Flex>
 );
 

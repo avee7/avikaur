@@ -25,29 +25,6 @@ const OtherProjects = () => {
   const items = [
     {
       id: 1,
-      imageSrc: DSImage,
-      heading: "Design Systems",
-      subProjects: [
-        { name: "CubiX Design System", year: "2024", imgSrc: CubiXImg, role: "UX Designer (Product Design and Design System))", impact: [
-          "Streamlining Design Processes",
-          "Anticipated Efficiency Gains",
-          "Continuous Improvement"
-        ], description: "We're in the process of building a multi-brand platform designed to streamline and improve our product development. This initiative introduces foundational styles and scalable components to ensure uniformity and efficiency throughout CubixCraft’s diverse product lineup. It’s a key step toward making our development processes more cohesive and responsive to market demands." },
-        { name: "Isoshealth Pattern Library", year: "2017", imgSrc: isoshealthImg, role: "UX Designer, UI developer (solo project)", impact: [
-          "Established foundational styles",
-          "Unified UI components",
-          "Streamlined developer workflows",
-          "Enhanced design consistency"
-        ], description: "A dynamic living pattern library, inspired by Storybook and developed in ReactJS, designed to unify the user experience across client and practitioner platforms." },
-        { name: "MDUI Design System", year: "2021", imgSrc: MdUIImg, role: "UX Designer", impact: [
-          "Enhanced Interface Consistency across 6 Mendeley products",
-          "Streamlined User Interactions",
-          "Improved User Satisfaction"
-        ], description: "In a collaborative effort at Mendeley, we unified the user experience across six distinct products through design ideation workshops involving multiple UX teams. I played a key role in developing a cohesive visual language, which effectively eliminated inconsistencies and enhanced the usability of our entire product suite." }
-      ],
-    },
-    {
-      id: 2,
       imageSrc: ProductDesignImage,
       heading: "Product Design",
       subProjects: [
@@ -63,6 +40,29 @@ const OtherProjects = () => {
           "Positive User Feedback"
         ], description: "I led the integration of the 'Browse References' feature from the Mendeley Reference Manager into the Mendeley Cite plugin for Microsoft Word. This project aimed to enhance usability within a compact interface, carefully maintaining clarity and ease of use despite the inherent space constraints." },
         { name: "Navio", year: "2018", imgSrc: NavioImg, role: "UI Designer", impact: [], description: "In Macmillan Education, I designed engaging gaming experiences for pre-primary students, focusing on creating new activities that transform learning into an enjoyable journey. This initiative was aimed at enhancing educational engagement through interactive and fun learning methods." }
+      ],
+    },
+    {
+      id: 2,
+      imageSrc: DSImage,
+      heading: "Design Systems",
+      subProjects: [
+        // { name: "CubiX Design System", year: "2024", imgSrc: CubiXImg, role: "UX Designer (Product Design and Design System))", impact: [
+        //   "Streamlining Design Processes",
+        //   "Anticipated Efficiency Gains",
+        //   "Continuous Improvement"
+        // ], description: "We're in the process of building a multi-brand platform designed to streamline and improve our product development. This initiative introduces foundational styles and scalable components to ensure uniformity and efficiency throughout CubixCraft’s diverse product lineup. It’s a key step toward making our development processes more cohesive and responsive to market demands." },
+        { name: "Isoshealth Pattern Library", year: "2017", imgSrc: isoshealthImg, role: "UX Designer, UI developer (solo project)", impact: [
+          "Established foundational styles",
+          "Unified UI components",
+          "Streamlined developer workflows",
+          "Enhanced design consistency"
+        ], description: "A dynamic living pattern library, inspired by Storybook and developed in ReactJS, designed to unify the user experience across client and practitioner platforms." },
+        { name: "MDUI Design System", year: "2021", imgSrc: MdUIImg, role: "UX Designer", impact: [
+          "Enhanced Interface Consistency across 6 Mendeley products",
+          "Streamlined User Interactions",
+          "Improved User Satisfaction"
+        ], description: "In a collaborative effort at Mendeley, we unified the user experience across six distinct products through design ideation workshops involving multiple UX teams. I played a key role in developing a cohesive visual language, which effectively eliminated inconsistencies and enhanced the usability of our entire product suite." }
       ],
     },
     {
@@ -112,6 +112,7 @@ const OtherProjects = () => {
             borderWidth="1px" 
             borderColor="rgba(118, 181, 132, 0.4)"
             backdropFilter="blur(10px)"
+            cursor={ item.id === 3 ? 'default' : 'pointer' }
             role="group" // Add group role for hover effect
           >
             <MotionFlex
@@ -126,7 +127,6 @@ const OtherProjects = () => {
               color="#fff"
               zIndex="1" 
               mt="2rem"
-              // textShadow="0 0px 4px rgba(0, 0, 0, 0.5)"
               textTransform="uppercase"
                >{item.heading}</Text>
               {item.id === 3 && (

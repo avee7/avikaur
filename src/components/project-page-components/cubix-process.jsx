@@ -27,9 +27,9 @@ const CubixProcess = () => {
 
         <Flex direction="column" gap={{ base: "3rem", md: "6rem" }} >
           <Box maxW="660px">
-            <Text size="md" color="#7B7A7E" textTransform="uppercase" pb={{ base: "0.5rem", md: "1rem" }}>Defining the problem</Text>
+            <Text size="md" color="#7B7A7E" textTransform="uppercase" pb={{ base: "0.5rem", md: "1rem" }}>Defining the plan</Text>
 
-            <Heading size={{ base: 'lg', md: 'xl' }}>Defining the plan</Heading>
+            <Heading size={{ base: 'lg', md: 'xl' }}>Setting goals and milestones</Heading>
             <Text size="lg" pt={{ base: "1rem", md: "2rem" }}>
               To kick off the project, I collaborated closely with the CEO to outline the timeline and milestones.
               We aimed to develop the design system concurrently with our primary product, Aalekh, setting clear goals and deliverables for each phase.
@@ -52,7 +52,7 @@ const CubixProcess = () => {
       <Box bg="#EFF2F6">
         <Container maxW="1300px" pt={{ base: "4rem", md: "8rem" }} pb={{ base: "4rem", md: "8rem" }}>
           <Flex direction="column" gap={{ base: "1.5rem", md: "3rem" }} bg="#EFF2F6">
-            <Text size="md" color="#7B7A7E" textTransform="uppercase">Defining approach and creating tokens</Text>
+            <Text size="md" color="#7B7A7E" textTransform="uppercase">Creating design tokens</Text>
 
             <Flex direction={{ base: "column", md: "row" }} gap={{ base: "2rem", md: "2rem" }}>
               <Box>

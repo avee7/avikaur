@@ -25,15 +25,14 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
   return (
     <Modal isOpen={isOpen} onClose={handleClose} size="full">
       <ModalOverlay />
-      <ModalContent m={0} bg="rgba(10,19,17,0.1)" backdropFilter="blur(15px)" position="relative">
+      <ModalContent m={0} bg="rgba(0,0,0, 0.7)" backdropFilter="blur(15px)" position="relative">
         <Flex direction={{ base: 'column', lg: 'row' }}>
 
           <Box
             width="100%"
             height={{ base: '40vh', lg: '100vh' }} // Set height accordingly if different
             overflow="hidden"
-            bg="rgba(145, 128, 255, 0.5)"
-            // bg="#7B7A7E"
+            bg="#a6ffba"
             bgImage={`url(${project.imgSrc})`}
             bgPosition="center center"
             bgRepeat="no-repeat"
@@ -48,13 +47,14 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
       width="72px" // Specifies the width of the button
       height="72px" // Specifies the height of the button
       borderRadius="50%" // Makes the background circle
-      backgroundColor="rgba(26,26,26,0.15)"
-      color="#6C63FF" // Sets the color of the 'x' icon
+      backgroundColor="rgba(26,26,26,0.1)"
+      color="#fff" // Sets the color of the 'x' icon
       fontSize={{ base: "1.25rem", lg: "1.5rem" }}
       margin={{ base: "1rem 1rem 0 0", lg: "2rem 2rem 0 0" }}
       padding="1.5rem"
       _hover={{
-        backgroundColor: "#1a1a1a" // Changes background on hover for better interaction visibility
+        
+        backgroundColor: "rgba(118, 181, 132, 0.2)"
       }}
     />
             <Flex direction="column" height="100%">
@@ -64,20 +64,20 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
                     {heading} · {project.year}
                   </Text>
 
-                  <Heading size="2xl">{project.name || 'No Project Selected'}</Heading>
+                  <Heading size={{base: "2xl", md: "3xl"}} color="#fff">{project.name || 'No Project Selected'}</Heading>
 
 
                 </Box>
 
                 <Box>
-                  <Text size="md" maxWidth="40rem">
+                  <Text size="lg" maxWidth="40rem" color="#fff">
                     {project.description || 'No description available.'}
                   </Text>
                 </Box>
 
                 <Box>
                   <Text size="lg" mb={2} color="#7B7A7E">ROLE</Text>
-                  <Text size="md">{project.role}</Text>
+                  <Text size="lg" color="#fff">{project.role}</Text>
 
                 </Box>
 
@@ -86,7 +86,7 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
                     <Text size="lg" mb={2} color="#7B7A7E">IMPACT</Text>
                     <List spacing={2}>
                       {project.impact.map((item, index) => (
-                        <ListItem key={index}><Text size="md">{item}</Text></ListItem>
+                        <ListItem key={index}><Text size="lg" color="#fff">{item}</Text></ListItem>
                       ))}
                     </List>
                   </Box>
@@ -109,8 +109,8 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
       height= "auto" // Specifies the height of the button
       borderRadius= "50%" // Makes the background circle
       
-      border= "solid 2px #6C63FF"
-      color= "#6C63FF"
+      border= "solid 2px #fff"
+      color= "#fff"
       fontSize= "20px"
       // boxShadow="0px 4px 16px rgba(0, 0, 0, 0.2)" 
       padding= "1.5rem"
@@ -119,6 +119,10 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
       isDisabled={currentProjectIndex === 0}
       icon={<FaArrowLeft />} // Use left arrow icon
       aria-label="Previous Project"
+      _hover={{
+        
+        backgroundColor: "rgba(118, 181, 132, 0.2)"
+      }}
     />
     <IconButton
       position="absolute"
@@ -127,16 +131,19 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
       height= "auto" // Specifies the height of the button
       borderRadius= "50%" // Makes the background circle
       
-      border= "solid 2px #6C63FF"
-      color= "#6C63FF"
+      border= "solid 2px #fff"
+      color= "#fff"
       fontSize= "20px"
-      // boxShadow="0px 4px 16px rgba(0, 0, 0, 0.2)" 
       padding= "1.5rem"
       backgroundColor= "rgba(26,26,26,0.15)"
       onClick={handleNext}
       isDisabled={currentProjectIndex === subProjects.length - 1}
       icon={<FaArrowRight />} // Use right arrow icon
       aria-label="Next Project"
+      _hover={{
+        
+        backgroundColor: "rgba(118, 181, 132, 0.2)"
+      }}
     />
       </ModalContent>
     </Modal>
