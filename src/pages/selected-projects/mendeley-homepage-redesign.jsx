@@ -27,13 +27,14 @@ const MendeleyHomePageRedesign = () => {
           bg="#B8E2E8"
           img={HomePage}
           headingColor="#e0e0e0" 
+          marginTop="0"
            />
 
       </Box>
 
      
 
-      <Box borderRadius="12px 12px 0 0" bg="#fff" position="relative" zIndex="4" marginTop={{base: '100vh'}}>
+      <Box borderRadius="12px 12px 0 0" bg="#fff" position="relative" zIndex="4" marginTop={{base: "70vh", md: "100vh"}}>
         <Container maxW="1300px">
 
         <HomepageIntroduction />

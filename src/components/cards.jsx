@@ -8,21 +8,21 @@ import CubixHero from "../images/cubix-card.png"
 
 const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, scale, year }) => {
   const cardVariants = {
-    offscreen: {
-      y: 50,
-      opacity: 0
-    },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "easeinout",
-        duration: 0.8,
-        delay: index === 0 || index === 1 ? 1.6 : 0 , // Add delay for the first card
-      }
-    },
+    // offscreen: {
+    //   y: 50,
+    //   opacity: 0
+    // },
+    // onscreen: {
+    //   y: 0,
+    //   opacity: 1,
+    //   transition: {
+    //     type: "easeinout",
+    //     duration: 0.8,
+    //     delay: index === 0 || index === 1 ? 1.6 : 0 , // Add delay for the first card
+    //   }
+    // },
     hover: {
-      scale: 1.02,
+      scale: 1.05,
       transition: { duration: 0.3 }
     }
   };
@@ -33,15 +33,15 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
     },
     hover: {
       opacity: 1,
-      transition: { duration: 0.3 }
+      transition: { duration: 0.3 },
     }
   };
 
   return (
     <Link href={href} style={{ textDecoration: 'none' }} maxW={{base: "none", md: "48%", xl: "47%"}}  mb="5rem">
       <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
+        // initial="offscreen"
+        // whileInView="onscreen"
         viewport={{ once: true, amount: 0.2 }}
         variants={cardVariants}
         whileHover={!showComingSoon ? "hover" : null}
@@ -83,7 +83,7 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
         <Box mt="0.8rem">
           <Heading size="xl" mb={3}>{title}</Heading>
           <Text size="lg">{description}</Text>
-          {/* <Text size="md" color="#7B7A7E">{year}</Text> */}
+          
         </Box>
       </motion.div>
     </Link>

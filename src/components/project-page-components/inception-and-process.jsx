@@ -35,8 +35,8 @@ const InceptionAndProcess = () => (
 
         <Box mt={{ base: "3rem", md: "6rem" }}>
           <Flex direction={{ base: "column", lg: "row" }} gap="2rem">
-            <Box>
-              <Image src={OldMendeley} maxW="600px" borderRadius="12px" border="solid 1px rgba(60,61,59,0.2)" />
+            <Box maxW="600px" width="100%">
+              <Image src={OldMendeley} maxW="100%" borderRadius="12px" border="solid 1px rgba(60,61,59,0.2)" />
             </Box>
             <Box>
               <VStack width="100%" maxW="480px" gap="0" >

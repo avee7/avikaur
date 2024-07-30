@@ -24,16 +24,15 @@ const Cubix = () => {
       </Helmet>
       <Box overflow="hidden" position="relative" mt="-78px">
         <ProjectPageHeader
-          // bg="linear-gradient(135deg, #2C74B3 0%, #12A594 100%)"
           bg="#2C74B3"
           img={CubixHero}
           headingColor="#f4f4f4"
-          imgMaxWidth={{base: '100%', xl: '100%'}}
+          marginTop={{base: "0", md: "22rem"}}
            />
 
       </Box>
 
-      <Box borderRadius="12px 12px 0 0" bg="#fff" position="relative" zIndex="4" marginTop={{base: '100vh'}}>
+      <Box borderRadius="12px 12px 0 0" bg="#fff" position="relative" zIndex="4" marginTop={{base: "70vh", md: "100vh"}}>
         <Container maxW="1300px">
 
           <CubixIntroduction />

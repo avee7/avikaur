@@ -123,7 +123,7 @@ const CubixProcess = () => {
       <Box bg="#2C73B3" width="100%" py={{ base: "4rem", md: "8rem" }}>
         <Container maxW="1300px" textAlign="center" width="100%">
         <Heading size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4">A system is born</Heading>
-        <Text size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4" mt={{ base: "1rem", md: "2rem" }}>“A design system isn’t a project. It’s a product serving products.”
+        <Text size={{ base: 'xl', lg: '2xl' }}  color="#f4f4f4" mt={{ base: "1rem", md: "2rem" }}>“A design system isn’t a project. It’s a product serving products.”
           <br />
           – Brad Frost</Text>
           </Container>
@@ -150,12 +150,16 @@ const CubixProcess = () => {
 
 
       <Box bg="#0A0911" width="100%" py={{ base: "4rem", md: "8rem" }} textAlign="center">
+        <Container maxW="1300px">
         <Heading size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4">Next Steps</Heading>
-        <Text size={{ base: '3xl', lg: '4xl' }} color="#f4f4f4" mt={{ base: "1rem", md: "2rem" }}>“Design systems are never complete; they are always in a state of evolution.”
+        <Text size={{ base: 'xl', lg: '2xl' }}  color="#f4f4f4" mt={{ base: "1rem", md: "2rem" }}>“Design systems are never complete; they are always in a state of evolution.”
           <br />– Alla Kholmatova</Text>
 
+
+        </Container>
+       
       </Box>
-      <Container maxW="1300px" pt={{base: "3rem", md: "6rem" }} display="flex" width="100%">
+      <Container maxW="1300px" pt={{base: "3rem", md: "6rem" }} width="100%">
       <Flex direction={{ base: "column", md: "row" }} flexWrap="wrap" gap={{base: "2rem", lg: '0'}}>
               <Flex direction="column" flex="1 1 auto" maxW={{base: '100%', lg: "calc(100% / 12 * 4)"}} width={{base: '100%', lg: "calc(100% / 12 * 4)"}} flexBasis={{base: '100%', lg: "calc(100% / 12 * 4)"}} pl="0rem" pr={{base: '0', lg: "2rem"}}>
                 <Heading size={{ base: 'lg', md: 'xl' }}>Encourage Iterative Improvement</Heading>
