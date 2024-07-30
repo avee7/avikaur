@@ -50,7 +50,7 @@ function FullScreenOverlay({ isOpen, onClose, heading, subProjects }) {
       backgroundColor="rgba(26,26,26,0.1)"
       color="#fff" // Sets the color of the 'x' icon
       fontSize={{ base: "1.25rem", lg: "1.5rem" }}
-      margin={{ base: "1rem 1rem 0 0", lg: "2rem 2rem 0 0" }}
+      /*margin={{ base: "0", lg: "2rem 2rem 0 0" }} */
       padding="1.5rem"
       _hover={{
         

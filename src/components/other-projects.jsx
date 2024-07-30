@@ -52,17 +52,18 @@ const OtherProjects = () => {
         //   "Anticipated Efficiency Gains",
         //   "Continuous Improvement"
         // ], description: "We're in the process of building a multi-brand platform designed to streamline and improve our product development. This initiative introduces foundational styles and scalable components to ensure uniformity and efficiency throughout CubixCraft’s diverse product lineup. It’s a key step toward making our development processes more cohesive and responsive to market demands." },
+        { name: "MDUI Design System", year: "2021", imgSrc: MdUIImg, role: "UX Designer", impact: [
+          "Enhanced Interface Consistency across 6 Mendeley products",
+          "Streamlined User Interactions",
+          "Improved User Satisfaction"
+        ], description: "In a collaborative effort at Mendeley, we unified the user experience across six distinct products through design ideation workshops involving multiple UX teams. I played a key role in developing a cohesive visual language, which effectively eliminated inconsistencies and enhanced the usability of our entire product suite." },
         { name: "Isoshealth Pattern Library", year: "2017", imgSrc: isoshealthImg, role: "UX Designer, UI developer (solo project)", impact: [
           "Established foundational styles",
           "Unified UI components",
           "Streamlined developer workflows",
           "Enhanced design consistency"
         ], description: "A dynamic living pattern library, inspired by Storybook and developed in ReactJS, designed to unify the user experience across client and practitioner platforms." },
-        { name: "MDUI Design System", year: "2021", imgSrc: MdUIImg, role: "UX Designer", impact: [
-          "Enhanced Interface Consistency across 6 Mendeley products",
-          "Streamlined User Interactions",
-          "Improved User Satisfaction"
-        ], description: "In a collaborative effort at Mendeley, we unified the user experience across six distinct products through design ideation workshops involving multiple UX teams. I played a key role in developing a cohesive visual language, which effectively eliminated inconsistencies and enhanced the usability of our entire product suite." }
+        
       ],
     },
     {
@@ -123,7 +124,7 @@ const OtherProjects = () => {
               whileHover={{ scale: 1.1 }}
             >
               <Image src={item.imageSrc} zIndex="0" position="absolute" bottom="0rem" left="0" width="100%" opacity="0.5" />
-              <Text size="3xl" 
+              <Text size={{base: "2xl", md: "3xl" }}
               color="#fff"
               zIndex="1" 
               mt="2rem"
