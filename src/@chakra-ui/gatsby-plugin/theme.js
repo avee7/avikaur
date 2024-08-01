@@ -13,8 +13,8 @@ const theme = extendTheme({
         {
           fontFamily: 'Prociono',
           src: `
-            url('../fonts/Prociono-Regular.ttf') format('ttf'),
-            url('../fonts/Prociono-Regular.woff') format('woff')
+            url('/fonts/Prociono-Regular-webfont.ttf') format('truetype'),
+            url('/fonts/Prociono-Regular-webfont.woff') format('woff')
           `,
           fontWeight: 'normal',
           fontStyle: 'normal',
