@@ -53,8 +53,11 @@ const MendeleyHomePageRedesign = () => {
           <Box bg="#fff">
           <ConceptTesting />
           </Box>
-          <SolutionPhase />
+
           <Box bg="#0A0911">
+          <SolutionPhase />
+          </Box>
+          <Box bg="#F6F6F6">
           <MFinalSolution />
           
         </Box>

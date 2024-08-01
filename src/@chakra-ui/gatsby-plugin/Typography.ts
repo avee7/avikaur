@@ -245,6 +245,30 @@ export const Typography = {
         "lineHeight":  "45px",
         "textDecoration":  "NONE"
       }
+    },
+    "4xl":  {
+      "font-normal":  {
+        "fontSize":  36,
+        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontWeight":  "400",
+        "lineHeight":  "150%",
+        "letterSpacing": "-0.7px",
+        "textDecoration":  "NONE"
+      },
+      "font-medium":  {
+        "fontSize":  36,
+        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontWeight":  "500",
+        "lineHeight":  "150%",
+        "textDecoration":  "NONE"
+      },
+      "font-semibold":  {
+        "fontSize":  36,
+        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontWeight":  "600",
+        "lineHeight":  "150%",
+        "textDecoration":  "NONE"
+      }
     }
   }
 };

@@ -6,7 +6,6 @@ import {
 import TestMethods from "../../images/mendeley-research-plan.png"
 import Heatmap1 from "../../images/mendeley-heatmap1.png"
 import Heatmap2 from "../../images/mendeley-heatmap2.png"
-import UserReport1 from "../../images/mendeley-what-went-well.png"
 
 
 
@@ -74,16 +73,124 @@ const ConceptTesting = () => {
 
 
         </Container>
-        <Box py={{ base: "3rem", md: "6rem" }} bg="#0A0911">
+        <Box pt={{ base: "3rem", md: "6rem" }} pb={{ base: "4rem", md: "8rem" }} bg="#fff">
           <Container maxW="1300px">
-            <Flex alignItems="center" gap="1rem">
-              <Heading size={{ base: '2xl', md: '3xl' }} color="#f4f4f4">What went well </Heading>
-              <Box float="left" fontSize="2.4rem" mr="1rem">&#11088;</Box>
+            <Flex direction="column">
+              <Text size="md" color="#7B7A7E" textTransform="uppercase">Testing Outcome</Text>
+
+              <Heading size={{ base: '2xl', md: '3xl' }} >Highlights </Heading>
+
+
             </Flex>
 
-            <Box>
-              <Image src={UserReport1} maxW="100%" />
-            </Box>
+
+            <Flex mt={{ base: "2rem", md: "4rem" }} direction={{ base: "column" }} gap={{ base: "1rem", md: "1rem" }} justifyContent="space-between">
+
+              <Box bg="#c3d7f8" p={{ base: "0.625rem", md: "1.25rem" }} borderRadius="8px">
+                <Heading size="md">
+                  <Box as="span" mr="1rem">
+                    &#11088;
+                  </Box>
+                  What Went Well
+                </Heading>
+                <Flex justifyContent="space-around" mt="20px" gap="1rem" flexWrap="wrap">
+                  <Box
+                    bg="#d6ffc1"
+                    p="1.25rem"
+                    borderRadius="8px"
+                    textAlign="center"
+                    flex={{ base: "0 0 100%", md: "1 1 30%" }}
+                  >
+                    <Heading size="md" mb="1rem">Content Clarity</Heading>
+                    <Text size="4xl">90%</Text>
+                    <Text size="md" mt="0.3rem">Participants found the content clear and easily understood Mendeley's new value proposition.</Text>
+                  </Box>
+                  <Box
+                    bg="#d6ffc1"
+                    p="1.25rem"
+                    borderRadius="8px"
+                    textAlign="center"
+                    flex={{ base: "0 0 100%", md: "1 1 30%" }}
+                  >
+                    <Heading size="md" mb="1rem">Ease of Navigation</Heading>
+                    <Text size="4xl">75%</Text>
+                    <Text size="md" mt="0.3rem">Participants were able to locate content easily, including primary CTAs and navigation links.</Text>
+                  </Box>
+                  <Box
+                    bg="#d6ffc1"
+                    p="1.25rem"
+                    borderRadius="8px"
+                    textAlign="center"
+                    flex={{ base: "0 0 100%", md: "1 1 30%" }}
+                  >
+                    <Heading size="md" mb="1rem">Content Engagement</Heading>
+                    <Text size="4xl">96%</Text>
+                    <Text size="md" mt="0.3rem">Participants found the content engaging; images next to the use cases grabbed their attention and enhanced their understanding.</Text>
+                  </Box>
+                </Flex>
+
+              </Box>
+
+              <Box bg="#c3d7f8" p={{ base: "0.625rem", md: "1.25rem" }} borderRadius="8px">
+                <Heading size="md">
+                  <Box as="span" mr="1rem">
+                    &#x1F4C8;
+                  </Box>
+                  What could be improved
+                </Heading>
+                <Flex justifyContent="space-around" mt="20px" gap="1rem" flexWrap="wrap">
+                  <Box
+                    bg="#f8eeb6"
+                    p="1.25rem"
+                    borderRadius="8px"
+                    textAlign="center"
+                    flex={{ base: "0 0 100%", md: "1 1 calc(25% - 1rem)" }} // Adjust for gap
+                  >
+                    <Heading size="md" mb="1rem">Lack of Scrolling</Heading>
+                    <Text size="4xl">70%</Text>
+                    <Text size="md" mt="0.3rem">Participants did not scroll unless prompted, assuming there was no additional content below the fold.</Text>
+                  </Box>
+                  <Box
+                    bg="#f8eeb6"
+                    p="1.25rem"
+                    borderRadius="8px"
+                    textAlign="center"
+                    flex={{ base: "0 0 100%", md: "1 1 calc(25% - 1rem)" }} // Adjust for gap
+                  >
+                    <Heading size="md" mb="1rem">Confusing Labels</Heading>
+                    <Text size="4xl">30%</Text>
+                    <Text size="md" mt="0.3rem">Participants were confused between 'Support' and 'Solutions' in the header, finding them too similar in purpose.</Text>
+                  </Box>
+                  <Box
+                    bg="#f8eeb6"
+                    p="1.25rem"
+                    borderRadius="8px"
+                    textAlign="center"
+                    flex={{ base: "0 0 100%", md: "1 1 calc(25% - 1rem)" }} // Adjust for gap
+                  >
+                    <Heading size="md" mb="1rem">Unclear Images</Heading>
+                    <Text size="4xl">40%</Text>
+                    <Text size="md" mt="0.3rem">Participants focused heavily on images and were frustrated by unclear details.</Text>
+                  </Box>
+
+                  <Box
+                    bg="#f8eeb6"
+                    p="1.25rem"
+                    borderRadius="8px"
+                    textAlign="center"
+                    flex={{ base: "0 0 100%", md: "1 1 calc(25% - 1rem)" }} // Adjust for gap
+                  >
+                    <Heading size="md" mb="1rem">Missed secondary CTAs</Heading>
+                    <Text size="4xl">60%</Text>
+                    <Text size="md" mt="0.3rem">Participants missed the secondary CTAs as they were not visually distinguishable.</Text>
+                  </Box>
+
+                </Flex>
+
+              </Box>
+            </Flex>
+
+
 
 
             {/* <Flex direction={{base: "column" , md:"row"}} gap="1rem" pt={{ base: "1rem", md: "2rem" }} >
