@@ -86,7 +86,7 @@ const ConceptTesting = () => {
 
             <Flex mt={{ base: "2rem", md: "4rem" }} direction={{ base: "column" }} gap={{ base: "1rem", md: "1rem" }} justifyContent="space-between">
 
-              <Box bg="#c3d7f8" p={{ base: "0.625rem", md: "1.25rem" }} borderRadius="8px">
+              <Box bg="rgba(177, 209, 221, 0.7)" p={{ base: "0.625rem", md: "1.25rem" }} borderRadius="8px">
                 <Heading size="md">
                   <Box as="span" mr="1rem">
                     &#11088;
@@ -131,12 +131,12 @@ const ConceptTesting = () => {
 
               </Box>
 
-              <Box bg="#c3d7f8" p={{ base: "0.625rem", md: "1.25rem" }} borderRadius="8px">
+              <Box bg="rgba(177, 209, 221, 0.7)" p={{ base: "0.625rem", md: "1.25rem" }} borderRadius="8px">
                 <Heading size="md">
                   <Box as="span" mr="1rem">
                     &#x1F4C8;
                   </Box>
-                  What could be improved
+                  What Could Be Improved
                 </Heading>
                 <Flex justifyContent="space-around" mt="20px" gap="1rem" flexWrap="wrap">
                   <Box
@@ -180,7 +180,7 @@ const ConceptTesting = () => {
                     textAlign="center"
                     flex={{ base: "0 0 100%", md: "1 1 calc(25% - 1rem)" }} // Adjust for gap
                   >
-                    <Heading size="md" mb="1rem">Missed secondary CTAs</Heading>
+                    <Heading size="md" mb="1rem">Missed Secondary CTAs</Heading>
                     <Text size="4xl">60%</Text>
                     <Text size="md" mt="0.3rem">Participants missed the secondary CTAs as they were not visually distinguishable.</Text>
                   </Box>
