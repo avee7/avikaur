@@ -32,7 +32,7 @@ export const Typography = {
       "2xl":  {
         "fontSize":  36,
         "fontFamily":  "'Source Sans 3', sans-serif",
-        "fontWeight":  500,
+        "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
@@ -46,7 +46,7 @@ export const Typography = {
       "lg":  {
         "fontSize":  24,
         "fontFamily":  "'Source Sans 3', sans-serif",
-        "fontWeight":  500,
+        "fontWeight":  600,
         "lineHeight":  "150%",
         "fontStyle": "normal",
         "textDecoration":  "NONE"
