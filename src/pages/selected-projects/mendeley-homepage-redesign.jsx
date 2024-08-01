@@ -44,12 +44,14 @@ const MendeleyHomePageRedesign = () => {
           
           </Box>
 
-          <Box bg="#F6F6F6">
-          <ConceptTesting />
-          </Box>
+          
           
           <Box bg="#fff">
           <InceptionAndProcess />
+          </Box>
+
+          <Box bg="#fff">
+          <ConceptTesting />
           </Box>
           <SolutionPhase />
           <Box bg="#0A0911">

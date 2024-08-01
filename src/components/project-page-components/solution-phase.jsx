@@ -3,8 +3,6 @@ import {
   Box, Text, Heading, Image, Grid, GridItem, Flex, VStack,
   Container
 } from '@chakra-ui/react'
-import ConceptImage1 from '../../images/concept1.jpg'
-import ConceptImage2 from '../../images/concept2.jpg'
 import SolutionImage1 from '../../images/solution1.png'
 import SolutionImage2 from '../../images/solution2.png'
 import { MdCheckCircle } from "react-icons/md";
@@ -21,7 +19,7 @@ const SolutionPhase = () => (
     <Container maxW="800px" pt={{ base: "3rem", md: "6rem" }} pb={{ base: "4rem", md: "8rem" }}>
       <Flex direction="column" gap={{base: "3rem", md: "6rem"}}>
         <Text size="lg" maxW="660px">
-          After synthesising the results from our research and conducting a comprehensive competitor analysis, I crafted the following designs.
+        I synthesised the results from our research and addressed the issues highlighted during the process. Based on these insights, I crafted the following designs.
         </Text>
         <Box>
           <Image src={SolutionImage1} maxWidth="100%" border="solid 1px rgba(60,61,59,0.2)" borderRadius="12px" />

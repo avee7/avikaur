@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Prociono';
+  src: url('./Prociono-Regular-webfont.woff2') format('woff'),
+       url('./Prociono-Regular-webfont.woff') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Prociono';
+  src: url('/fonts/Prociono-Bold.woff2') format('woff2'),
+       url('/fonts/Prociono-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+} */
