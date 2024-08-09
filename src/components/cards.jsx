@@ -144,7 +144,7 @@ const Cards = () => (
       imgHeight="auto"
       index={2}
       year="2023"
-      scale="1.5"
+      scale="1.2"
     />
     
   </Flex>

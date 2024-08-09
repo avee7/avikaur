@@ -20,7 +20,7 @@ const MRMDuplicationMgmt = () => {
   return (
     <Layout textColour="dark">
       <Helmet>
-        <title>MRM Duplication Management— Avinash Kaur</title>
+        <title>MRM Duplicate Management— Avinash Kaur</title>
       </Helmet>
       <Box overflow="hidden" position="relative" mt="-78px">
         <ProjectPageHeader

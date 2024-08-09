@@ -29,7 +29,7 @@ const MRMIntroduction = () => (
         Mendeley Reference Manager is a SaaS offering by Mendeley that serves over 2.5 million researchers globally, providing a robust B2C platform to organise, manage, and compose research with efficiency.
         </Text>
         <Text size="lg" maxW="585px" pt={{base: "1rem"}}>
-        Aiming to elevate the quality of researchers' work, Mendeley's Duplicates Management feature effortlessly identifies, compares, and resolves duplicate references, ensuring a streamlined and efficient research process for all users.
+        Aiming to elevate the quality of researchers' work, Mendeley's Duplicate Management feature effortlessly identifies, compares, and resolves duplicate references, ensuring a streamlined and efficient research process for all users.
         </Text>
 
       </Box>
