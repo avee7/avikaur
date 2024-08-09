@@ -106,6 +106,13 @@ const theme = extendTheme({
         color: '#0A0911'
       },
       sizes: {
+        '5xl': {
+          fontFamily: Typography.text['5xl']['font-semibold'].fontFamily,
+          fontSize: Typography.text['5xl']['font-semibold'].fontSize, 
+          fontWeight:  Typography.text['5xl']['font-semibold'].fontWeight,
+          lineHeight:  Typography.text['5xl']['font-semibold'].lineHeight,
+          letterSpacing: Typography.text['5xl']['font-semibold'].letterSpacing
+        },
         '4xl': {
           fontFamily: Typography.text['4xl']['font-semibold'].fontFamily,
           fontSize: Typography.text['4xl']['font-semibold'].fontSize, 

@@ -3,7 +3,7 @@ import { Box, Heading, Text, Image, Link, Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import MendeleyProjectImage from "../images/mendeley-project-image.png";
 import DeltaProjectImage from "../images/airline-neutral.png";
-import DuplicatesProjectImage from "../images/duplicates-image.png";
+import DuplicatesProjectImage from "../images/mrm-hero-img.png";
 import CubixHero from "../images/cubix-card.png"
 
 const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, scale, year }) => {
@@ -135,11 +135,11 @@ const Cards = () => (
       scale="1.2"
     /> */}
     <Card
-      href="/"
-      title="Duplicates Management"
+      href="./selected-projects/mrm-duplicate-management"
+      title="Duplicate Management"
       description="Product Design"
       imageSrc={DuplicatesProjectImage}
-      showComingSoon={true}
+      showComingSoon={false}
       imgWidth="100%"
       imgHeight="auto"
       index={2}
