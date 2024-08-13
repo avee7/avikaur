@@ -32,7 +32,8 @@ const ProjectHeader = ({ title, subtitle, bg, img, marginTop, fullImage, imgWidt
             alignItems="center"
             justifyContent="center"
             direction="column"
-            width={imgWidth}
+            width="100%"
+            maxW={imgWidth}
             position="relative"
             height={{ base: "70vh", md: "100vh" }}
           >
