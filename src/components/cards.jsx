@@ -25,7 +25,7 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
   };
 
   return (
-    <Link href={href} style={{ textDecoration: 'none' }} maxW={{base: "none", md: "48%", xl: "47%"}}  mb="5rem">
+    <Link href={href} style={{ textDecoration: 'none' }} flexBasis={{base: "100%", md: "48%", xl: "47%"}}  mb="5rem">
       <motion.div
         // initial="offscreen"
         // whileInView="onscreen"
@@ -95,7 +95,7 @@ const Cards = () => (
       imgHeight="auto"
       index={0} 
       year="2022"
-      scale="1.5"
+      scale="1.2"
     />
     <Card
       href="./selected-projects/cubix-design-system"
@@ -108,6 +108,7 @@ const Cards = () => (
       index={1} 
       year="2024"
       scale="1.2"
+     
     />
     <Card
       href="./selected-projects/airline-neutral-design-system"
@@ -115,8 +116,8 @@ const Cards = () => (
       description="Multi-brand Design System"
       imageSrc={DeltaProjectImage}
       showComingSoon={false}
-      imgWidth="100%"
-      imgHeight="auto"
+      imgWidth="auto"
+      imgHeight="80%"
       index={3}
       year="2016"
       scale="1.2"

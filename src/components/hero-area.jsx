@@ -48,7 +48,7 @@ const HeroArea = () => {
       >
 
 
-        <Stack direction="column" position="relative" gap="2rem" maxW={{base: "660px", lg:"900px"}}>
+        <Stack px="1rem" direction="column" position="relative" gap="2rem" maxW={{base: "660px", lg:"900px"}}>
 
           <motion.div
             style={{
@@ -69,12 +69,8 @@ const HeroArea = () => {
               p={{ base: "0 2rem 1rem", xl: "0 0 1.25rem" }}
               textAlign="center"
               size={{ base: '5xl', lg: '6xl' }}
-              // color="#f4f4f4"
-              // mt={{base: '0', lg: '2rem'}}
-              // color="#6c63ff"
               color="#0A0911"
-              // background="linear-gradient(263deg,#6c63ff  0%, #8982ff 100%)"
-              // backgroundClip="text"
+             
             >
               Avinash Kaur
             </MotionHeading>
@@ -90,13 +86,12 @@ const HeroArea = () => {
               mx="auto"
               color="#0A0911"
               
-              // color="#e0e0e0"
 
             >
 
-              {/* I'm a product designer with a background in front-end development, passionate about building engaging, scalable, and purposeful digital experiences. */}
+              
               I'm a product designer who blends design passion with front-end development skills to craft engaging, scalable digital experiences.
-              {/* I'm a product designer focused on merging creative and technical skills to craft user-focused, scalable digital experiences. */}
+              
             </MotionText>
           </motion.div>
 

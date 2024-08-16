@@ -80,7 +80,7 @@ const AboutMe = () => {
         <MotionBox w={{ base: "80%", md: "30%" }}>
           <MotionImage
             src={MyImage}
-            maxW="300px"
+            maxW="100%"
             margin="0 auto"
             initial={{ opacity: 0, rotate: 10 }}  // Starts invisible and rotated by 10 degrees
             animate={{ opacity: 1, rotate: 0 }}  // Fades in and rotates back to 0 degrees

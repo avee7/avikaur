@@ -15,7 +15,7 @@ const Footer = () => (
           alignItems="flex-start"
           justifyContent="space-between"
           height="100%"
-          gap="2rem"
+          
           pb={{ base: "2rem", md: "5rem" }}
           width={{ base: '100%', md: 'auto' }} // Adjust width based on screen size
         >
