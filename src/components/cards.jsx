@@ -8,19 +8,6 @@ import CubixHero from "../images/cubix-card.png"
 
 const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, scale, year }) => {
   const cardVariants = {
-    // offscreen: {
-    //   y: 50,
-    //   opacity: 0
-    // },
-    // onscreen: {
-    //   y: 0,
-    //   opacity: 1,
-    //   transition: {
-    //     type: "easeinout",
-    //     duration: 0.8,
-    //     delay: index === 0 || index === 1 ? 1.6 : 0 , // Add delay for the first card
-    //   }
-    // },
     hover: {
       scale: 1.05,
       transition: { duration: 0.3 }
@@ -111,7 +98,7 @@ const Cards = () => (
       scale="1.5"
     />
     <Card
-      href="./selected-projects/cubix-design-system/"
+      href="./selected-projects/cubix-design-system"
       title="Cubix Design System"
       description="Multi-brand, themeable design system"
       imageSrc={CubixHero}
@@ -122,18 +109,18 @@ const Cards = () => (
       year="2024"
       scale="1.2"
     />
-    {/* <Card
-      href="/"
+    <Card
+      href="./selected-projects/airline-neutral-design-system"
       title="Airline Neutral: Fly Delta Airlines"
       description="Multi-brand Design System"
       imageSrc={DeltaProjectImage}
-      showComingSoon={true}
+      showComingSoon={false}
       imgWidth="100%"
       imgHeight="auto"
       index={3}
       year="2016"
       scale="1.2"
-    /> */}
+    />
     <Card
       href="./selected-projects/mrm-duplicate-management"
       title="Duplicate Management"

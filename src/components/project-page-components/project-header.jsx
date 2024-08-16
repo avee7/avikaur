@@ -28,7 +28,7 @@ const ProjectHeader = ({ title, subtitle, bg, img, marginTop, fullImage, imgWidt
         <Box width="100vw">
           <Flex
             mx="auto"
-            p={{ base: '3rem 0', md: '4rem 0' }}
+            p={{ base: '3rem 1rem', md: '4rem 0' }}
             alignItems="center"
             justifyContent="center"
             direction="column"
