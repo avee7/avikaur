@@ -24,7 +24,7 @@ const Home = () => {
     <Box>
       <Box position="fixed" width="100%" height="calc(60vh + 64px)" zIndex="0" top="0" display="flex" justifyContent="center" alignItems={{base: 'center', lg: "center"}} 
       bgColor="#a6ffba">
-        <HeroAnimation />
+        {/* <HeroAnimation /> */}
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>
