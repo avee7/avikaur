@@ -1,44 +1,20 @@
 import React from 'react';
-import { Box, Heading, Text, Image, Link, Flex } from '@chakra-ui/react';
+import { Box, Heading, Text, Image, Link, Flex, Grid, GridItem } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import MendeleyProjectImage from "../images/mendeley-project-image.png";
 import DeltaProjectImage from "../images/airline-neutral.png";
 import DuplicatesProjectImage from "../images/mrm-hero-img.png";
-import CubixHero from "../images/cubix-card.png"
+import CubixHero from "../images/cubix-card.png";
 
 const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, imgHeight, index, scale, year }) => {
-  const cardVariants = {
-    hover: {
-      scale: 1.05,
-      transition: { duration: 0.3 }
-    }
-  };
-
-  const comingSoonVariants = {
-    initial: {
-      opacity: 0
-    },
-    hover: {
-      opacity: 1,
-      transition: { duration: 0.3 },
-    }
-  };
-
   return (
-    <Link href={href} style={{ textDecoration: 'none' }} flexBasis={{base: "100%", md: "48%", xl: "47%"}}  mb="5rem">
-      <motion.div
-        // initial="offscreen"
-        // whileInView="onscreen"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={cardVariants}
-        whileHover={!showComingSoon ? "hover" : null}
-      >
+    <Link href={href} style={{ textDecoration: 'none' }}>
         <Box
           borderRadius="20px"
           position="relative"
           overflow="hidden"
           p={{base: "2rem", md: "4rem" }}
-          height={{base: '450px', xl: "600px"}}
+          height={{base: '450px', xl: "100%"}}
           border="solid 1px rgba(224,224,224, 1)"
           bg="#eff2f7"
           display="flex"
@@ -47,95 +23,101 @@ const Card = ({ href, title, description, imageSrc, showComingSoon, imgWidth, im
         >
           <Image src={imageSrc} height={imgHeight} maxW="100%" transform={`scale(${scale})`} />
           {showComingSoon && (
-            <motion.div
-              variants={comingSoonVariants}
-              initial="initial"
-              whileHover="hover"
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                backgroundColor: 'rgba(0, 0, 0, 0.5)',
-              }}
+            <Box
+              position="absolute"
+              top={0}
+              left={0}
+              right={0}
+              bottom={0}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              backgroundColor="rgba(0, 0, 0, 0.5)"
             >
               <Text size="2xl" color="#000">Coming Soon</Text>
-            </motion.div>
+            </Box>
           )}
         </Box>
         <Box mt="0.8rem">
           <Heading size="xl" mb={3}>{title}</Heading>
           <Text size="lg">{description}</Text>
-          
         </Box>
-      </motion.div>
     </Link>
   );
 };
 
 const Cards = () => (
-  <Flex
-    wrap="wrap"
+  <Grid
     maxW="1300px"
     width="100%"
     mx="auto"
-    justifyContent="space-between"
+    templateRows={{ base: "repeat(2, 1fr)", md: "repeat(2, 1fr)" }}
+    templateColumns={{ base: "1fr", md: "2fr 1fr" }}
+    gap={4}
   >
-    <Card
-      href="./selected-projects/mendeley-homepage-redesign"
-      title="Beyond Reference Management"
-      description="Website Redesign / Case Study"
-      imageSrc={MendeleyProjectImage}
-      showComingSoon={false}
-      imgWidth="100%"
-      imgHeight="auto"
-      index={0} 
-      year="2022"
-      scale="1.2"
-    />
-    <Card
-      href="./selected-projects/cubix-design-system"
-      title="Cubix Design System"
-      description="Multi-brand, themeable design system"
-      imageSrc={CubixHero}
-      showComingSoon={false}
-      imgWidth="100%"
-      imgHeight="auto"
-      index={1} 
-      year="2024"
-      scale="1.2"
-     
-    />
-    <Card
-      href="./selected-projects/airline-neutral-design-system"
-      title="Airline Neutral: Fly Delta Airlines"
-      description="Multi-brand Design System"
-      imageSrc={DeltaProjectImage}
-      showComingSoon={false}
-      imgWidth="auto"
-      imgHeight="80%"
-      index={3}
-      year="2016"
-      scale="1.2"
-    />
-    <Card
-      href="./selected-projects/mrm-duplicate-management"
-      title="Duplicate Management"
-      description="Product Design"
-      imageSrc={DuplicatesProjectImage}
-      showComingSoon={false}
-      imgWidth="100%"
-      imgHeight="auto"
-      index={2}
-      year="2023"
-      scale="1.2"
-    />
-    
-  </Flex>
+    {/* The first card spanning the entire row */}
+    <GridItem colSpan={{ base: 1, md: 2 }}>
+      <Card
+        href="./selected-projects/mendeley-homepage-redesign"
+        title="Beyond Reference Management"
+        description="Website Redesign / Case Study"
+        imageSrc={MendeleyProjectImage}
+        showComingSoon={false}
+        imgWidth="100%"
+        imgHeight="auto"
+        index={0} 
+        year="2022"
+        scale="1.2"
+      />
+    </GridItem>
+
+    {/* The second card taking the full height of two rows */}
+    <GridItem rowSpan={2}>
+      <Card
+        href="./selected-projects/cubix-design-system"
+        title="Cubix Design System"
+        description="Multi-brand, themeable design system"
+        imageSrc={CubixHero}
+        showComingSoon={false}
+        imgWidth="100%"
+        imgHeight="auto"
+        index={1} 
+        year="2024"
+        scale="1.2"
+      />
+    </GridItem>
+
+    {/* The third and fourth cards, each taking half of the second column */}
+    <GridItem>
+      <Card
+        href="./selected-projects/airline-neutral-design-system"
+        title="Airline Neutral: Fly Delta Airlines"
+        description="Multi-brand Design System"
+        imageSrc={DeltaProjectImage}
+        showComingSoon={false}
+        imgWidth="auto"
+        imgHeight="80%"
+        index={3}
+        year="2016"
+        scale="1.2"
+      />
+    </GridItem>
+
+    <GridItem>
+      <Card
+        href="./selected-projects/mrm-duplicate-management"
+        title="Duplicate Management"
+        description="Product Design"
+        imageSrc={DuplicatesProjectImage}
+        showComingSoon={false}
+        imgWidth="100%"
+        imgHeight="auto"
+        index={2}
+        year="2023"
+        scale="1.2"
+      />
+    </GridItem>
+  </Grid>
 );
 
 export default Cards;
