@@ -4,8 +4,8 @@ import { MdBorderColor } from 'react-icons/md';
 
 const theme = extendTheme({
   fonts: {
-    heading: "Prociono, serif",
-    body: `"Source Sans 3", sans-serif`
+    heading: "Rubik, sans-serif",
+    body: "Rubik, sans-serif"
   },
   styles: {
     global: {
@@ -24,7 +24,7 @@ const theme = extendTheme({
         color: '#0A0911',
       },
       'body': {
-        fontFamily: "'Source Sans 3', sans-serif",
+        fontFamily: "Rubik, sans-serif",
         fontSize: "18px",
         
       }

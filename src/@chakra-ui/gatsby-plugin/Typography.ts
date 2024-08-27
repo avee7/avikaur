@@ -3,49 +3,49 @@ export const Typography = {
     "heading-large":  {
       "6xl":  {
         "fontSize":  120,
-        "fontFamily":  "Prociono",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
         "lineHeight":  "100%",
         "textDecoration":  "NONE"
       },
       "5xl":  {
         "fontSize":  92,
-        "fontFamily":  "Prociono",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
         "lineHeight":  "100%",
         "textDecoration":  "NONE"
       },
       "4xl":  {
         "fontSize":  64,
-        "fontFamily":  "Prociono",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
-        "lineHeight":  "125%",
+        "lineHeight":  "120%",
         "textDecoration":  "NONE"
       },
       "3xl":  {
         "fontSize":  48,
-        "fontFamily":  "Prociono",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
       "2xl":  {
         "fontSize":  36,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
       "xl":  {
         "fontSize":  28,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
       "lg":  {
         "fontSize":  24,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
         "lineHeight":  "150%",
         "fontStyle": "normal",
@@ -53,7 +53,7 @@ export const Typography = {
       },
       "md":  {
         "fontSize":  20,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  600,
         "lineHeight":  "150%",
         "fontStyle": "normal",
@@ -61,7 +61,7 @@ export const Typography = {
       },
       "sm":  {
         "fontSize":  16,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  500,
         "lineHeight":  "150%",
         "fontStyle": "normal",
@@ -69,7 +69,7 @@ export const Typography = {
       },
       "xs":  {
         "fontSize":  14,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  500,
         "lineHeight":  "150%",
         "fontStyle": "normal",
@@ -81,7 +81,7 @@ export const Typography = {
     "xs":  {
       "font-normal":  {
         "fontSize":  12,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "300",
         "lineHeight":  "18px",
         "textDecoration":  "NONE",
@@ -89,14 +89,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  12,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "300",
         "lineHeight":  "18px",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  12,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "300",
         "lineHeight":  "18px",
         "textDecoration":  "NONE"
@@ -105,7 +105,7 @@ export const Typography = {
     "sm":  {
       "font-normal":  {
         "fontSize":  14,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "300",
         "lineHeight":  "21px",
         "letterSpacing": "-0.5px",
@@ -113,14 +113,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  14,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "300",
         "lineHeight":  "21px",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  14,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "300",
         "lineHeight":  "21px",
       },
@@ -128,7 +128,7 @@ export const Typography = {
     "md":  {
       "font-normal":  {
         "fontSize":  16,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "24px",
         "letterSpacing": "-0.5px",
@@ -136,7 +136,7 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  16,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "500",
         "lineHeight":  "24px",
         "textDecoration":  "NONE"
@@ -144,7 +144,7 @@ export const Typography = {
       
       "font-semibold":  {
         "fontSize":  16,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "600",
         "lineHeight":  "24px",
         "textDecoration":  "NONE"
@@ -153,7 +153,7 @@ export const Typography = {
     "lg":  {
       "font-normal":  {
         "fontSize":  18,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "27px",
         "letterSpacing": "-0.5px",
@@ -161,14 +161,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  18,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "500",
         "lineHeight":  "27px",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  18,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "600",
         "lineHeight":  "27px",
         "textDecoration":  "NONE"
@@ -177,7 +177,7 @@ export const Typography = {
     "xl":  {
       "font-normal":  {
         "fontSize":  20,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "130%",
         "letterSpacing": "-0.7px",
@@ -185,14 +185,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  20,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "500",
         "lineHeight":  "30px",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  20,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "600",
         "lineHeight":  "30px",
         "textDecoration":  "NONE"
@@ -201,7 +201,7 @@ export const Typography = {
     "2xl":  {
       "font-normal":  {
         "fontSize":  24,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "36px",
         "letterSpacing": "-0.7px",
@@ -209,14 +209,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  24,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "500",
         "lineHeight":  "36px",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  24,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "600",
         "lineHeight":  "36px",
         "textDecoration":  "NONE"
@@ -225,7 +225,7 @@ export const Typography = {
     "3xl":  {
       "font-normal":  {
         "fontSize":  30,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "45px",
         "letterSpacing": "-0.7px",
@@ -233,14 +233,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  30,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "500",
         "lineHeight":  "45px",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  30,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "600",
         "lineHeight":  "45px",
         "textDecoration":  "NONE"
@@ -249,7 +249,7 @@ export const Typography = {
     "4xl":  {
       "font-normal":  {
         "fontSize":  36,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "150%",
         "letterSpacing": "-0.7px",
@@ -257,14 +257,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  36,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "500",
         "lineHeight":  "150%",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  36,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "600",
         "lineHeight":  "150%",
         "textDecoration":  "NONE"
@@ -273,7 +273,7 @@ export const Typography = {
     "5xl":  {
       "font-normal":  {
         "fontSize":  48,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "400",
         "lineHeight":  "150%",
         "letterSpacing": "-0.7px",
@@ -281,14 +281,14 @@ export const Typography = {
       },
       "font-medium":  {
         "fontSize":  48,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "500",
         "lineHeight":  "150%",
         "textDecoration":  "NONE"
       },
       "font-semibold":  {
         "fontSize":  48,
-        "fontFamily":  "'Source Sans 3', sans-serif",
+        "fontFamily":  "Rubik, sans-serif",
         "fontWeight":  "600",
         "lineHeight":  "125%",
         "textDecoration":  "NONE"

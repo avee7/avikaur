@@ -14,5 +14,5 @@ const posthogScript = (
 
 export const onRenderBody = ({ setHtmlAttributes, setPostBodyComponents }) => {
   setHtmlAttributes({ lang: `en` });
-  setPostBodyComponents([posthogScript]);
+//  setPostBodyComponents([posthogScript]);
 };

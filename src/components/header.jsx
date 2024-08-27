@@ -27,7 +27,6 @@ const Header = ({ headerBg = "transparent", textColour }) => {
   return (
     <Box
       bg={headerBg}
-      // boxShadow="sm"
       position="sticky"
       top="0"
       zIndex="sticky"
@@ -43,38 +42,12 @@ const Header = ({ headerBg = "transparent", textColour }) => {
           <Flex alignItems={'center'}>
             <Box>
               <Button as={Link} href="/" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.1)", textDecoration: 'none' }}>Home</Button>
-              {/* <Button as={Link} href="/about" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>About</Button> */}
-              {/* <Button as={Link} href="/contact" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.6)", textDecoration: 'none' }}>Contact</Button> */}
-            </Box>
+              </Box>
 
-            {/* <IconButton
-              icon={<HamburgerIcon />}
-              aria-label={'Open Menu'}
-              size={'lg'}
-              display={{ md: 'none' }}
-              onClick={onOpen}
-              color="#e0e0e0"
-              transition="all 0.2s"
-              variant="ghost"
-              borderRadius="md"
-              _hover={{ bg: "#2A2A2A", textDecoration: 'none' }}
-            /> */}
           </Flex>
         </Flex>
 
-        {/* <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
-          <DrawerOverlay />
-          <DrawerContent bg="rgba(10, 9, 17, 0.8)" boxShadow="sm">
-            <DrawerCloseButton />
-            <DrawerBody>
-              <Stack pt={12} spacing={4}>
-                <Button as={Link} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2A2A2A", textDecoration: 'none' }} href="/" variant="ghost" onClick={onClose}>Home</Button>
-                <Button as={Link} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2A2A2A", textDecoration: 'none' }} href="/about" variant="ghost" onClick={onClose}>About</Button>
-                <Button as={Link} transition="all 0.2s" color="#e0e0e0" borderRadius="md" _hover={{ bg: "#2A2A2A", textDecoration: 'none' }} href="/contact" variant="ghost" onClick={onClose}>Contact</Button>
-              </Stack>
-            </DrawerBody>
-          </DrawerContent>
-        </Drawer> */}
+        
       </Container>
     </Box>
   );

@@ -51,7 +51,7 @@ module.exports = {
       options: {
         fonts: [
           
-          
+          `Rubik:ital,wght@0,300..900;1,300..900`,
           `Source+Sans+3:ital,wght@0,200..900;1,200..900`,
           
         ],

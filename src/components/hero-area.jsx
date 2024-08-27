@@ -48,7 +48,7 @@ const HeroArea = () => {
       >
 
 
-        <Stack px="1rem" direction="column" position="relative" gap="2rem" maxW={{base: "660px", lg:"900px"}}>
+        <Stack px="1rem" direction="column" position="relative" gap="2rem" maxW={{base: "100%", lg:"1300"}} mt={{base: "2rem", lg: "10rem"}}>
 
           <motion.div
             style={{
@@ -67,30 +67,29 @@ const HeroArea = () => {
             <MotionHeading
               as="h1"
               p={{ base: "0 2rem 1rem", xl: "0 0 1.25rem" }}
-              textAlign="center"
-              size={{ base: '5xl', lg: '6xl' }}
+              
+              size={{ base: '2xl', lg: '4xl' }}
               color="#0A0911"
              
             >
-              Avinash Kaur
+              I'm a product designer focused on creating scalable, engaging digital experiences.
             </MotionHeading>
            
             <MotionText position="relative" zIndex="1"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.25, duration: 0.9 }}
-              textAlign="center"
-              size={{ base: 'xl', lg: '3xl' }}
+              size={{ base: 'lg', lg: 'xl' }}
               width="100%"
               p={{ base: "0 2rem", xl: "0" }}
-              mx="auto"
+             
               color="#0A0911"
-              
+              maxW="900px"
 
             >
 
               
-              I'm a product designer who blends design passion with front-end development skills to craft engaging, scalable digital experiences.
+With a background in front-end development, I deliver solutions that merge functionality with aesthetics.
               
             </MotionText>
           </motion.div>
