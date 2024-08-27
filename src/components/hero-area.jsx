@@ -68,7 +68,7 @@ const HeroArea = () => {
               as="h1"
               p={{ base: "0 2rem 1rem", xl: "0 0 1.25rem" }}
               
-              size={{ base: '2xl', lg: '4xl' }}
+              size={{ base: '2xl', md: '3xl', lg: '4xl' }}
               color="#0A0911"
              
             >
@@ -84,13 +84,12 @@ const HeroArea = () => {
               p={{ base: "0 2rem", xl: "0" }}
              
               color="#0A0911"
-              maxW="900px"
+              // maxW="900px"
 
             >
 
               
-With a background in front-end development, I deliver solutions that merge functionality with aesthetics.
-              
+Developer-turned-designer, working on bridging the gap between design and development.
             </MotionText>
           </motion.div>
 
