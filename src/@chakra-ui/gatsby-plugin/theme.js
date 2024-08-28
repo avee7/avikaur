@@ -4,36 +4,30 @@ import { MdBorderColor } from 'react-icons/md';
 
 const theme = extendTheme({
   fonts: {
-    heading: "Rubik, sans-serif",
-    body: "Rubik, sans-serif"
+    heading: "'DM Serif Display', serif",
+    body: '"DM Sans", sans-serif'
   },
   styles: {
     global: {
-      '@font-face': [
-        {
-          fontFamily: 'Prociono',
-          src: `
-            url('/fonts/Prociono-Regular-webfont.ttf') format('truetype'),
-            url('/fonts/Prociono-Regular-webfont.woff') format('woff')
-          `,
-          fontWeight: 'normal',
-          fontStyle: 'normal',
-        },
-      ],
+      // '@font-face': [
+      //   {
+      //     fontFamily: 'Prociono',
+      //     src: `
+      //       url('/fonts/Prociono-Regular-webfont.ttf') format('truetype'),
+      //       url('/fonts/Prociono-Regular-webfont.woff') format('woff')
+      //     `,
+      //     fontWeight: 'normal',
+      //     fontStyle: 'normal',
+      //   },
+      // ],
       'html, body': {
         color: '#0A0911',
       },
       'body': {
-        fontFamily: "Rubik, sans-serif",
+        fontFamily: '"DM Sans", sans-serif',
         fontSize: "18px",
         
       }
-      // a: {
-      //   color: 'teal.500',
-      //   _hover: {
-      //     textDecoration: 'dashed',
-      //   },
-      // },
     },
   },
   components: {    
@@ -111,35 +105,35 @@ const theme = extendTheme({
           fontSize: Typography.text['5xl']['font-semibold'].fontSize, 
           fontWeight:  Typography.text['5xl']['font-semibold'].fontWeight,
           lineHeight:  Typography.text['5xl']['font-semibold'].lineHeight,
-          letterSpacing: Typography.text['5xl']['font-semibold'].letterSpacing
+          
         },
         '4xl': {
           fontFamily: Typography.text['4xl']['font-semibold'].fontFamily,
           fontSize: Typography.text['4xl']['font-semibold'].fontSize, 
           fontWeight:  Typography.text['4xl']['font-semibold'].fontWeight,
           lineHeight:  Typography.text['4xl']['font-semibold'].lineHeight,
-          letterSpacing: Typography.text['4xl']['font-semibold'].letterSpacing
+          
         },
         '3xl': {
           fontFamily: Typography.text['3xl']['font-normal'].fontFamily,
           fontSize: Typography.text['3xl']['font-normal'].fontSize, 
           fontWeight:  Typography.text['3xl']['font-normal'].fontWeight,
           lineHeight:  Typography.text['3xl']['font-normal'].lineHeight,
-          letterSpacing: Typography.text['3xl']['font-normal'].letterSpacing
+          // letterSpacing: Typography.text['3xl']['font-normal'].letterSpacing
         },
         '2xl': {
           fontFamily: Typography.text['2xl']['font-normal'].fontFamily,
           fontSize: Typography.text['2xl']['font-normal'].fontSize, 
           fontWeight:  Typography.text['2xl']['font-normal'].fontWeight,
           lineHeight:  Typography.text['2xl']['font-normal'].lineHeight,
-          letterSpacing: Typography.text['2xl']['font-normal'].letterSpacing
+          // letterSpacing: Typography.text['2xl']['font-normal'].letterSpacing
         },
         'xl':{
           fontFamily: Typography.text['xl']['font-normal'].fontFamily,
           fontSize: Typography.text.xl['font-normal'].fontSize, 
           fontWeight: Typography.text.xl['font-normal'].fontWeight,
           lineHeight: Typography.text.xl['font-normal'].lineHeight,
-          letterSpacing: Typography.text['xl']['font-normal'].letterSpacing
+          // letterSpacing: Typography.text['xl']['font-normal'].letterSpacing
 
         },
         'lg': {
@@ -147,28 +141,28 @@ const theme = extendTheme({
           fontSize: Typography.text.lg['font-normal'].fontSize, 
           fontWeight: Typography.text.lg['font-normal'].fontWeight,
           lineHeight: Typography.text.lg['font-normal'].lineHeight,
-          letterSpacing: Typography.text['lg']['font-normal'].letterSpacing
+          // letterSpacing: Typography.text['lg']['font-normal'].letterSpacing
         },
         'md': {
           fontFamily: Typography.text['md']['font-normal'].fontFamily,
           fontSize: Typography.text.md['font-normal'].fontSize, 
           fontWeight: Typography.text.md['font-normal'].fontWeight,
           lineHeight: Typography.text.md['font-normal'].lineHeight,
-          letterSpacing: Typography.text['md']['font-normal'].letterSpacing
+          // letterSpacing: Typography.text['md']['font-normal'].letterSpacing
         },
         'sm': {
           fontFamily: Typography.text['sm']['font-normal'].fontFamily,
           fontSize: Typography.text.sm['font-normal'].fontSize, 
           fontWeight: Typography.text.sm['font-normal'].fontWeight,
           lineHeight: Typography.text.sm['font-normal'].lineHeight,
-          letterSpacing: Typography.text['sm']['font-normal'].letterSpacing
+          // letterSpacing: Typography.text['sm']['font-normal'].letterSpacing
         },
         'xs': {
           fontFamily: Typography.text['xs']['font-normal'].fontFamily,
           fontSize: Typography.text.xs['font-normal'].fontSize, 
           fontWeight: Typography.text.xs['font-normal'].fontWeight,
           lineHeight: Typography.text.xs['font-normal'].lineHeight,
-          letterSpacing: Typography.text['xs']['font-normal'].letterSpacing
+          // letterSpacing: Typography.text['xs']['font-normal'].letterSpacing
         },
 
         defaultProps: {

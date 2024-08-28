@@ -79,17 +79,17 @@ const HeroArea = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.25, duration: 0.9 }}
-              size={{ base: 'lg', lg: 'xl' }}
+              size={{ base: 'md', md: 'lg' }}
               width="100%"
               p={{ base: "0 2rem", xl: "0" }}
              
               color="#0A0911"
-              // maxW="900px"
+              
 
             >
 
               
-Developer-turned-designer, working on bridging the gap between design and development.
+With a background in front-end development, I design solutions that merge functionality with aesthetics.
             </MotionText>
           </motion.div>
 
