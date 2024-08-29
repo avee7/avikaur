@@ -51,6 +51,7 @@ module.exports = {
       options: {
         fonts: [
           `DM+Serif+Display`,
+          `DM+Serif+Text`,
           `Rubik:ital,wght@0,300..900;1,300..900`,
           `DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000`,
           `Source+Sans+3:ital,wght@0,200..900;1,200..900`,

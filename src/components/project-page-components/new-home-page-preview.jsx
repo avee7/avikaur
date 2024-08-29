@@ -19,21 +19,21 @@ const NewHomePagePreview = () => {
            <Stack gap={3} alignItems="flex-start" direction={{base: "column", md: "row"}}>
              
                <Box p="1.5rem" borderRadius="8px" border="solid 1px rgba(239,242,247, 0.2)" flex="1 1 auto" maxW={{base: '100%', lg: "calc(100% / 12 * 4)"}} width={{base: '100%', lg: "calc(100% / 12 * 4)"}} flexBasis={{base: '100%', lg: "calc(100% / 12 * 4)"}}>
-                 <Heading size="md" mb="4px" color="#f4f4f4">Content Engagement</Heading>
+                 <Text size="lg" mb="4px" color="#f4f4f4">Content Engagement</Text>
                  <Flex direction="row" gap={2} alignItems="center">
                    <Image src={MendeleyEngagement} maxW="50%" />
                    <Text size="md" color="#f4f4f4">4.5 / 5</Text>
                  </Flex>
                </Box>
                <Box p="1.5rem" borderRadius="8px" border="solid 1px rgba(239,242,247, 0.2)" flex="1 1 auto" maxW={{base: '100%', lg: "calc(100% / 12 * 4)"}} width={{base: '100%', lg: "calc(100% / 12 * 4)"}} flexBasis={{base: '100%', lg: "calc(100% / 12 * 4)"}}>
-                 <Heading size="md" mb="4px" color="#f4f4f4">Perception of Trust</Heading>
+               <Text size="lg" mb="4px" color="#f4f4f4">Perception of Trust</Text>
                  <Flex direction="row" gap={2} alignItems="center">
                    <Image src={MendeleyTrust} maxW="50%" />
                    <Text size="md" color="#f4f4f4">4.4 / 5</Text>
                  </Flex>
                </Box>
                <Box p="1.5rem" borderRadius="8px"  border="solid 1px rgba(239,242,247, 0.2)" flex="1 1 auto" maxW={{base: '100%', lg: "calc(100% / 12 * 4)"}} width={{base: '100%', lg: "calc(100% / 12 * 4)"}} flexBasis={{base: '100%', lg: "calc(100% / 12 * 4)"}}>
-                 <Heading size="md" mb="4px" color="#f4f4f4">Content Clarity</Heading>
+               <Text size="lg" mb="4px" color="#f4f4f4">Content Clarity</Text>
                  <Flex direction="row" gap={2} alignItems="center">
                    <Image src={MendeleyClarity} maxW="50%" />
                    <Text size="md" color="#f4f4f4">4.5 / 5</Text>

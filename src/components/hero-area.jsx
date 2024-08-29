@@ -79,7 +79,7 @@ const HeroArea = () => {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.25, duration: 0.9 }}
-              size={{ base: 'md', md: 'lg' }}
+              size={{ base: 'lg', md: 'xl' }}
               width="100%"
               p={{ base: "0 2rem", xl: "0" }}
              

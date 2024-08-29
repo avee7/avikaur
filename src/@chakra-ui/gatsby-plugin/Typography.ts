@@ -38,14 +38,14 @@ export const Typography = {
       },
       "xl":  {
         "fontSize":  28,
-        "fontFamily":  "'DM Serif Display', serif",
-        "fontWeight":  600,
+        "fontFamily":  "'DM Serif Text', serif",
+        "fontWeight":  400,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
       "lg":  {
         "fontSize":  24,
-        "fontFamily":  "'DM Serif Display', serif",
+        "fontFamily":  "'DM Serif Text', serif",
         "fontWeight":  400,
         "lineHeight":  "150%",
         "fontStyle": "normal",
