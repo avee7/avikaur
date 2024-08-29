@@ -2,7 +2,7 @@ import React from "react"
 import { Box, Container } from '@chakra-ui/react';
 import Layout from "../../components/layout";
 import ProjectPageHeader from "../../components/project-page-components/project-header";
-import CubixHero from "../../images/cubix-hero.png"
+import CubixHero from "../../images/cubix-hero1.png"
 import CubixIntroduction from "../../components/project-page-components/cubix-introduction";
 import CubixPreview from "../../components/project-page-components/cubix-preview";
 import CubixChallenge from "../../components/project-page-components/cubix-challenge";

@@ -8,14 +8,14 @@ import CubixHero from "../images/cubix-image.png";
 
 const Card = ({ href, title, description, imageSrc, imgHeight, index, scale, textColor }) => {
   return (
-    <Link href={href} style={{ textDecoration: 'none' }} display="inline-flex" height="100%">
+    <Link href={href} style={{ textDecoration: 'none' }} display="inline-flex">
       <Box
         borderRadius="20px"
         position="relative"
         overflow="hidden"
         border="solid 1px rgba(224,224,224, 1)"
       >
-        <Image src={imageSrc} height="100%" width="auto" maxW="100%" />
+        <Image src={imageSrc} width="auto" maxW="100%" />
         <Box pos="absolute" top={{base: "-10rem", md: "1.25rem"}} left={{base: "-10rem", md: "1.25rem"}}>
           <Text size="lg" color={textColor}>{title}</Text>
           {/* <Heading size="xl" color="#f4f4f4">{title}</Heading> */}

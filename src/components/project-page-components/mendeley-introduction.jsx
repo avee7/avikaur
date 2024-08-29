@@ -50,7 +50,7 @@ const MendeleyIntroduction = () => (
           <Text size="md" color="#7B7A7E">COLLABORATORS</Text>
           <UnorderedList styleType="'•  '">
             <ListItem><Text size="lg">Developers</Text></ListItem>
-            <ListItem><Text size="lg">Marketing Lead</Text></ListItem>
+            
             <ListItem><Text size="lg">Marketing Lead</Text></ListItem>
             <ListItem><Text size="lg">Senior Product Director</Text></ListItem>
 

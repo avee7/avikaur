@@ -24,44 +24,44 @@ export const Typography = {
       },
       "3xl":  {
         "fontSize":  48,
-        "fontFamily":  "'DM Serif Display', serif",
-        "fontWeight":  400,
+        "fontFamily":  '"DM Sans", sans-serif',
+        "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
       "2xl":  {
         "fontSize":  36,
-        "fontFamily":  "'DM Serif Display', serif",
-        "fontWeight":  400,
+        "fontFamily":  '"DM Sans", sans-serif',
+        "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
       "xl":  {
         "fontSize":  28,
-        "fontFamily":  "'DM Serif Text', serif",
-        "fontWeight":  400,
+        "fontFamily":  '"DM Sans", sans-serif',
+        "fontWeight":  600,
         "lineHeight":  "125%",
         "textDecoration":  "NONE"
       },
       "lg":  {
         "fontSize":  24,
-        "fontFamily":  "'DM Serif Text', serif",
-        "fontWeight":  400,
+        "fontFamily":  '"DM Sans", sans-serif',
+        "fontWeight":  600,
         "lineHeight":  "150%",
         "fontStyle": "normal",
         "textDecoration":  "NONE"
       },
       "md":  {
         "fontSize":  20,
-        "fontFamily":  "'DM Serif Display', serif",
-        "fontWeight":  400,
+        "fontFamily":  '"DM Sans", sans-serif',
+        "fontWeight":  600,
         "lineHeight":  "150%",
         "fontStyle": "normal",
         "textDecoration":  "NONE"
       },
       "sm":  {
         "fontSize":  16,
-        "fontFamily":  "'DM Serif Display', serif",
+        "fontFamily":  '"DM Sans", sans-serif',
         "fontWeight":  400,
         "lineHeight":  "150%",
         "fontStyle": "normal",
@@ -69,7 +69,7 @@ export const Typography = {
       },
       "xs":  {
         "fontSize":  14,
-        "fontFamily":  "'DM Serif Display', serif",
+        "fontFamily":  '"DM Sans", sans-serif',
         "fontWeight":  400,
         "lineHeight":  "150%",
         "fontStyle": "normal",

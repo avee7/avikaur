@@ -23,7 +23,7 @@ const InceptionAndProcess = () => (
         <Flex direction="column" gap={{ base: "0.5rem", md: "1rem" }}>
           <Text size="md" color="#7B7A7E" textTransform="uppercase">Defining the problem</Text>
 
-          <Heading maxW="660px" size={{ base: '2xl', md: '3xl' }} color="#0A0911">Why Mendeley's Full Potential Remains Hidden?</Heading>
+          <Heading maxW="660px" size={{ base: 'xl', md: '2xl' }} color="#0A0911">Why Mendeley's Full Potential Remains Hidden?</Heading>
           <Text maxW="660px" size="lg" pt={{ base: "1rem", md: "2rem" }}>The user research at Mendeley has shown that while the reference manager
             is widely used for managing and organising research, users often turn to other platforms for
             additional needs. This indicates a significant gap in awareness regarding Mendeley’s

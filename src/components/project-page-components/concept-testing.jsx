@@ -78,7 +78,7 @@ const ConceptTesting = () => {
             <Flex direction="column">
               <Text size="md" color="#7B7A7E" textTransform="uppercase">Testing Outcome</Text>
 
-              <Heading size={{ base: '2xl', md: '3xl' }} >Highlights </Heading>
+              <Heading size={{ base: 'xl', md: '2xl' }} >Highlights </Heading>
 
 
             </Flex>
