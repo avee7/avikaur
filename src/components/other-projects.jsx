@@ -89,7 +89,7 @@ const OtherProjects = () => {
 
   return (
     <Container pt={{ base: "8rem",  lg: "10rem"}} pb={{ base: "8rem",  lg: "12rem"}} bg={"#466b4e"} zIndex="9" position="relative" maxW="none">
-      <Heading size={{base: '3xl', md: '4xl'}} mb={{base: "3rem", md: "6rem"}} maxW="1300px" width="100%" mx="auto" color="#fff" fontWeight="500">Other Projects</Heading>
+      <Heading size={{base: '4xl', md: '5xl'}} mb={{base: "3rem", md: "6rem"}} maxW="1300px" width="100%" mx="auto" color="#fff" fontWeight="500">Other Projects</Heading>
       
 
       <Grid
