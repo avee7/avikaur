@@ -6,13 +6,11 @@ import { Box } from '@chakra-ui/react';
 import HeroArea from '../components/hero-area';
 import SelectedProjects from '../components/selected-projects';
 import OtherProjects from '../components/other-projects';
-import CVSection from '../components/cv-section';
-import HeroAnimation from '../components/hero-animation';
 import useScrollToTop from "../hooks/useScrollToTop";
 import About from "../components/about-me"
 import { Helmet } from "react-helmet";
 import { motion, useScroll, useTransform } from 'framer-motion';
-// const MotionBox = motion(Box);
+
 
 
 const Home = () => {
@@ -24,7 +22,6 @@ const Home = () => {
     <Box>
       <Box position="fixed" width="100%" height="calc(60vh + 64px)" zIndex="0" top="0" display="flex" justifyContent="center" alignItems={{base: 'center', lg: "center"}} 
       bgColor="#a6ffba">
-        {/* <HeroAnimation /> */}
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>

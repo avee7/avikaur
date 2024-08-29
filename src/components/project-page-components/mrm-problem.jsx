@@ -1,7 +1,5 @@
 import React from "react"
 import { Box, Text, Heading, Image, Flex, Container } from '@chakra-ui/react'
-import quoteImg from "../../images/quote.png"
-// import ProductPreview from '../../images/cubix-ds.png';
 
 
 

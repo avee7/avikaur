@@ -4,7 +4,6 @@ import Layout from "../../components/layout";
 import ProjectPageHeader from "../../components/project-page-components/project-header";
 import MRMHero from "../../images/mrm-hero-img.png"
 import MRMIntroduction from "../../components/project-page-components/mrm-introduction";
-import MRMPreview from "../../components/project-page-components/mrm-preview";
 import MRMProblem from "../../components/project-page-components/mrm-problem";
 import MRMProcess from "../../components/project-page-components/mrm-process";
 

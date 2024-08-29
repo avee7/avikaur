@@ -15,13 +15,11 @@ import {
   Link,
   Container
 } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import darkLogo from '../images/avee-logo.png';
-import lightLogo from '../images/avee-logo-light.png';
+import logo from '../images/avee-logo.png';
 
 const Header = ({ headerBg = "transparent", textColour }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const logo = textColour === 'dark' ? darkLogo : lightLogo;
+  // const logo = textColour === 'dark' ? darkLogo : darkLogo;
   const fontColour = textColour === 'dark' ? '#0A0911' : '#f4f4f4';
 
   return (
@@ -31,7 +29,7 @@ const Header = ({ headerBg = "transparent", textColour }) => {
       top="0"
       zIndex="sticky"
       width="100%"
-      backdropFilter="blur(8px)"
+      // backdropFilter="blur(8px)"
     >
       <Container px={{base: "1rem", xl: "3rem"}} width="100%" maxW="none">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} pt="1rem">

@@ -23,10 +23,12 @@ const AboutMe = () => {
   };
 
   return (
-    <Container maxW="1300px" pt={{ base: "4rem", lg: "7.5rem" }} pb={{ base: "6rem", lg: "12rem" }} >
+    <Container maxW="1300px" pt={{ base: "4rem", sm: "5rem", lg: "10rem" }} pb={{ base: "4rem", sm: "5rem", lg: "10rem" }} >
       <Box mb={{base: "2rem", md: "4rem"}}>
-      <Heading size={{base: '3xl', md: '4xl'}}  maxW="1300px" width="100%" mx="auto" mb="1rem">About Me</Heading>
-      <Text size={{base: '2xl', md: '3xl'}} mb="1rem"> Product designer based in London.</Text>
+      <Text size={{base: 'md', md: 'lg'}} mb="0.5rem">AVINASH KAUR</Text>
+      <Heading size={{base: '4xl', md: '5xl'}}  maxW="1300px" width="100%" mx="auto" mb="1rem">About Me</Heading>
+      
+      <Heading size={{base: 'md', md: 'lg'}}> Product designer based in London.</Heading>
      
 
       </Box>
@@ -36,48 +38,43 @@ const AboutMe = () => {
           direction="column"
           gap="2rem"
           alignItems="flex-start"
-          w={{ base: "100%", lg: "70%" }}
+          maxW="776px"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <Flex align="flex-start">
-            <Box fontSize="2rem" mr="1rem">&#127912;</Box>
-            <Text size={{base: 'xl', md: '2xl'}}>
+          <Flex align="center" position="relative">
+            <Box fontSize="1.5rem" position="absolute" top="-4px">&#127912;</Box>
+            <Text size={{base: 'lg', md: 'xl'}} pl="2rem">
             I started my career as a front-end developer but soon realised my true passion lies in design. Since 2017, I have been focusing on designing user-centered experiences that people love.
             </Text>
           </Flex>
 
-          <Flex align="flex-start">
-            <Box fontSize="2rem" mr="1rem">&#127775;</Box>
-            <Text size={{base: 'xl', md: '2xl'}}>
+          <Flex align="center" position="relative">
+            <Box fontSize="1.5rem" position="absolute" top="-4px">&#127775;</Box>
+            <Text size={{base: 'lg', md: 'xl'}} pl="2rem">
             I believe in transforming lives through design by prioritising usability, consistency, and scalability as core values in my work.
             </Text>
           </Flex>
 
-          <Flex align="flex-start">
-            <Box fontSize="2rem" mr="1rem">&#127793;</Box>
-            <Text size={{base: 'xl', md: '2xl'}}>
+          <Flex align="center" position="relative">
+            <Box fontSize="1.5rem" position="absolute" top="-4px">&#127793;</Box>
+            <Text size={{base: 'lg', md: 'xl'}} pl="2rem">
             I value constructive feedback as a catalyst for growth, driving me to continually enhance my skills.
             </Text>
           </Flex>
 
-          {/* <Flex align="flex-start">
-            <Box fontSize="2rem" mr="1rem">&#127775;</Box>
-            <Text size="2xl">
-              I appreciate attention to detail and value prototyping as essential for realising ideas and guiding decisions.
-            </Text>
-          </Flex> */}
+          
 
-          <Flex align="flex-start">
-            <Box fontSize="1.8rem" mr="1rem">&#127803;</Box>
-            <Text size={{base: 'xl', md: '2xl'}}>
+          <Flex align="center" position="relative">
+            <Box fontSize="1.5rem" position="absolute" top="-4px">&#127803;</Box>
+            <Text size={{base: 'lg', md: 'xl'}} pl="2rem">
             Beyond work, I enjoy nature walks, painting, and gardening.
             </Text>
           </Flex>
         </MotionFlex>
 
-        <MotionBox w={{ base: "80%", md: "30%" }}>
+        {/* <MotionBox w={{ base: "80%", md: "30%" }}>
           <MotionImage
             src={MyImage}
             maxW="100%"
@@ -97,7 +94,7 @@ const AboutMe = () => {
               }
             }}
           />
-        </MotionBox>
+        </MotionBox> */}
       </Flex>
     </Container>
   );
