@@ -1,158 +1,107 @@
-import React, { useState } from "react";
-import { Grid, GridItem, Heading, Image, Container, Flex, useDisclosure, Box, Text, useBreakpointValue } from '@chakra-ui/react';
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import { Box, Image, IconButton, Flex, Container, Heading } from '@chakra-ui/react';
+import { ArrowBackIcon, ArrowForwardIcon } from '@chakra-ui/icons';
 
-import DSImage from "../images/DSImages.svg";
-import ProductDesignImage from "../images/productImage.png";
-import PrototypesImage from "../images/prototypeimg.svg";
-import isoshealthImg from "../images/isoshealth-img.webp"
-import CubiXImg from "../images/cubix-img.png"
-import MdUIImg from "../images/mdui-img.png"
-import GroupsImg from "../images/groups-img.png"
-import MCiteImg from "../images/mcite-img.webp"
-import NavioImg from "../images/big-wheel.gif"
+import MdUIImg from "../images/mdui-img1.png";
+import GroupsImg from "../images/groups-img1.png";
+import HabitAppImg from "../images/buildmyhabit.png";
+import MCiteImg from "../images/mcite-img1.png";
 
-import FullScreenOverlay from './full-screen-overlay'; // Ensure the path is correct
+const images = [
+  { src: HabitAppImg, tilt: 2 }, // Example tilt for third image
+  { src: MCiteImg, tilt: -2 },    // Example tilt for second image
+  { src: GroupsImg, tilt: 3 },  // Example tilt for first image
+  
+  // { src: MdUIImg, tilt: -1 },     // Example tilt for fourth image
+];
 
+const Carousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-const MotionFlex = motion(Flex);
+  const imagesPerView = 2; // Number of images to show at once
+  const slideWidth = 50; // Adjust this to control the slide distance (in vw or any other unit)
 
-const OtherProjects = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedItem, setSelectedItem] = useState(null);
-
-    // Define items data
-  const items = [
-    {
-      id: 1,
-      imageSrc: ProductDesignImage,
-      heading: "Product Design",
-      subProjects: [
-        { name: "Groups", year: "2020", imgSrc: GroupsImg, role: "UX Designer", impact: [
-          "Positive User Testing Feedback",
-          "Improved Collaboration amongst Researchers",
-          "Increased User Engagement and Satisfaction"
-        ], description: "I led the design of the 'Groups' feature for the Mendeley Reference Manager, significantly improving the process of forming and managing groups. These enhancements have significantly improved how users collaborate and manage their research activities on the platform" },
-        { name: "Browse References", year: "2020", imgSrc: MCiteImg, role: "UX Designer", impact: [
-          "Enhanced Usability",
-          "Boosted Plugin Utility",
-          "Maintained Clarity and Ease of Use",
-          "Positive User Feedback"
-        ], description: "I led the integration of the 'Browse References' feature from the Mendeley Reference Manager into the Mendeley Cite plugin for Microsoft Word. This project aimed to enhance usability within a compact interface, carefully maintaining clarity and ease of use despite the inherent space constraints." },
-        { name: "Navio", year: "2018", imgSrc: NavioImg, role: "UI Designer", impact: [], description: "In Macmillan Education, I designed engaging gaming experiences for pre-primary students, focusing on creating new activities that transform learning into an enjoyable journey. This initiative was aimed at enhancing educational engagement through interactive and fun learning methods." }
-      ],
-    },
-    {
-      id: 2,
-      imageSrc: DSImage,
-      heading: "Design Systems",
-      subProjects: [
-        // { name: "CubiX Design System", year: "2024", imgSrc: CubiXImg, role: "UX Designer (Product Design and Design System))", impact: [
-        //   "Streamlining Design Processes",
-        //   "Anticipated Efficiency Gains",
-        //   "Continuous Improvement"
-        // ], description: "We're in the process of building a multi-brand platform designed to streamline and improve our product development. This initiative introduces foundational styles and scalable components to ensure uniformity and efficiency throughout CubixCraft’s diverse product lineup. It’s a key step toward making our development processes more cohesive and responsive to market demands." },
-        { name: "MDUI Design System", year: "2021", imgSrc: MdUIImg, role: "UX Designer", impact: [
-          "Enhanced Interface Consistency across 6 Mendeley products",
-          "Streamlined User Interactions",
-          "Improved User Satisfaction"
-        ], description: "In a collaborative effort at Mendeley, we unified the user experience across six distinct products through design ideation workshops involving multiple UX teams. I played a key role in developing a cohesive visual language, which effectively eliminated inconsistencies and enhanced the usability of our entire product suite." },
-        { name: "Isoshealth Pattern Library", year: "2017", imgSrc: isoshealthImg, role: "UX Designer, UI developer (solo project)", impact: [
-          "Established foundational styles",
-          "Unified UI components",
-          "Streamlined developer workflows",
-          "Enhanced design consistency"
-        ], description: "A dynamic living pattern library, inspired by Storybook and developed in ReactJS, designed to unify the user experience across client and practitioner platforms." },
-        
-      ],
-    },
-    {
-      id: 3,
-      imageSrc: PrototypesImage,
-      heading: "Prototypes",
-      subProjects: [
-        { name: "AjabShahar", year: "2015", imgSrc: "", role: "UI developer (solo project)",  impact: [], description: "At Thoughtworks, for the 'AjabShahar' project, I crafted HTML, CSS, and JavaScript prototypes to secure client approval, focusing on delivering the immersive experience the client desired. My work featured complex interactions such as parallax effects and advanced CSS3 animations, demonstrating the innovative capabilities of our designs and effectively engaging our clients." },
-        { name: "Mendeley Prototypes", year: "2019-2023", imgSrc: "", role: "UX Designer",  impact: [], description: "During my tenure at Mendeley, I developed numerous prototypes using HTML, CSS, and Azure, transforming initial ideas into visual representations that accelerated decision-making processes. This work not only facilitated quicker validations but also significantly enhanced our project development lifecycle." }
-      ],
-    },
-  ];
-
-
-  const handleClick = (item) => {
-    if (item.id !== 3) {
-      setSelectedItem(item);
-      onOpen();
+  const prevSlide = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex((prevIndex) => prevIndex - 1);
     }
   };
 
-  const gridTemplateColumns = useBreakpointValue({ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' });
+  const nextSlide = () => {
+    if (currentIndex < images.length - imagesPerView) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    }
+  };
 
   return (
-    <Container pt={{ base: "8rem",  lg: "10rem"}} pb={{ base: "8rem",  lg: "12rem"}} bg={"#466b4e"} zIndex="9" position="relative" maxW="none">
-      <Heading size={{base: '4xl', md: '5xl'}} mb={{base: "3rem", md: "6rem"}} maxW="1300px" width="100%" mx="auto" color="#fff" fontWeight="500">Other Projects</Heading>
+    <Box bg="#0A0911" zIndex="9" position="relative" pt={{ base: "8rem", lg: "10rem" }} pb={{ base: "8rem", lg: "12rem" }}>
+      <Container maxW="1300px">
+        <Heading size={{ base: '4xl', md: '5xl' }} mb={{ base: "3rem", md: "6rem" }} width="100%" mx="auto" color="#f4f4f4" textAlign="center">Other Projects</Heading>
+      </Container>
       
-
-      <Grid
-        h='556px'
-        maxW="1300px" width="100%" mx="auto"
-        templateRows={{ base: 'auto', md: 'repeat(2, 1fr)' }}
-        templateColumns={gridTemplateColumns}
-        gap={4}
-      >
-        {items.map(item => (
-          <GridItem 
-            key={item.id} 
-            rowSpan={{ base: 1, md: item.id === 1 ? 2 : 1 }}
-            colSpan={{ base: 2, md: 1 }} // Stack on smaller screens
-            onClick={() => handleClick(item)}
-            overflow="hidden" 
-             
-            // bg="rgba(214, 255, 223, 0.2)"
-            bg="rgba(0,0,0, 0.1)"
-            borderRadius="20px" 
-            borderWidth="1px" 
-            borderColor="rgba(118, 181, 132, 0.4)"
-            backdropFilter="blur(10px)"
-            cursor={ item.id === 3 ? 'default' : 'pointer' }
-            role="group" // Add group role for hover effect
-          >
-            <MotionFlex
-              height="100%"
-              alignItems="center"
-              justifyContent="center"
-              position="relative"
-              whileHover={{ scale: 1.1 }}
-            >
-              <Image src={item.imageSrc} zIndex="0" position="absolute" bottom="0rem" left="0" width="100%" opacity="0.5" />
-              <Text size={{base: "2xl", md: "3xl" }}
-              color="#fff"
-              zIndex="1" 
-              mt="2rem"
-              textTransform="uppercase"
-               >{item.heading}</Text>
-              {item.id === 3 && (
-                <Box position="absolute" top="0" left="0" right="0" bottom="0" bg="rgba(0, 0, 0, 0.3)" display="flex" alignItems="flex-end" justifyContent="center"
-                  opacity="0"
-                  _groupHover={{ opacity: 1 }} 
-                >
-                  <Text size="lg" pb="1rem" color="#fff">Coming Soon</Text>
-                </Box>
-              )}
-            </MotionFlex>
-          </GridItem>
-        ))}
-      </Grid>
-
-      {selectedItem && (
-        <FullScreenOverlay
-          isOpen={isOpen}
-          onClose={onClose}
-          heading={selectedItem.heading}
-          subProjects={selectedItem.subProjects}
+      <Flex justifyContent="center" alignItems="center" position="relative" px="2rem" maxW="99vw" overflow="hidden" mx="auto" height="624px">
+        <IconButton
+          aria-label="Previous Slide"
+          icon={<ArrowBackIcon />}
+          onClick={prevSlide}
+          position="absolute"
+          left="0"
+          zIndex="10"
+          color= '#fff'
+          bg= "rgba(26,26,26,0.8)"
+          borderRadius= "50%"
+          border= "1px solid #fff"
+          _hover= {{ bg: "rgba(118, 181, 132, 0.2)" }}
+           boxSize="3rem"
+          disabled={currentIndex === 0}
         />
-      )}
-    </Container>
+        
+        <Flex
+          transition="transform 0.5s ease-in-out"
+          transform={`translateX(-${currentIndex * slideWidth}vw)`}
+          justifyContent="flex-start"
+          alignItems="center"
+          minW="100%"
+          gap={{base: "1rem", md: "2rem"}}
+        >
+          {images.map((image, index) => (
+            <Box 
+              key={index} 
+              flex="0 0 50%" 
+              px="1rem" 
+              transform={`rotate(${image.tilt}deg)`} // Apply tilt here
+              transition="transform 0.3s ease"
+            >
+              <Image
+                src={image.src}
+                // height="600px"
+                maxW="100%"
+                // objectFit="cover"
+              />
+            </Box>
+          ))}
+        </Flex>
+        
+        <IconButton
+          aria-label="Next Slide"
+          icon={<ArrowForwardIcon />}
+          onClick={nextSlide}
+          position="absolute"
+          right="0"
+          color= '#fff'
+          bg= "rgba(26,26,26,0.8)"
+          borderRadius= "50%"
+          border= "1px solid #fff"
+          _hover= {{ bg: "rgba(118, 181, 132, 0.2)" }}
+          zIndex="10"
+          boxSize="3rem"
+          disabled={currentIndex >= images.length - imagesPerView}
+        />
+      </Flex>
+    </Box>
   );
 };
 
-export default OtherProjects;
+export default Carousel;
+
+

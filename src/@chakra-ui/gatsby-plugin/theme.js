@@ -9,17 +9,6 @@ const theme = extendTheme({
   },
   styles: {
     global: {
-      // '@font-face': [
-      //   {
-      //     fontFamily: 'Prociono',
-      //     src: `
-      //       url('/fonts/Prociono-Regular-webfont.ttf') format('truetype'),
-      //       url('/fonts/Prociono-Regular-webfont.woff') format('woff')
-      //     `,
-      //     fontWeight: 'normal',
-      //     fontStyle: 'normal',
-      //   },
-      // ],
       'html, body': {
         color: '#0A0911',
       },
@@ -236,7 +225,23 @@ const theme = extendTheme({
       defaultProps: {
         variant: 'outline', 
       }
-    }
+    }, 
+    // IconButton: {
+    //   variants: {
+    //     roundedOutline: {
+    //       color: '#fff',
+    //       bg: "rgba(26,26,26,0.8)",
+    //       borderRadius: "50%",
+    //       border: "1px solid white",
+    //       _hover: {
+    //         bg: "rgba(118, 181, 132, 0.2)",
+    //       },
+    //     },
+    //   },
+    //   defaultProps: {
+    //     variant: "roundedOutline",
+    //   },
+    // },
      
     
   }
