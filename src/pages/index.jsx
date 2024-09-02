@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Box } from '@chakra-ui/react';
 import HeroArea from '../components/hero-area';
 import SelectedProjects from '../components/selected-projects';
-import OtherProjects from '../components/other-projects';
+// import OtherProjects from '../components/other-projects';
 import useScrollToTop from "../hooks/useScrollToTop";
 import About from "../components/about-me"
 import { Helmet } from "react-helmet";
@@ -29,8 +29,8 @@ const Home = () => {
           <SelectedProjects />
         </Box>
       </motion.div>
-      <OtherProjects />
-      <Box bg="#a6ffba"  zIndex="9" position="relative">
+      {/* <OtherProjects /> */}
+      <Box bg="#f6f6f6"  zIndex="9" position="relative">
         <About/>
       </Box>
       {/* <Box bg="#a6ffba" zIndex="9" position="relative">
