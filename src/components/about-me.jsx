@@ -23,12 +23,12 @@ const AboutMe = () => {
   };
 
   return (
-    <Container maxW="1300px" pt={{ base: "4rem", sm: "5rem", lg: "10rem" }} pb={{ base: "4rem", sm: "5rem", lg: "10rem" }} >
+    <Container maxW="1300px" pt={{ base: "4rem", sm: "5rem", lg: "10rem" }} pb={{ base: "4rem", sm: "6rem", lg: "12rem" }} >
       <Box mb={{base: "2rem", md: "4rem"}}>
-      <Text size={{base: 'md', md: 'lg'}} mb="0.5rem">AVINASH KAUR</Text>
+      {/* <Text size={{base: 'md', md: 'lg'}} mb="0.5rem">AVINASH KAUR</Text> */}
       <Heading size={{base: '4xl', md: '5xl'}}  maxW="1300px" width="100%" mx="auto" mb="1rem">About Me</Heading>
       
-      <Heading size={{base: 'md', md: 'lg'}}> Product designer based in London.</Heading>
+      {/* <Heading size={{base: 'md', md: 'lg'}}>&#128075; I'm Avi, a product designer based in London.</Heading> */}
      
 
       </Box>
@@ -44,9 +44,15 @@ const AboutMe = () => {
           animate="visible"
         >
           <Flex align="center" position="relative">
+            <Box fontSize="1.5rem" position="absolute" top="-4px">&#128075;</Box>
+            <Text size={{base: 'lg', md: 'xl'}} pl="2rem">
+            I'm Avi, a product designer based in London.
+            </Text>
+          </Flex>
+          <Flex align="center" position="relative">
             <Box fontSize="1.5rem" position="absolute" top="-4px">&#127912;</Box>
             <Text size={{base: 'lg', md: 'xl'}} pl="2rem">
-            I started my career as a front-end developer but soon realised my true passion lies in design. Since 2017, I have been focusing on designing user-centered experiences that people love.
+            I started my career as a front-end developer but soon realised that my true passion lies in design. Since 2017, I have been focusing on creating user-centered experiences that people love.
             </Text>
           </Flex>
 

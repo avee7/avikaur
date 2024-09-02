@@ -17,8 +17,8 @@ const Card = ({ href, title, description, imageSrc, imgHeight, index, scale, tex
       >
         <Image src={imageSrc} width="auto" maxW="100%" />
         <Box pos="absolute" top={{base: "-10rem", md: "1.25rem"}} left={{base: "-10rem", md: "1.25rem"}}>
-          <Text size="lg" color={textColor}>{title}</Text>
-          {/* <Heading size="xl" color="#f4f4f4">{title}</Heading> */}
+          <Text size="md" textTransform="uppercase" color={textColor}>{description}</Text>
+          <Heading size="xl" color={textColor} mt="4px">{title}</Heading>
         </Box>
       </Box>
 

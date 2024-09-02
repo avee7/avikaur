@@ -20,12 +20,12 @@ const Home = () => {
 
   return (
     <Box>
-      <Box position="fixed" width="100%" height="calc(60vh + 64px)" zIndex="0" top="0" display="flex" justifyContent="center" alignItems={{base: 'center', lg: "center"}} 
+      <Box position="fixed" width="100%" height={{base: "calc(60vh + 64px)", md: "calc(70vh + 64px)"}} zIndex="0" top="0" display="flex" justifyContent="center" alignItems={{base: 'center', lg: "center"}} 
       bgColor="#a6ffba">
         <HeroArea />
       </Box>
       <motion.div style={{ y: ySelectedProjects }}>
-        <Box mt={{ base: "60vh"}} >
+        <Box mt={{ base: "60vh", md: "70vh"}} >
           <SelectedProjects />
         </Box>
       </motion.div>
