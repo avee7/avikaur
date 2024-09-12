@@ -15,7 +15,7 @@ const AirlineNeutral = () => {
   useScrollToTop();
 
   return (
-    <Layout textColour="dark">
+    <Layout textColour="dark" fullWidth={true}>
       <Helmet>
         <title>Airline Neutral Design System — Avinash Kaur</title>
       </Helmet>

@@ -46,7 +46,7 @@ const IndexPage = () => {
   useScrollToTop();
 
   return (
-    <Layout textColour="dark">
+    <Layout textColour="dark" fullWidth={false}>
       <Helmet>
         <title>Avinash Kaur — Product Designer</title>
         <meta name="description" content="Experienced product designer specialising in creating user-friendly and scalable digital experiences. Passionate about delivering innovative design solutions that enhance usability and user satisfaction." />

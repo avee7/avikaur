@@ -8,11 +8,11 @@ import theme from '../@chakra-ui/gatsby-plugin/theme';
 
 import Footer from "./footer"
 
-const Layout = ({ children, headerBg, textColour }) => (
+const Layout = ({ children, headerBg, textColour, fullWidth }) => (
   <ChakraProvider theme={theme}>
       <Box bg={"#fff"}>
       {/* <AdobeFonts /> */}
-      <Header headerBg={headerBg} textColour={textColour}/>
+      <Header headerBg={headerBg} textColour={textColour} fullWidth={fullWidth}/>
       {children}
       <Footer/>
       </Box>

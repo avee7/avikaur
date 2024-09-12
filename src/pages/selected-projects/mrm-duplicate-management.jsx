@@ -17,7 +17,7 @@ const MRMDuplicationMgmt = () => {
   useScrollToTop();
 
   return (
-    <Layout textColour="dark">
+    <Layout textColour="dark" fullWidth={true}>
       <Helmet>
         <title>MRM Duplicate Management— Avinash Kaur</title>
       </Helmet>

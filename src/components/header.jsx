@@ -2,50 +2,54 @@ import React from 'react';
 import {
   Box,
   Flex,
-  IconButton,
   Button,
-  useDisclosure,
-  Stack,
-  Drawer,
-  DrawerBody,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
   Image,
   Link,
   Container
 } from '@chakra-ui/react';
-import logo from '../images/avee-logo.png';
+import logo from '../images/av-logo.png';
 
-const Header = ({ headerBg = "transparent", textColour }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  // const logo = textColour === 'dark' ? darkLogo : darkLogo;
+const Header = ({ headerBg = "transparent", textColour, fullWidth }) => {
   const fontColour = textColour === 'dark' ? '#0A0911' : '#f4f4f4';
+  const headerFullWidth = fullWidth ? true : false;
 
   return (
     <Box
       bg={headerBg}
-      position="sticky"
+      position={headerFullWidth ? "sticky" : "relative"}
       top="0"
       zIndex="sticky"
       width="100%"
-      // backdropFilter="blur(8px)"
     >
-      <Container px={{base: "1rem", xl: "3rem"}} width="100%" maxW="none">
+      <Container 
+        px={headerFullWidth ? { base: "1rem", xl: "3rem" } : "0"} 
+        width="100%" 
+        maxW={headerFullWidth ? "none" : "1300px"}
+      >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'} pt="1rem">
-          <Box as={Link} href='/'>
+          <Box as={Link} href='/' width="3rem">
             <Image src={logo} alt="logo" maxW="100%" />
           </Box>
 
           <Flex alignItems={'center'}>
             <Box>
-              <Button as={Link} href="/" variant="ghost" size='lg' px={4} py={2} transition="all 0.2s" color={fontColour} borderRadius="md" _hover={{ bg: "rgba(10, 9, 17, 0.1)", textDecoration: 'none' }}>Home</Button>
-              </Box>
-
+              <Button 
+                as={Link} 
+                href="/" 
+                variant="ghost" 
+                size='lg' 
+                px={4} 
+                py={2} 
+                transition="all 0.2s" 
+                color={fontColour} 
+                borderRadius="md" 
+                _hover={{ bg: "rgba(10, 9, 17, 0.1)", textDecoration: 'none' }}
+              >
+                Home
+              </Button>
+            </Box>
           </Flex>
         </Flex>
-
-        
       </Container>
     </Box>
   );

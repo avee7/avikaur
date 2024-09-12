@@ -18,7 +18,7 @@ const MendeleyHomePageRedesign = () => {
   useScrollToTop();
 
   return (
-    <Layout textColour="dark">
+    <Layout textColour="dark" fullWidth={true}>
       <Helmet>
         <title>Mendeley Home Page — Avinash Kaur</title>
       </Helmet>
