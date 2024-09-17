@@ -16,7 +16,7 @@ const HeroArea = () => {
   const opacityTransform = useTransform(scrollY, [0, 300], [1, 0.5]);
 
   return (
-    <Box zIndex="1" width="100%" m={{ base: "0 auto" }} position="relative" pb={{ base: '0', lg: "0rem" }}>
+    <Container zIndex="1" width="100%" m={{ base: "0 auto" }} position="relative" pb={{ base: '0', lg: "0rem" }} maxW="none">
 
 
 
@@ -81,7 +81,7 @@ const HeroArea = () => {
 
       </MotionFlex>
 
-    </Box>
+    </Container>
 
   );
 };

@@ -22,7 +22,7 @@ const Header = ({ headerBg = "transparent", textColour, fullWidth }) => {
       width="100%"
     >
       <Container 
-        px={headerFullWidth ? { base: "1rem", xl: "3rem" } : { base: "1rem", xl: "0" }} 
+        px={headerFullWidth ? { base: "2rem", xl: "3rem" } : { base: "2rem", xl: "1rem" }} 
         width="100%" 
         maxW={headerFullWidth ? "none" : "1300px"}
       >
